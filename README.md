@@ -1,5 +1,7 @@
 # svg-animator
 
+	Do not use commercial or GPL license. The aim is to become open-source and free to commercialize when the features are coded
+
 Development pipe
 ======
 
