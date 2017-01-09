@@ -15,8 +15,8 @@ Tasks are tracked with ZenBoard
 
 Technologies
 ===
-Angular2 
-D3.JS (manipulate SVG)
+* Angular2 
+* D3.JS (manipulate SVG)
 
 
 Continouus integration
