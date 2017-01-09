@@ -13,7 +13,13 @@ We work with scrum method
 
 Tasks are tracked with ZenBoard
 
+Technologies
+===
+Angular2 
+D3.JS (manipulate SVG)
+
 
 Continouus integration
 ====
+Travis
 TODO
