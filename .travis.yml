@@ -1,0 +1,39 @@
+language: node_js
+sudo: true
+dist: trusty
+
+node_js:
+  - '6'
+
+branches:
+    only:
+        - master
+        - develop
+        - release
+
+env:
+    global:
+        - CHROME_BIN=/usr/bin/google-chrome
+        - DISPLAY=:99.0
+
+cache:
+  directories:
+     - node_modules
+
+before_install:
+     - ./scripts/install-dependencies.sh
+     - ./scripts/setup-github-access.sh
+
+after_success:
+    # deploy github page
+    - ./scripts/delete-gh-pages.sh
+    - git status; npm run deploy-gh-pages
+    - git checkout master
+    # give github a little bit of time to update the github page
+    - sleep 10
+    # run e2e test on the github page
+    - tsc -p e2e
+    - npm run e2e config/protactor.sauce.conf.js
+
+after_script:
+  - cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
