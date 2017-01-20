@@ -1,9 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<h1> {{title}} </h1>
 <div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
     <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
         <div class="handle title">{{box.title}}</div>
-        <p>{{box.text}}</p>
+        <img src="assets/examples/{{box.svg}}" alt="Svg Img">
     </div>
 </div>
+<button type="button">Save grid organization</button> 
