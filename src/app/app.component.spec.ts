@@ -2,16 +2,20 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {NgGridModule} from "./angular2-grid/modules/NgGrid.module";
 
 describe('AppComponent', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                NgGridModule
+            ],
+        });
+        TestBed.compileComponents();
     });
-    TestBed.compileComponents();
-  });
 
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);

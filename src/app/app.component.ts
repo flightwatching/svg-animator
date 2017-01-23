@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { NgGrid } from './angular2-grid/directives/NgGrid';
-import { NgGridItem } from './angular2-grid/directives/NgGridItem';
-import { NgGridConfig, NgGridItemConfig, NgGridItemEvent } from "./angular2-grid/interfaces/INgGrid";
+import { NgGridConfig, NgGridItemConfig } from "./angular2-grid/interfaces/INgGrid";
 
 class Box {
 	id: number;
@@ -44,7 +42,7 @@ export class AppComponent {
 
 	constructor() {
 		//this.boxes = new Array<Box>(4);
-		for (var i = 0; i < 4; i++) {
+		for (let i = 0; i < 4; i++) {
 			const conf = this._generateDefaultItemConfig();
 			conf.payload = 1 + i;
 			this.boxes[i] = new Box();
@@ -62,4 +60,3 @@ export class AppComponent {
 		return { 'dragHandle': '.handle', 'col': 1, 'row': 1, 'resizable': true, 'minWidth': 10, 'minHeight': 10, 'sizex': 1, 'sizey': 1 };
 	}
 }
-	
