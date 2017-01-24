@@ -11,7 +11,7 @@
     </md-sidenav>
     <!-- primary content -->
     <div class="dashboard">
-        <div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
+        <div [ngGrid]="gridConfig">
             <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
                 <div class="handle title">{{box.title}}</div>
                 <img src="assets/examples/{{box.svg}}" alt="Svg Img">

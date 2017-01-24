@@ -3,7 +3,6 @@ import { NgGridConfig, NgGridItemConfig } from "./angular2-grid/interfaces/INgGr
 import {Http} from "@angular/http";
 
 class Box {
-	id: number;
 	config: NgGridItemConfig;
 	svg: string;
 }
@@ -15,55 +14,62 @@ class Box {
 })
 export class AppComponent {
 	private boxes: Array<Box> = [];
+	private payloads: number = 0;
 
-  title = 'SVG Animator';
-  private gridConfig: NgGridConfig = <NgGridConfig>{
-		'margins': [5],
-		'draggable': true,
-		'resizable': true,
-		'max_cols': 0,
-		'max_rows': 0,
-		'visible_cols': 0,
-		'visible_rows': 0,
-		'min_cols': 1,
-		'min_rows': 1,
-		'col_width': 2,
-		'row_height': 2,
-		'cascade': 'up',
-		'min_width': 250,
-		'min_height': 250,
-		'fix_to_grid': false,
-		'auto_style': true,
-		'auto_resize': true,
-		'maintain_ratio': true,
-		'prefer_new': false,
-		'zoom_on_drag': false,
-		'limit_to_screen': true
+    private gridConfig: NgGridConfig = <NgGridConfig>{
+        'margins': [5],
+        'draggable': true,
+        'resizable': true,
+        'max_cols': 0,
+        'max_rows': 0,
+        'visible_cols': 0,
+        'visible_rows': 0,
+        'min_cols': 1,
+        'min_rows': 1,
+        'col_width': 2,
+        'row_height': 2,
+        'cascade': 'up',
+        'min_width': 50,
+        'min_height': 50,
+        'fix_to_grid': false,
+        'auto_style': true,
+        'auto_resize': false,
+        'maintain_ratio': false,
+        'prefer_new': false,
+        'zoom_on_drag': false,
+        'limit_to_screen': true
 	};
 
 	constructor(private http:Http) {
-		for (let i = 0; i < 4; i++) {
-			const conf = this._generateDefaultItemConfig();
-			conf.payload = 1 + i;
-			this.boxes[i] = new Box();
-			this.boxes[i].id = i + 1;
-			this.boxes[i].config = conf;
-			//this.boxes[i] = { id: i + 1, config: conf, svg: 'assets/examples/astronaute.svg'};
-		}
-		this.boxes[0].svg = 'normalized_tectonic_plates.svg';
-		this.boxes[1].svg = 'astronaute.svg';
-		this.boxes[2].svg = 'files.svg';
-		this.boxes[3].svg = 'horloge.svg';
+        this.loadConfiguration();
 	}
 
 	addDraw():void {
         const conf: NgGridItemConfig = this._generateDefaultItemConfig();
-        conf.payload = 5;
-        this.boxes.push({ id: conf.payload, config: conf, svg:'horloge.svg' });
+        this.payloads++;
+        this.boxes[this.payloads] = new Box();
+        this.boxes[this.payloads].config = conf;
+        this.boxes[this.payloads].svg = "horloge.svg";
+        this.boxes[this.payloads].config.payload = this.payloads;
+/*
+        this.boxes.push({ config: conf, svg:'horloge.svg' });
+*/
     }
 
     saveConfigurationGrid():void {
         console.log(this.boxes);
+    }
+
+    private loadConfiguration():void {
+        this.http.get('config/configuration-grid.json')
+        .map(res => res.json())
+        .subscribe((configs) => {
+            this.gridConfig = configs.gridConfig;
+
+            configs.gridItemsConfigs.map((itemConfig) => {
+                this.boxes.push(itemConfig);
+            });
+        });
     }
 
 	private _generateDefaultItemConfig(): NgGridItemConfig {
