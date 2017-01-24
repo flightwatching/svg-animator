@@ -14,7 +14,7 @@
         <div [ngGrid]="gridConfig">
             <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
                 <div class="handle title">{{box.title}}</div>
-                <img src="assets/examples/{{box.svg}}" alt="Svg Img">
+                <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Svg Img">
             </div>
         </div>
     </div>
