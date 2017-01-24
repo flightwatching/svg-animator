@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "./angular2-grid/interfaces/INgGrid";
+import {Http} from "@angular/http";
 
 class Box {
 	id: number;
@@ -40,8 +41,7 @@ export class AppComponent {
 		'limit_to_screen': true
 	};
 
-	constructor() {
-		//this.boxes = new Array<Box>(4);
+	constructor(private http:Http) {
 		for (let i = 0; i < 4; i++) {
 			const conf = this._generateDefaultItemConfig();
 			conf.payload = 1 + i;
@@ -55,6 +55,16 @@ export class AppComponent {
 		this.boxes[2].svg = 'files.svg';
 		this.boxes[3].svg = 'horloge.svg';
 	}
+
+	addDraw():void {
+        const conf: NgGridItemConfig = this._generateDefaultItemConfig();
+        conf.payload = 5;
+        this.boxes.push({ id: conf.payload, config: conf, svg:'horloge.svg' });
+    }
+
+    saveConfigurationGrid():void {
+        console.log(this.boxes);
+    }
 
 	private _generateDefaultItemConfig(): NgGridItemConfig {
 		return { 'dragHandle': '.handle', 'col': 1, 'row': 1, 'resizable': true, 'minWidth': 10, 'minHeight': 10, 'sizex': 1, 'sizey': 1 };

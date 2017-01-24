@@ -1,8 +1,22 @@
-<h1>{{title}}</h1>
-<div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
-    <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
-        <div class="handle title">{{box.title}}</div>
-        <img src="assets/examples/{{box.svg}}" alt="Svg Img">
+<md-toolbar>
+    <span>Flightwatching</span>
+</md-toolbar>
+
+<md-sidenav-container>
+    <md-sidenav #sidenav mode="side" opened="true">
+        <ul>
+            <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
+        </ul>
+        <!-- sidenav content -->
+    </md-sidenav>
+    <!-- primary content -->
+    <div class="dashboard">
+        <div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
+            <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
+                <div class="handle title">{{box.title}}</div>
+                <img src="assets/examples/{{box.svg}}" alt="Svg Img">
+            </div>
+        </div>
     </div>
-</div>
-<button type="button">Save grid organization</button>
+</md-sidenav-container>
+<button (click)="addDraw()" class="btn-add" color="primary" md-fab><md-icon>add</md-icon></button>
