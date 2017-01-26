@@ -61,7 +61,7 @@ export class AppComponent {
     }
 
     private loadConfiguration():void {
-        this.http.get('config/configuration-grid.json')
+        this.http.get('assets/config/configuration-grid.json')
         .map(res => res.json())
         .subscribe((configs) => {
             this.gridConfig = configs.gridConfig;

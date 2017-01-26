@@ -2,7 +2,8 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import {NgGridModule} from "./angular2-grid/modules/NgGrid.module";
+import { NgGridModule } from "./angular2-grid/modules/NgGrid.module";
+import { MaterialModule } from "@angular/material"; 
 
 describe('AppComponent', () => {
     beforeEach(() => {
@@ -11,8 +12,9 @@ describe('AppComponent', () => {
                 AppComponent
             ],
             imports: [
-                NgGridModule
-            ],
+                NgGridModule,
+                MaterialModule.forRoot()
+            ]
         });
         TestBed.compileComponents();
     });
@@ -21,18 +23,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  }));
-
-  it(`should have as title 'SVG Animator'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('SVG Animator');
-  }));
-
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('SVG Animator');
   }));
 });
