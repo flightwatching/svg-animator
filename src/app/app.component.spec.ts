@@ -2,7 +2,7 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { NgGridModule } from "./angular2-grid/modules/NgGrid.module";
+import { NgGridModule } from "angular2-grid";
 import { MaterialModule } from "@angular/material"; 
 
 describe('AppComponent', () => {

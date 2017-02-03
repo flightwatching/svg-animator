@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgGridConfig, NgGridItemConfig } from "./angular2-grid/interfaces/INgGrid";
+import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import {Http} from "@angular/http";
 
 class Box {
@@ -10,7 +10,7 @@ class Box {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css', './angular2-grid/NgGrid.css']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 	private boxes: Array<Box> = [];
