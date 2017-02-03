@@ -1,5 +1,5 @@
 md-toolbar {
-    background-color: rgb(236, 240, 241);
+    background-color: rgb(50, 53, 56);
 }
 
 md-sidenav {
@@ -18,7 +18,7 @@ md-sidenav {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    color: #7f7f7f;
+    color: #FFFFFF;
 }
 
 .sidenav-item:hover {
@@ -44,6 +44,7 @@ md-sidenav-container {
 .btn-sidenav {
     padding: 0;
     border: none;
+    background-color: rgb(50, 53, 56);
 }
 
 #sidenav-icon {

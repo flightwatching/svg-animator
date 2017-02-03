@@ -15,7 +15,7 @@ class Box {
 export class AppComponent {
 	private boxes: Array<Box> = [];
 	private payloads: number = 0;
-    private sidenavOpened = true;
+    private sidenavOpened = false;
 
     private gridConfig: NgGridConfig = <NgGridConfig>{
         'margins': [5],
