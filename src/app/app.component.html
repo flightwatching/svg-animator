@@ -1,11 +1,13 @@
 <md-toolbar>
-    <span>Flightwatching</span>
+    <button (click)="sideNav()" class="btn-sidenav"><img id="sidenav-icon" src="assets/sidenav-icon.png"/></button>
 </md-toolbar>
 
+
 <md-sidenav-container>
-    <md-sidenav #sidenav mode="side" opened="true">
+    <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
         <ul>
             <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
+            <li class="sidenav-item"><md-icon>delete</md-icon>DELETE</li>
         </ul>
         <!-- sidenav content -->
     </md-sidenav>
@@ -20,3 +22,4 @@
     </div>
 </md-sidenav-container>
 <button (click)="addDraw()" class="btn-add" color="primary" md-fab><md-icon>add</md-icon></button>
+

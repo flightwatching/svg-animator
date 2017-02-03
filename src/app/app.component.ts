@@ -15,6 +15,7 @@ class Box {
 export class AppComponent {
 	private boxes: Array<Box> = [];
 	private payloads: number = 0;
+    private sidenavOpened = true;
 
     private gridConfig: NgGridConfig = <NgGridConfig>{
         'margins': [5],
@@ -54,6 +55,11 @@ export class AppComponent {
 /*
         this.boxes.push({ config: conf, svg:'horloge.svg' });
 */
+    }
+
+
+    sideNav():void {
+        this.sidenavOpened = !this.sidenavOpened;
     }
 
     saveConfigurationGrid():void {

@@ -1,5 +1,5 @@
 md-toolbar {
-    background-color: rgb(40, 42, 45);
+    background-color: rgb(236, 240, 241);
 }
 
 md-sidenav {
@@ -32,7 +32,7 @@ md-sidenav-container {
 
 .dashboard {
     min-height: 100vh;
-    background-color: rgb(236, 240, 241);
+    background-color: rgb(236, 240, 241); 
 }
 
 .btn-add {
@@ -40,3 +40,15 @@ md-sidenav-container {
     bottom: 40px;
     right: 40px;
 }
+
+.btn-sidenav {
+    padding: 0;
+    border: none;
+}
+
+#sidenav-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
