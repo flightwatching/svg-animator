@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import {Http} from "@angular/http";
+import {GridConfigService} from "./grid-config/grid-config.service";
 
 class Box {
 	config: NgGridItemConfig;
@@ -8,9 +9,10 @@ class Box {
 }
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    providers: [GridConfigService],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 	private boxes: Array<Box> = [];
@@ -41,9 +43,9 @@ export class AppComponent {
         'limit_to_screen': true
 	};
 
-	constructor(private http:Http) {
+	constructor(private http:Http, gridConfigService:GridConfigService) {
         this.loadConfiguration();
-	}
+    }
 
 	addDraw():void {
         const conf: NgGridItemConfig = this._generateDefaultItemConfig();
@@ -52,9 +54,9 @@ export class AppComponent {
         this.boxes[this.payloads].config = conf;
         this.boxes[this.payloads].svg = "horloge.svg";
         this.boxes[this.payloads].config.payload = this.payloads;
-/*
-        this.boxes.push({ config: conf, svg:'horloge.svg' });
-*/
+        /*
+                this.boxes.push({ config: conf, svg:'horloge.svg' });
+        */
     }
 
 

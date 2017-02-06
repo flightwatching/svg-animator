@@ -3,7 +3,8 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NgGridModule } from "angular2-grid";
-import { MaterialModule } from "@angular/material"; 
+import { MaterialModule } from "@angular/material";
+import {} from 'jasmine';
 
 describe('AppComponent', () => {
     beforeEach(() => {
