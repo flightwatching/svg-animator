@@ -81,7 +81,7 @@ describe('GridConfig Service', () => {
                     new ResponseOptions({
                             status : 200,
                             body: {
-                                config: { 'margins': [10], 'draggable': true, 'resizable': true,}
+                                config: { 'margins': [10], 'draggable': true, 'resizable': true}
                             }
                         }
                     )));
