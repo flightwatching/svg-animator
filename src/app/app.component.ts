@@ -11,7 +11,6 @@ class Box {
 
 @Component({
     selector: 'app-root',
-    providers: [GridConfigService],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
@@ -22,12 +21,12 @@ export class AppComponent {
 
     private gridConfig: NgGridConfig = {};
 
-	constructor(private gridConfigService:GridConfigService, public snackBar: MdSnackBar) {
+	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {
         this.loadConfiguration();
     }
 
 	addDraw():void {
-        const conf: NgGridItemConfig = this._generateDefaultItemConfig();
+	    const conf: NgGridItemConfig = this._generateDefaultItemConfig();
         this.payloads++;
         this.boxes[this.payloads] = new Box();
         this.boxes[this.payloads].config = conf;

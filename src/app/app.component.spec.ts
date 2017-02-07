@@ -1,28 +1,76 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
+import {TestBed, async, ComponentFixture} from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NgGridModule } from "angular2-grid";
-import { MaterialModule } from "@angular/material";
+import {MaterialModule, MdSnackBar} from "@angular/material";
 import {} from 'jasmine';
+import Spy = jasmine.Spy;
+import {GridConfigService} from "./grid-config/grid-config.service";
+import {DebugElement} from "@angular/core";
+import {By} from "@angular/platform-browser";
+import {Observable} from "rxjs";
+
 
 describe('AppComponent', () => {
+
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
+    let el: DebugElement;
+    let mockGridConfigService: GridConfigService;
+
+
     beforeEach(() => {
+        mockGridConfigService = jasmine.createSpyObj<GridConfigService>('GridConfigService', ['getConfigs', 'getConfig', 'saveConfig']);
+        (mockGridConfigService.saveConfig as Spy).and.returnValue(Observable.of(1));
+        (mockGridConfigService.getConfig as Spy).and.returnValue(Observable.of({ config:{ gridConfig: {}, gridItemsConfigs: []}}));
+    });
+
+    beforeEach(async(() =>
         TestBed.configureTestingModule({
             declarations: [
                 AppComponent
+            ],
+            providers: [
+                { provide: GridConfigService, useValue: mockGridConfigService },
+                MdSnackBar
             ],
             imports: [
                 NgGridModule,
                 MaterialModule.forRoot()
             ]
-        });
-        TestBed.compileComponents();
+        }).compileComponents()
+    ));
+
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.componentInstance;
+        el = fixture.debugElement;
+        fixture.autoDetectChanges();
     });
 
-  xit('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
+    it('should create the app', async(() => {
+        expect(component).toBeTruthy();
+    }));
+
+    describe("Configuration", () => {
+        let selectedElement: DebugElement;
+
+        beforeEach(async(() => {
+            fixture.whenStable().then(() => {
+                /* Given */
+                selectedElement = el.query(By.css('li:first-child'));
+                /* When  */
+                selectedElement.nativeElement.click();
+            });
+        }));
+
+        it('Should save the grid configuration', async(() => {
+            fixture.whenStable()
+            .then(() => {
+                expect(mockGridConfigService.saveConfig).toHaveBeenCalled();
+            });
+        }));
+    });
 });
+
