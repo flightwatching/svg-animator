@@ -4,7 +4,7 @@ import {GridConfigService} from "./grid-config/grid-config.service";
 import {MdSnackBar} from '@angular/material';
 
 
-class Box {
+export class Box {
 	config: NgGridItemConfig;
 	svg: string;
 }
@@ -21,8 +21,12 @@ export class AppComponent {
 
     private gridConfig: NgGridConfig = {};
 
+    tabGridConfigs: Array<NgGridConfig> = [];
+
+
 	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {
-        this.loadConfiguration();
+        this.loadConfigurations();
+        this.loadCurrentConfiguration();
     }
 
 	addDraw():void {
@@ -46,7 +50,16 @@ export class AppComponent {
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
-    private loadConfiguration():void {
+    private loadConfigurations(): void {
+         this.gridConfigService.getConfigs()
+        .subscribe(
+            res => {
+                this.tabGridConfigs = res;                
+            },
+            err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
+    }
+
+    private loadCurrentConfiguration():void {
         this.gridConfigService.getConfig("default.json")
         .subscribe(
             res => {

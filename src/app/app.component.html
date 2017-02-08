@@ -7,8 +7,12 @@
     <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
         <ul>
             <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
+            <li class="sidenav-item">Grid config(s)</li>
+            <li class="sidenav-item" *ngFor="let config of tabGridConfigs">
+                {{ config.name }}
+            </li>
+
         </ul>
-        <!-- sidenav content -->
     </md-sidenav>
     <!-- primary content -->
     <div class="dashboard">
