@@ -20,7 +20,7 @@ export class GridConfigService {
                     return Observable.throw(new Error("Server error, try later"));
                 }
                 else {
-                    return Observable.throw(new Error(`${error.status}`));
+                    return Observable.throw(new Error('No response from server'));
                 }
             });
     }
@@ -39,7 +39,7 @@ export class GridConfigService {
                     return Observable.throw(new Error("Server error, try later"));
                 }
                 else {
-                    return Observable.throw(new Error(`${error.status}`));
+                    return Observable.throw(new Error('No response from server'));
                 }
             });
     }
@@ -55,7 +55,7 @@ export class GridConfigService {
                     return Observable.throw(new Error("Server error, try later"));
                 }
                 else {
-                    return Observable.throw(new Error(`${error.status}`));
+                    return Observable.throw(new Error('No response from server'));
                 }
             });
     }

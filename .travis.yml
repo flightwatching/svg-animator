@@ -27,6 +27,7 @@ before_install:
 after_success:
     # deploy github page
     - ./scripts/delete-gh-pages.sh
+    - npm run build
     - git status; npm run deploy-gh-pages
     - git checkout master
     # give github a little bit of time to update the github page

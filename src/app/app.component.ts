@@ -44,9 +44,13 @@ export class AppComponent {
     }
 
     saveConfigurationGrid():void {
-        this.gridConfigService.saveConfig("default3", this.gridConfig)
+	    // Build the configuration to save
+        let config = { gridConfig: this.gridConfig, gridItemsConfigs: []};
+        this.boxes.map(b => config.gridItemsConfigs.push({ svg: b.svg, config: b.config}));
+
+        this.gridConfigService.saveConfig("default", config)
             .subscribe(
-                res => this.snackBar.open("Configuration save", 'Undo', { duration: 3000 }),
+                res => this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 }),
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
@@ -66,7 +70,10 @@ export class AppComponent {
                 this.gridConfig = res.config.gridConfig;
                 res.config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
             },
-            err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
+            err => {
+                console.log(err)
+                this.snackBar.open(err.message, 'Undo', { duration: 3000 })
+            });
     }
 
 	private _generateDefaultItemConfig(): NgGridItemConfig {
