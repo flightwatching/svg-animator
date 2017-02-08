@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
-import {Http} from "@angular/http";
+import {GridConfigService} from "./grid-config/grid-config.service";
+import {MdSnackBar} from '@angular/material';
+
 
 class Box {
 	config: NgGridItemConfig;
@@ -8,53 +10,28 @@ class Box {
 }
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 	private boxes: Array<Box> = [];
 	private payloads: number = 0;
     private sidenavOpened = false;
 
-    private gridConfig: NgGridConfig = <NgGridConfig>{
-        'margins': [5],
-        'draggable': true,
-        'resizable': true,
-        'max_cols': 0,
-        'max_rows': 0,
-        'visible_cols': 0,
-        'visible_rows': 0,
-        'min_cols': 1,
-        'min_rows': 1,
-        'col_width': 2,
-        'row_height': 2,
-        'cascade': 'up',
-        'min_width': 50,
-        'min_height': 50,
-        'fix_to_grid': false,
-        'auto_style': true,
-        'auto_resize': false,
-        'maintain_ratio': false,
-        'prefer_new': false,
-        'zoom_on_drag': false,
-        'limit_to_screen': true
-	};
+    private gridConfig: NgGridConfig = {};
 
-	constructor(private http:Http) {
+	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {
         this.loadConfiguration();
-	}
+    }
 
 	addDraw():void {
-        const conf: NgGridItemConfig = this._generateDefaultItemConfig();
+	    const conf: NgGridItemConfig = this._generateDefaultItemConfig();
         this.payloads++;
         this.boxes[this.payloads] = new Box();
         this.boxes[this.payloads].config = conf;
         this.boxes[this.payloads].svg = "horloge.svg";
         this.boxes[this.payloads].config.payload = this.payloads;
-/*
-        this.boxes.push({ config: conf, svg:'horloge.svg' });
-*/
     }
 
 
@@ -63,19 +40,27 @@ export class AppComponent {
     }
 
     saveConfigurationGrid():void {
-        console.log(this.boxes);
+	    // Build the configuration to save
+        let config = { gridConfig: this.gridConfig, gridItemsConfigs: []};
+        this.boxes.map(b => config.gridItemsConfigs.push({ svg: b.svg, config: b.config}));
+
+        this.gridConfigService.saveConfig("default", config)
+            .subscribe(
+                res => this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 }),
+                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
     private loadConfiguration():void {
-        this.http.get('assets/config/configuration-grid.json')
-        .map(res => res.json())
-        .subscribe((configs) => {
-            this.gridConfig = configs.gridConfig;
-
-            configs.gridItemsConfigs.map((itemConfig) => {
-                this.boxes.push(itemConfig);
+        this.gridConfigService.getConfig("default.json")
+        .subscribe(
+            res => {
+                this.gridConfig = res.config.gridConfig;
+                res.config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
+            },
+            err => {
+                console.log(err)
+                this.snackBar.open(err.message, 'Undo', { duration: 3000 })
             });
-        });
     }
 
 	private _generateDefaultItemConfig(): NgGridItemConfig {
