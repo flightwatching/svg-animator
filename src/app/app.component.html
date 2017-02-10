@@ -6,20 +6,22 @@
 <md-sidenav-container>
     <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
         <ul>
-            <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
             <li class="sidenav-item">Grid config(s)</li>
-            <li class="sidenav-item" *ngFor="let config of tabGridConfigs">
-                {{ config.name }}
+            <li class="sidenav-item">Current : {{currentConfigName}}</li>
+            <li class="sidenav-item" *ngFor="let config of tabGridConfigs" 
+                    (click)="setGridConf(config)"
+                    [style.background-color]="config.name === currentConfigName ? 'red' : 'none'">
+                {{config.name}}
             </li>
-
+            <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
         </ul>
     </md-sidenav>
-    <!-- primary content -->
+
     <div class="dashboard">
         <div [ngGrid]="gridConfig">
             <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
                 <div class="handle title">{{box.title}}</div>
-                <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Svg Img">
+                <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Loading image...">
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ export class AppComponent {
 	private boxes: Array<Box> = [];
 	private payloads: number = 0;
     private sidenavOpened = false;
-
+    private currentConfigName = "default";
     private gridConfig: NgGridConfig = {};
 
     tabGridConfigs: Array<NgGridConfig> = [];
@@ -48,10 +48,17 @@ export class AppComponent {
         let config = { gridConfig: this.gridConfig, gridItemsConfigs: []};
         this.boxes.map(b => config.gridItemsConfigs.push({ svg: b.svg, config: b.config}));
 
-        this.gridConfigService.saveConfig("default", config)
+        this.gridConfigService.saveConfig(this.currentConfigName, config)
             .subscribe(
                 res => this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 }),
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
+    }
+
+    setGridConf(config): void {
+        this.gridConfig = config;
+        this.currentConfigName = config.name;
+        this.boxes = [];
+        config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
     }
 
     private loadConfigurations(): void {
@@ -64,7 +71,7 @@ export class AppComponent {
     }
 
     private loadCurrentConfiguration():void {
-        this.gridConfigService.getConfig("default.json")
+        this.gridConfigService.getConfig(this.currentConfigName)
         .subscribe(
             res => {
                 this.gridConfig = res.config.gridConfig;
