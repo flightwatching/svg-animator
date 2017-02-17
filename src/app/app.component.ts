@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import {GridConfigService} from "./grid-config/grid-config.service";
 import {MdSnackBar} from '@angular/material';
+import {DrawService} from "./draw/draw.service";
 
 
 export class Box {
@@ -20,11 +21,13 @@ export class AppComponent {
     private sidenavOpened = false;
     private currentConfigName = "default";
     private gridConfig: NgGridConfig = {};
+    private draws: Array<any>;
 
     tabGridConfigs: Array<NgGridConfig> = [];
 
-
-	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {
+	constructor(private gridConfigService: GridConfigService,
+                private snackBar: MdSnackBar,
+                private drawService: DrawService) {
         this.loadConfigurations();
         this.loadCurrentConfiguration();
     }
@@ -38,6 +41,9 @@ export class AppComponent {
         this.boxes[this.payloads].config.payload = this.payloads;
     }
 
+    getDraws(): Array<any> {
+	    return this.drawService.draws;
+    }
 
     sideNav():void {
         this.sidenavOpened = !this.sidenavOpened;
