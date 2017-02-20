@@ -8,7 +8,7 @@
     "build": "ng build --prod",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
-    "test": "ng test --code-coverage true --watch false",
+    "test": "ng test --code-coverage true --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
     "deploy-gh-pages": "ng github-pages:deploy"

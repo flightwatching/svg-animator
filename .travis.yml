@@ -24,17 +24,17 @@ before_install:
      - ./scripts/install-dependencies.sh
      - ./scripts/setup-github-access.sh
 
+after_script:
+    - cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
 after_success:
     # deploy github page
     - ./scripts/delete-gh-pages.sh
     - npm run build
     - git status; npm run deploy-gh-pages
-    - git checkout master
+    - git checkout $TRAVIS_BRANCH
     # give github a little bit of time to update the github page
     - sleep 10
     # run e2e test on the github page
     - tsc -p e2e
     - npm run e2e config/protactor.sauce.conf.js
-
-after_script:
-  - cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
