@@ -85,3 +85,7 @@ md-sidenav-container {
     border: none;
     outline: none;
 }
+
+.config-btn-label {
+    margin-left: 5px;
+}

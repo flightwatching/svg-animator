@@ -8,22 +8,25 @@
         <ul>
             <li class="sidenav-item">Grid config(s)</li>
             <li class="sidenav-item">Current : {{currentConfigName}}</li>
-            <li class="sidenav-item" *ngFor="let config of tabGridConfigs"
+            <li class="sidenav-item" *ngFor="let config of configs"
                     [style.background-color]="config.name === currentConfigName ? 'red' : 'transparent'">
-                <div (click)="setGridConf(config)">{{config.name}}</div>
+                <div (click)="setConfig(config.name)">{{config.name}}</div>
                 <button (click)="deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
             </li>
-            <li (click)="saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon>SAVE</li>
+            <li (click)="addConf()" class="sidenav-item"><md-icon>add</md-icon><span class="config-btn-label">ADD</span></li>
+            <li (click)="saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon><span class="config-btn-label">SAVE</span></li>
         </ul>
     </md-sidenav>
 
     <div class="dashboard">
-        <div [ngGrid]="gridConfig">
-            <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
+    <div *ngIf="currentConfig">
+        <div [ngGrid]="currentConfig.gridConfig">
+            <div *ngFor="let box of currentConfig.boxes" [(ngGridItem)]="box.config">
                 <div class="handle title">{{box.title}}</div>
                 <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Loading image...">
             </div>
         </div>
+    </div>
     </div>
 </md-sidenav-container>
 <button (click)="addDraw()" class="btn-add" color="primary" md-fab><md-icon>add</md-icon></button>

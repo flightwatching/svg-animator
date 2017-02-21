@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import {GridConfigService} from "./grid-config/grid-config.service";
 import {MdSnackBar} from '@angular/material';
@@ -9,56 +9,87 @@ export class Box {
 	svg: string;
 }
 
+export class Config {
+    name: String;
+    gridConfig: NgGridConfig;
+    boxes: Array<Box>;
+}
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-	private boxes: Array<Box> = [];
+export class AppComponent implements OnInit {
+    private numNewConfig = 3;
 	private payloads: number = 0;
     private sidenavOpened = false;
-    private currentConfigName = "default";
-    private gridConfig: NgGridConfig = {};
+    private currentConfigName: String ="default";
+    currentConfig: Config;
+    configs: Array<Config> = [];
 
-    tabGridConfigs: Array<NgGridConfig> = [];
 
+	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {}
 
-	constructor(private gridConfigService:GridConfigService, private snackBar: MdSnackBar) {
+    ngOnInit(): void {
         this.loadConfigurations();
-        this.loadCurrentConfiguration();
+    }
+
+    private findConfig(name: String): Config {
+        for (var i = 0; i < this.configs.length; i++) {
+            if (this.configs[i].name == name) {
+                return this.configs[i];
+            }
+        }
+        return null;
+    }
+
+    private findIConfig(name: String): number {
+        for (var i = 0; i < this.configs.length; i++) {
+            if (this.configs[i].name == name) {
+                return i;
+            }
+        }
+        return null;
+    }
+
+    private setConfig(configName: String) {
+        this.currentConfig = this.findConfig(configName);
+        this.currentConfigName = configName;
+    }
+
+    //get all the configs from server and set one according to this.currentConfigName
+    private loadConfigurations(): void {
+         this.gridConfigService.getConfigs()
+        .subscribe(
+            res => {
+                this.configs = res;
+                this.setConfig(this.currentConfigName);
+            },
+            err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
 	addDraw():void {
 	    const conf: NgGridItemConfig = this._generateDefaultItemConfig();
         this.payloads++;
-        this.boxes[this.payloads] = new Box();
-        this.boxes[this.payloads].config = conf;
-        this.boxes[this.payloads].svg = "horloge.svg";
-        this.boxes[this.payloads].config.payload = this.payloads;
+        this.currentConfig.boxes[this.payloads] = new Box();
+        this.currentConfig.boxes[this.payloads].config = conf;
+        this.currentConfig.boxes[this.payloads].svg = "horloge.svg";
+        this.currentConfig.boxes[this.payloads].config.payload = this.payloads;
     }
-
 
     sideNav():void {
         this.sidenavOpened = !this.sidenavOpened;
     }
 
     saveConfigurationGrid():void {
-	    // Build the configuration to save
-        let config = { gridConfig: this.gridConfig, gridItemsConfigs: []};
-        this.boxes.map(b => config.gridItemsConfigs.push({ svg: b.svg, config: b.config}));
-
-        this.gridConfigService.saveConfig(this.currentConfigName, config)
+        this.gridConfigService.saveConfig(this.currentConfig)
             .subscribe(
-                res => this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 }),
+                res => {
+                    this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 });
+                    this.loadConfigurations();
+                },
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
-    }
-
-    setGridConf(config): void {
-        this.gridConfig = config;
-        this.currentConfigName = config.name;
-        this.boxes = [];
-        config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
     }
 
     deleteConf(configName) {
@@ -66,32 +97,25 @@ export class AppComponent {
             .subscribe(
                 res => {
                     this.snackBar.open("Configuration deleted", 'Undo', { duration: 3000 });  
+                    //this.configs.slice(this.findIConfig(configName), 1);
                     this.loadConfigurations();
                 },
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
             );
     }
 
-    private loadConfigurations(): void {
-         this.gridConfigService.getConfigs()
-        .subscribe(
-            res => {
-                this.tabGridConfigs = res;                
-            },
-            err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
-    }
-
-    private loadCurrentConfiguration():void {
-        this.gridConfigService.getConfig(this.currentConfigName)
-        .subscribe(
-            res => {
-                this.gridConfig = res.config.gridConfig;
-                res.config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
-            },
-            err => {
-                console.log(err)
-                this.snackBar.open(err.message, 'Undo', { duration: 3000 })
-            });
+    addConf() {
+        let newName = 'default'+this.numNewConfig;
+        this.gridConfigService.addConfig({name: newName, gridConfig: this.currentConfig.gridConfig, boxes: this.currentConfig.boxes})
+            .subscribe(
+                res => {
+                    this.snackBar.open("Configuration added", 'Undo', { duration: 3000 });
+                    this.currentConfigName = newName;
+                    this.loadConfigurations();
+                    this.numNewConfig++;
+                },
+                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
+            );
     }
 
 	private _generateDefaultItemConfig(): NgGridItemConfig {
