@@ -43,9 +43,11 @@ export class AppComponent {
         this.sidenavOpened = !this.sidenavOpened;
     }
 
-    closeSVG():void {
-        
-    }
+    closeSVG(index):void {
+        if (index > -1) {
+            this.boxes.splice(index, 1);
+        }
+   }
 
     saveConfigurationGrid():void {
 	    // Build the configuration to save
