@@ -60,7 +60,7 @@ describe('AppComponent', () => {
         beforeEach(async(() => {
             fixture.whenStable().then(() => {
                 /* Given */
-                selectedElement = el.query(By.css('li:last-child'));
+                selectedElement = el.query(By.css('#save-config'));
                 /* When  */
                 selectedElement.nativeElement.click();
             });
