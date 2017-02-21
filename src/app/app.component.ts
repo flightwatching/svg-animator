@@ -43,6 +43,10 @@ export class AppComponent {
         this.sidenavOpened = !this.sidenavOpened;
     }
 
+    closeSVG():void {
+        
+    }
+
     saveConfigurationGrid():void {
 	    // Build the configuration to save
         let config = { gridConfig: this.gridConfig, gridItemsConfigs: []};
