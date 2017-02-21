@@ -5,16 +5,25 @@
 
 <md-sidenav-container>
     <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
-        <ul>
-            <li class="sidenav-item">Grid config(s)</li>
-            <li class="sidenav-item">Current : {{currentConfigName}}</li>
-            <li class="sidenav-item" *ngFor="let config of tabGridConfigs"
-                    (click)="setGridConf(config)"
-                    [style.background-color]="config.name === currentConfigName ? 'red' : 'transparent'">
-                {{config.name}}
-            </li>
-            <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
-        </ul>
+        <div>
+            <ul>
+                <li class="sidenav-item">Grid config(s)</li>
+                <li class="sidenav-item">Current : {{currentConfigName}}</li>
+                <li class="sidenav-item" *ngFor="let config of tabGridConfigs"
+                        (click)="setGridConf(config)"
+                        [style.background-color]="config.name === currentConfigName ? 'red' : 'transparent'">
+                    {{config.name}}
+                </li>
+                <li (click)="saveConfigurationGrid()" class="sidenav-item"><md-icon>save</md-icon>SAVE</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="sidenav-item-draw" *ngFor="let d of draws; let i = index;">
+                    <span (click)="addDraw(i)" [innerHtml]="d | safeHtml"></span>
+                </li>
+            </ul>
+        </div>
     </md-sidenav>
 
     <div class="dashboard">

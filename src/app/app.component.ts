@@ -21,7 +21,7 @@ export class AppComponent {
     private sidenavOpened = false;
     private currentConfigName = "default";
     private gridConfig: NgGridConfig = {};
-    private draws: Array<any>;
+    private draws: Array<any> = [];
 
     tabGridConfigs: Array<NgGridConfig> = [];
 
@@ -30,19 +30,26 @@ export class AppComponent {
                 private drawService: DrawService) {
         this.loadConfigurations();
         this.loadCurrentConfiguration();
+        this.getDraws();
     }
 
-	addDraw():void {
-	    const conf: NgGridItemConfig = this._generateDefaultItemConfig();
-        this.payloads++;
-        this.boxes[this.payloads] = new Box();
-        this.boxes[this.payloads].config = conf;
-        this.boxes[this.payloads].svg = "horloge.svg";
-        this.boxes[this.payloads].config.payload = this.payloads;
+	addDraw(index: number):void {
+	    /*
+            TODO migrate the display of local svg to svg get by the service
+            TODO refactor the model of box svg
+            TODO use index to the target draw in draws
+        */
+	    this.boxes.push({
+            config: this._generateDefaultItemConfig(),
+            svg: "horloge.svg"
+        });
     }
 
-    getDraws(): Array<any> {
-	    return this.drawService.draws;
+    getDraws(): void{
+	    this.drawService.getDraws()
+            .subscribe(
+                data => this.draws = data.draws,
+                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
     sideNav():void {
