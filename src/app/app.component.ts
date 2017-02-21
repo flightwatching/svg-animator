@@ -41,7 +41,7 @@ export class AppComponent {
         */
 	    this.boxes.push({
             config: this._generateDefaultItemConfig(),
-            svg: "horloge.svg"
+            svg: "horloge"
         });
     }
 
@@ -50,6 +50,10 @@ export class AppComponent {
             .subscribe(
                 data => this.draws = data.draws,
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
+    }
+
+    getDraw(name: String)  {
+        this.drawService.
     }
 
     sideNav():void {
@@ -78,7 +82,7 @@ export class AppComponent {
          this.gridConfigService.getConfigs()
         .subscribe(
             res => {
-                this.tabGridConfigs = res;                
+                this.tabGridConfigs = res;
             },
             err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }

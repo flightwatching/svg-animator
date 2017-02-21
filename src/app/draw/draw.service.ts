@@ -12,4 +12,9 @@ export class DrawService {
         return this.http.get(`${environment.config.API_BASE_URL}draw`)
                 .map(res => res.json());
     }
+
+    getDraw(name: String): Observable<any> {
+        return this.http.get(`${environment.config.API_BASE_URL}draw/${name}`)
+            .map(res => res.json());
+    }
 }

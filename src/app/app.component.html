@@ -20,7 +20,7 @@
         <div>
             <ul>
                 <li class="sidenav-item-draw" *ngFor="let d of draws; let i = index;">
-                    <span (click)="addDraw(i)" [innerHtml]="d | safeHtml"></span>
+                    <span (click)="addDraw(i)" [innerHtml]="d.svg | safeHtml"></span>
                 </li>
             </ul>
         </div>
@@ -30,7 +30,7 @@
         <div [ngGrid]="gridConfig">
             <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
                 <div class="handle title">{{box.title}}</div>
-                <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Loading image...">
+                <span [innerHtml]="getDraw(box.name) | safeHtml"></span>
             </div>
         </div>
     </div>
