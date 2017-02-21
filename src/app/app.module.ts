@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from "@angular/material";
 import {GridConfigService} from "./grid-config/grid-config.service";
 import {DrawService} from "./draw/draw.service";
+import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
