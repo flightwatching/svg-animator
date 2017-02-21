@@ -24,6 +24,7 @@ describe('AppComponent', () => {
         mockGridConfigService = jasmine.createSpyObj<GridConfigService>('GridConfigService', ['getConfigs', 'getConfig', 'saveConfig']);
         (mockGridConfigService.saveConfig as Spy).and.returnValue(Observable.of(1));
         (mockGridConfigService.getConfig as Spy).and.returnValue(Observable.of({ config:{ gridConfig: {}, gridItemsConfigs: []}}));
+        (mockGridConfigService.getConfigs as Spy).and.returnValue(Observable.of([{ config:{ gridConfig: {}, gridItemsConfigs: []}}]));
     });
 
     beforeEach(async(() =>
@@ -59,7 +60,7 @@ describe('AppComponent', () => {
         beforeEach(async(() => {
             fixture.whenStable().then(() => {
                 /* Given */
-                selectedElement = el.query(By.css('li:first-child'));
+                selectedElement = el.query(By.css('li:last-child'));
                 /* When  */
                 selectedElement.nativeElement.click();
             });
