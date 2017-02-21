@@ -78,3 +78,10 @@ md-sidenav-container {
 .btn {
     margin-left: 10px;
 }
+
+.btn-del-conf {
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}

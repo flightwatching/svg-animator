@@ -59,4 +59,20 @@ export class GridConfigService {
                 }
             });
     }
+
+    deleteConfig(configName: String) : Observable<Response> {
+        return this.http.post(`${environment.config.API_BASE_URL}grid-config/delete/${configName}`, {})
+            .map((res: Response) => (res.status === 200)?  { status: res.status, message: res.json().message } : { status: res.status})
+            .catch((error: Response) => {
+                if (error.status === 400) {
+                    return Observable.throw(new Error(`${error.status} ${error.json().message}`));
+                }
+                else if (error.status >= 500) {
+                    return Observable.throw(new Error("Server error, try later"));
+                }
+                else {
+                    return Observable.throw(new Error('No response from server'));
+                }
+            });
+    }
 }

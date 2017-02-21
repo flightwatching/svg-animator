@@ -61,6 +61,17 @@ export class AppComponent {
         config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
     }
 
+    deleteConf(configName) {
+        this.gridConfigService.deleteConfig(configName)
+            .subscribe(
+                res => {
+                    this.snackBar.open("Configuration deleted", 'Undo', { duration: 3000 });  
+                    this.loadConfigurations();
+                },
+                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
+            );
+    }
+
     private loadConfigurations(): void {
          this.gridConfigService.getConfigs()
         .subscribe(
