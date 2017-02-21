@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import {GridConfigService} from "./grid-config/grid-config.service";
 import {MdSnackBar} from '@angular/material';
@@ -25,7 +25,9 @@ export class AppComponent implements OnInit {
 	private payloads: number = 0;
     private sidenavOpened = false;
     private currentConfigName: String ="default";
+    @Input()
     currentConfig: Config;
+    @Input()
     configs: Array<Config> = [];
 
 
@@ -87,7 +89,6 @@ export class AppComponent implements OnInit {
             .subscribe(
                 res => {
                     this.snackBar.open("Configuration saved", 'Undo', { duration: 3000 });
-                    this.loadConfigurations();
                 },
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
@@ -98,6 +99,7 @@ export class AppComponent implements OnInit {
                 res => {
                     this.snackBar.open("Configuration deleted", 'Undo', { duration: 3000 });  
                     //this.configs.slice(this.findIConfig(configName), 1);
+                    // console.log();
                     this.loadConfigurations();
                 },
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
@@ -106,19 +108,57 @@ export class AppComponent implements OnInit {
 
     addConf() {
         let newName = 'default'+this.numNewConfig;
-        this.gridConfigService.addConfig({name: newName, gridConfig: this.currentConfig.gridConfig, boxes: this.currentConfig.boxes})
+        let newConfig: Config; 
+
+        newConfig = {name: newName, gridConfig: this._generateDefaultGridConfig(), boxes: this._generateDefaultArrayBoxConfig()};
+
+        this.gridConfigService.addConfig(newConfig)
             .subscribe(
                 res => {
                     this.snackBar.open("Configuration added", 'Undo', { duration: 3000 });
-                    this.currentConfigName = newName;
-                    this.loadConfigurations();
+                    
+                    this.configs.push(newConfig);
+                    this.setConfig(newName);
+
                     this.numNewConfig++;
                 },
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
             );
     }
 
+    private _generateDefaultArrayBoxConfig(): Box[] {
+        return [{ svg: "example.svg", config: this._generateDefaultItemConfig() }];
+    }
+
 	private _generateDefaultItemConfig(): NgGridItemConfig {
 		return { 'dragHandle': '.handle', 'col': 1, 'row': 1, 'resizable': true, 'minWidth': 10, 'minHeight': 10, 'sizex': 1, 'sizey': 1 };
 	}
+
+    private _generateDefaultGridConfig(): NgGridConfig {
+        return {
+            "margins":[
+                5
+            ],
+            "draggable":true,
+            "resizable":true,
+            "max_cols":0,
+            "max_rows":0,
+            "visible_cols":0,
+            "visible_rows":0,
+            "min_cols":1,
+            "min_rows":1,
+            "col_width":2,
+            "row_height":2,
+            "cascade":"up",
+            "min_width":50,
+            "min_height":50,
+            "fix_to_grid":false,
+            "auto_style":true,
+            "auto_resize":false,
+            "maintain_ratio":false,
+            "prefer_new":false,
+            "zoom_on_drag":false,
+            "limit_to_screen":true 
+        };
+    }
 }
