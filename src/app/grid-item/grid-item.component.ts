@@ -1,6 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {NgGridItemConfig} from "angular2-grid";
 import {DrawService} from "../draw/draw.service";
+import {DrawModel} from "../draw/draw.model";
+import {MdSnackBar} from "@angular/material";
 
 @Component({
   selector: 'grid-item',
@@ -11,19 +12,18 @@ export class GridItemComponent implements OnInit {
 
   @Input() itemConfigs:any;
 
-  private svg: String = "";
+  draw: DrawModel;
 
-  constructor(private drawService:DrawService) {}
+  constructor(private drawService:DrawService, private snackBar: MdSnackBar) {}
 
   ngOnInit() {
     this.drawService.getDraw(this.itemConfigs.svg)
         .subscribe(
             data => {
                 if(data) {
-                    this.svg = data.svg
+                    this.draw = new DrawModel(data);
                 }
             },
-            err => console.error(err.message)
-        )
+            err => this.snackBar.open(`Cannot retrieve ${this.itemConfigs.svg}`, 'Undo', { duration: 3000 }));
   }
 }

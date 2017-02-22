@@ -9,6 +9,7 @@ import {GridConfigService} from "./grid-config/grid-config.service";
 import {DrawService} from "./draw/draw.service";
 import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
 import { GridItemComponent } from './grid-item/grid-item.component';
+import {DrawApiService} from "./draw/draw-api.service";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GridItemComponent } from './grid-item/grid-item.component';
   ],
   providers: [
       GridConfigService,
-      DrawService
+      DrawService,
+      DrawApiService
   ],
   bootstrap: [AppComponent]
 })

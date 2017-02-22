@@ -1,36 +1,29 @@
 import { Injectable } from '@angular/core';
-import {Http, Response} from "@angular/http";
-import { environment } from "../../environments/environment";
-import {Observable, Subject, BehaviorSubject, ReplaySubject} from "rxjs";
+import { Observable, Subject, ReplaySubject } from "rxjs";
+import { DrawApiService } from "./draw-api.service";
+import { DrawModel } from "./draw.model";
 
 @Injectable()
 export class DrawService {
 
-    draws: Subject<any>;
+    private draws: Subject<Array<DrawModel>>;
 
-    constructor(private http : Http) {
+    constructor(private drawApiService: DrawApiService) {
         this.draws = new ReplaySubject(1);
         this.loadDraw();
     }
 
-    getDraws(): Observable<any> {
-        /*return this.http.get(`${environment.config.API_BASE_URL}draw`)
-                .map(res => res.json());*/
+    getDraws(): Observable<Array<DrawModel>> {
         return this.draws;
     }
 
-    private requestDraws(): Observable<any> {
-        return this.http.get(`${environment.config.API_BASE_URL}draw`)
-            .map(res => res.json().draws);
+    getDraw(name: String): Observable<DrawModel> {
+        return this.draws.map(draws => draws.filter(d => d.name === name)[0]);
     }
 
     private loadDraw() {
-        this.requestDraws()
+        this.drawApiService.requestDraws()
             .retry()
             .subscribe(this.draws);
-    }
-
-    getDraw(name: String): Observable<any> {
-        return this.draws.map(draws => draws.filter(d => d.name === name)[0]);
     }
 }
