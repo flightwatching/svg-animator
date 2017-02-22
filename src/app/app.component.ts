@@ -43,7 +43,7 @@ export class AppComponent {
 	    this.drawService.getDraws()
             .subscribe(
                 data => this.draws = data,
-                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
+                err => this.snackBar.open("Can't retrieve the draws", 'Undo', { duration: 3000 }));
     }
 
     sideNav():void {
