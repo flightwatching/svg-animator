@@ -52,10 +52,6 @@ export class AppComponent {
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
-    getDraw(name: String)  {
-        this.drawService.
-    }
-
     sideNav():void {
         this.sidenavOpened = !this.sidenavOpened;
     }

@@ -28,10 +28,7 @@
 
     <div class="dashboard">
         <div [ngGrid]="gridConfig">
-            <div *ngFor="let box of boxes" [(ngGridItem)]="box.config">
-                <div class="handle title">{{box.title}}</div>
-                <span [innerHtml]="getDraw(box.name) | safeHtml"></span>
-            </div>
+            <grid-item *ngFor="let box of boxes" [itemConfigs]="box"></grid-item>
         </div>
     </div>
 </md-sidenav-container>
