@@ -17,7 +17,6 @@ export class Box {
 })
 export class AppComponent {
 	private boxes: Array<Box> = [];
-	private payloads: number = 0;
     private sidenavOpened = false;
     private currentConfigName = "default";
     private gridConfig: NgGridConfig = {};
@@ -33,22 +32,17 @@ export class AppComponent {
         this.getDraws();
     }
 
-	addDraw(index: number):void {
-	    /*
-            TODO migrate the display of local svg to svg get by the service
-            TODO refactor the model of box svg
-            TODO use index to the target draw in draws
-        */
+	addDraw(name: string):void {
 	    this.boxes.push({
             config: this._generateDefaultItemConfig(),
-            svg: "horloge"
+            svg: name,
         });
     }
 
     getDraws(): void{
 	    this.drawService.getDraws()
             .subscribe(
-                data => this.draws = data.draws,
+                data => this.draws = data,
                 err => this.snackBar.open(err.message, 'Undo', { duration: 3000 }));
     }
 
@@ -91,7 +85,6 @@ export class AppComponent {
                 res.config.gridItemsConfigs.map(itemConfig => this.boxes.push(itemConfig));
             },
             err => {
-                console.log(err)
                 this.snackBar.open(err.message, 'Undo', { duration: 3000 })
             });
     }

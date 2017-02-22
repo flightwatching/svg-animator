@@ -19,10 +19,11 @@ export class GridItemComponent implements OnInit {
     this.drawService.getDraw(this.itemConfigs.svg)
         .subscribe(
             data => {
-              console.log(data);
-              this.svg = data.draw.svg;
+                if(data) {
+                    this.svg = data.svg
+                }
             },
             err => console.error(err.message)
-        );
+        )
   }
 }

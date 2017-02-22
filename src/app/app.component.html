@@ -19,8 +19,8 @@
         </div>
         <div>
             <ul>
-                <li class="sidenav-item-draw" *ngFor="let d of draws; let i = index;">
-                    <span (click)="addDraw(i)" [innerHtml]="d.svg | safeHtml"></span>
+                <li class="sidenav-item-draw" *ngFor="let d of draws">
+                    <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
                 </li>
             </ul>
         </div>

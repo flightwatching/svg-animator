@@ -1,5 +1,7 @@
 <div [(ngGridItem)]="itemConfigs.config">
   <div class="handle title"></div>
-  <span [innerHtml]="svg | safeHtml"></span>
+    <div class="draw">
+        <span [innerHtml]="svg | safeHtml"></span>
+    </div>
 </div>
 
