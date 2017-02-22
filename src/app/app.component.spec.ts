@@ -72,5 +72,22 @@ describe('AppComponent', () => {
             });
         }));
     });
+
+    describe("Close svg", () => {
+
+        beforeEach(async(() => {
+            fixture.whenStable().then(() => {
+                let button = fixture.debugElement.nativeElement.querySelector('btn-del');
+                button.click();
+            });
+        }));
+
+        it('Should close the svg', async(() => {
+            fixture.whenStable().then(() => {
+                expect(component.closeSVG).toHaveBeenCalled();
+            });
+        }));
+    });
+
 });
 
