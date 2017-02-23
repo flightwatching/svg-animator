@@ -10,6 +10,8 @@ import { WorkspaceConfigService } from "./workspace-config/workspace-config.serv
 import {DebugElement} from "@angular/core";
 import {By} from "@angular/platform-browser";
 import {Observable} from "rxjs";
+import {SafeHtmlPipe} from "./shared/pipes/safe-html.pipe";
+import {DrawService} from "./draw/draw.service";
 
 
 xdescribe('AppComponent', () => {
@@ -18,6 +20,12 @@ xdescribe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
     let el: DebugElement;
     let mockGridConfigService: WorkspaceConfigService;
+
+    const draws = [
+        {name: "draw1", svg: "<svg>draw1</svg>"},
+        {name: "draw2", svg: "<svg>draw2</svg>"},
+        {name: "draw3", svg: "<svg>draw3</svg>"}
+    ];
 
 
     beforeEach(() => {
@@ -30,8 +38,10 @@ xdescribe('AppComponent', () => {
     beforeEach(async(() =>
         TestBed.configureTestingModule({
             declarations: [
-                AppComponent
+                AppComponent,
+                SafeHtmlPipe
             ],
+            schemas: [ NO_ERRORS_SCHEMA ],
             providers: [
                 { provide: WorkspaceConfigService, useValue: mockGridConfigService },
                 MdSnackBar

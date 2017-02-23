@@ -17,21 +17,21 @@
 
                 <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon><span class="config-btn-label">SAVE</span></li>
             </div>
-            
+
             <li (click)="workspaceConfigService.addConf()" class="sidenav-item"><md-icon>add</md-icon><span class="config-btn-label">ADD</span></li>
+        </ul>
+        <ul>
+            <li class="sidenav-item-draw" *ngFor="let d of draws">
+                <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
+            </li>
         </ul>
     </md-sidenav>
 
     <div class="dashboard">
         <div *ngIf="workspaceConfigService.currentConfig">
             <div [ngGrid]="workspaceConfigService.currentConfig.gridConfig">
-                <div *ngFor="let box of workspaceConfigService.currentConfig.boxes" [(ngGridItem)]="box.config">
-                    <div class="handle title">{{box.title}} <button (click)="closeSVG(workspaceConfigService.currentConfig.boxes.indexOf(box))" class="btn-del" ><md-icon class="icon-close">close</md-icon></button></div>
-                    <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Loading image...">
-                </div>
+                <grid-item *ngFor="let box of workspaceConfigService.currentConfig.boxes" [itemConfigs]="box"></grid-item>
             </div>
         </div>
     </div>
 </md-sidenav-container>
-<button (click)="addDraw()" class="btn-add" color="primary" md-fab><md-icon>add</md-icon></button>
-
