@@ -74,7 +74,7 @@ describe('AppComponent', () => {
         }));
     });
 
-    describe("Close svg", () => {
+    xdescribe("Close svg", () => {
 
         beforeEach(async(() => {
             fixture.whenStable().then(() => {
