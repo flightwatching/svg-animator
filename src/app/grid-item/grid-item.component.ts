@@ -14,7 +14,9 @@ export class GridItemComponent implements OnInit {
 
   draw: DrawModel;
 
-  constructor(private drawService:DrawService, private snackBar: MdSnackBar) {}
+  constructor(private drawService:DrawService, private snackBar: MdSnackBar) {
+      this.draw = new DrawModel({name: "empty", svg: "empty"});
+  }
 
   ngOnInit() {
     this.drawService.getDraw(this.itemConfigs.svg)
