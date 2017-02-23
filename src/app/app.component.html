@@ -26,7 +26,7 @@
         <div *ngIf="currentConfig">
             <div [ngGrid]="currentConfig.gridConfig">
                 <div *ngFor="let box of currentConfig.boxes" [(ngGridItem)]="box.config">
-                    <div class="handle title">{{box.title}}</div>
+                    <div class="handle title">{{box.title}} <button (click)="closeSVG(currentConfig.boxes.indexOf(box))" class="btn-del" ><md-icon class="icon-close">close</md-icon></button></div>
                     <img class="svg-img" draggable="false" src="assets/examples/{{box.svg}}" alt="Loading image...">
                 </div>
             </div>

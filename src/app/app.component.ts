@@ -84,6 +84,12 @@ export class AppComponent implements OnInit {
         this.sidenavOpened = !this.sidenavOpened;
     }
 
+    closeSVG(index):void {
+        if (index > -1) {
+            this.boxes.splice(index, 1);
+        }
+   }
+
     saveConfigurationGrid():void {
         this.gridConfigService.saveConfig(this.currentConfig)
             .subscribe(
