@@ -5,7 +5,9 @@ import { HttpModule } from '@angular/http';
 import { NgGridModule } from 'angular2-grid';
 import { AppComponent } from './app.component';
 import { MaterialModule } from "@angular/material";
-import {GridConfigService} from "./grid-config/grid-config.service";
+import { WorkspaceConfigService } from "./workspace-config/workspace-config.service";
+import { WorkspaceConfigAPIService } from "./workspace-config/workspace-config-api.service";
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import {GridConfigService} from "./grid-config/grid-config.service";
     NgGridModule,
     MaterialModule.forRoot()
   ],
-  providers: [GridConfigService],
+  providers: [WorkspaceConfigService, WorkspaceConfigAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

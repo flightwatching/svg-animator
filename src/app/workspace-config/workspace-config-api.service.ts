@@ -3,14 +3,14 @@ import { Http, Response } from "@angular/http";
 import { environment } from "../../environments/environment";
 import { Observable } from "rxjs";
 import { NgGridConfig } from "angular2-grid";
-import { Config } from "../app.component"
+import { WorkspaceConfigModel } from "./workspace-config.model";
 
 @Injectable()
-export class GridConfigService {
+export class WorkspaceConfigAPIService {
 
     constructor(private http: Http) { }
 
-    getConfigs(): Observable<Array<Config>> {
+    getConfigs(): Observable<Array<WorkspaceConfigModel>> {
         return this.http.get(`${environment.config.API_BASE_URL}grid-config`)
             .map((res: Response) => (res.status === 200)?  res.json() : { status: res.status})
             .catch((error: Response) => {
@@ -45,7 +45,7 @@ export class GridConfigService {
             });
     }
 
-    saveConfig(config: Config): Observable<Response> {
+    saveConfig(config: WorkspaceConfigModel): Observable<Response> {
         return this.http.post(`${environment.config.API_BASE_URL}grid-config/${config.name}`, { config: config })
             .map((res: Response) => (res.status === 200)?  { status: res.status, message: res.json().message } : { status: res.status})
             .catch((error: Response) => {
@@ -77,7 +77,7 @@ export class GridConfigService {
             });
     }
 
-    addConfig(config: Config) : Observable<Response> {
+    addConfig(config: WorkspaceConfigModel) : Observable<Response> {
         return this.http.post(`${environment.config.API_BASE_URL}grid-config/${config.name}`, {config: config})
             .map((res: Response) => (res.status === 200)?  { status: res.status, message: res.json().message } : { status: res.status})
             .catch((error: Response) => {
