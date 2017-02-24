@@ -29,7 +29,7 @@
 
     <div class="dashboard">
         <div *ngIf="workspaceConfigService.currentConfig">
-            <div [ngGrid]="workspaceConfigService.currentConfig.gridConfig">
+            <div [ngGrid]="workspaceConfigService.gridConfig">
                 <grid-item *ngFor="let box of workspaceConfigService.currentConfig.boxes" [itemConfigs]="box"></grid-item>
             </div>
         </div>

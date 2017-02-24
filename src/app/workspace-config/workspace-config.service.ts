@@ -11,8 +11,11 @@ export class WorkspaceConfigService {
     currentConfig: WorkspaceConfigModel;
     configs: Array<WorkspaceConfigModel> = [];
     currentConfigName: String ="default";
+    gridConfig: NgGridConfig;
 
-	constructor(private workspaceConfigAPIService:WorkspaceConfigAPIService, private snackBar: MdSnackBar) {}
+	constructor(private workspaceConfigAPIService:WorkspaceConfigAPIService, private snackBar: MdSnackBar) {
+        this.gridConfig = this.generateDefaultGridConfig();
+    }
 
     setConfig(configName: String) {
         this.currentConfig = this.findConfig(configName);
@@ -56,7 +59,7 @@ export class WorkspaceConfigService {
         let newName = 'default'+this.numNewConfig;
         let newConfig: WorkspaceConfigModel; 
 
-        newConfig = {name: newName, gridConfig: this.generateDefaultGridConfig(), boxes: this.generateDefaultArrayBoxConfig()};
+        newConfig = {name: newName, boxes: []};
 
         this.workspaceConfigAPIService.addConfig(newConfig)
             .subscribe(
@@ -91,9 +94,7 @@ export class WorkspaceConfigService {
 
     private generateDefaultGridConfig(): NgGridConfig {
         return {
-            "margins":[
-                5
-            ],
+            "margins":[5],
             "draggable":true,
             "resizable":true,
             "max_cols":0,
