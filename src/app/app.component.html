@@ -1,10 +1,5 @@
-<md-toolbar>
-    <button (click)="sideNav()" class="btn-sidenav"><img id="sidenav-icon" src="assets/sidenav-icon.png"/></button>
-</md-toolbar>
-
-
 <md-sidenav-container>
-    <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
+    <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
         <ul>
             <li class="sidenav-item">CONFIG(S)</li>
 
@@ -35,3 +30,5 @@
         </div>
     </div>
 </md-sidenav-container>
+
+<button (click)="sideNav()" id="btn-sidenav"><img id="sidenav-icon" src="assets/sidenav-icon.png"/></button>

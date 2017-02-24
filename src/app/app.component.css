@@ -61,15 +61,19 @@ md-sidenav-container {
     height: 100% ;
 }
 
-.btn-sidenav {
+#btn-sidenav {
     padding: 0;
     border: none;
-    background-color: rgb(50, 53, 56);
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 40px;
+    right: 40px;
 }
 
 #sidenav-icon {
     width: 30px;
     height: 30px;
+    background-color: rgb(0, 0, 0);
 }
 
 .grid {
