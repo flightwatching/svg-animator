@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2664.9 1336.4" enable-background="new 0 0 2664.9 1336.4" xml:space="preserve">
+<symbol  id="valve" viewBox="-170.2 -187.8 319.7 375.5">
+	<path fill="#05090A" d="M137.9-1.9c0-81.9-66.4-148.3-148.3-148.3c-81.9,0-148.3,66.4-148.3,148.3c0,81.9,66.4,148.3,148.3,148.3
+		C71.5,146.3,137.9,79.9,137.9-1.9z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="23.1099" stroke-miterlimit="10" d="M137.9-1.9c0-81.9-66.4-148.3-148.3-148.3
+		c-81.9,0-148.3,66.4-148.3,148.3c0,81.9,66.4,148.3,148.3,148.3C71.5,146.3,137.9,79.9,137.9-1.9z"/>
+	<path id="clapet_x5F_sym_7_" fill="#5BA545" stroke="#949F90" stroke-width="5.7775" d="M-29.7-183.4c7-0.9,14-1.5,21.2-1.5
+		c5.9,0,11.7,0.3,17.4,1v367.8c-5.7,0.6-11.5,1-17.4,1c-7.2,0-14.2-0.5-21.2-1.5V-183.4z"/>
+	<path fill="#151716" d="M2-2c0-6.8-5.6-12.4-12.4-12.4c-6.8,0-12.4,5.5-12.4,12.4c0,6.8,5.6,12.4,12.4,12.4C-3.6,10.4,2,4.9,2-2z"
+		/>
+	<path id="center_8_" fill="none" stroke="#5BA545" stroke-width="23.1099" stroke-miterlimit="10" d="M-10.4-2"/>
+</symbol>
+<g id="bg">
+	<rect x="-2.8" y="-2.8" fill="#141518" width="2675.3" height="1342"/>
+	<g>
+		<path fill="#50B1B3" d="M2669.6,0v1336.4H0V0H2669.6 M2675.3-5.7h-5.7H0h-5.7V0v1336.4v5.7H0h2669.6h5.7v-5.7V0V-5.7L2675.3-5.7z"
+			/>
+	</g>
+</g>
+<rect id="bleed_bg" x="548.5" y="106" fill="#1B1E2B" width="2116.5" height="1230.4"/>
+<g id="cartouche">
+	<g>
+		<g>
+			<path fill="#8DC641" d="M98.6,636.6l-10.9,0.1c-0.1,0-0.2-0.1-0.3-0.2L78,619.2c-0.1-0.1-0.2-0.2-0.3-0.2h-2.5
+				c-0.2,0-0.3,0.2-0.3,0.4l4.2,17c0,0.2-0.1,0.4-0.3,0.4l-14.5,0.4c-0.1,0-0.2,0-0.3-0.1l-3-4.8c-0.1-0.1-0.1-0.1-0.3-0.1h-1.3
+				c-0.4,0-0.7,0.4-0.6,0.8l1.8,5.9c0,0.1,0,0.3,0,0.4l-1.8,5.9c-0.1,0.4,0.2,0.8,0.6,0.8h1.3c0.1,0,0.2-0.1,0.3-0.1l3-4.8
+				c0.1-0.1,0.2-0.1,0.3-0.1l14.5,0.4c0.2,0,0.3,0.2,0.3,0.4l-4.2,17c0,0.2,0.1,0.4,0.3,0.4h2.5c0.1,0,0.2-0.1,0.3-0.2l9.5-17.3
+				c0.1-0.1,0.2-0.2,0.3-0.2l10.9,0.1c2.9,0,6.4-1.2,6.4-2.3C105.1,637.8,101.5,636.6,98.6,636.6z"/>
+		</g>
+	</g>
+	
+		<text id="type_x5F_anim" transform="matrix(1.0096 0 0 1 394.7667 652.399)" fill="#FFFFFF" font-family="'LetoSans'" font-size="39">B777 </text>
+	<polygon fill="#FFFFFF" points="84.9,249.9 82,235.7 85.1,239.6 92.5,197.8 77.6,206.4 86.6,171.1 96.7,171.1 84.9,198.1 
+		100.9,188.7 88.6,240.3 93,237.8 	"/>
+	<text transform="matrix(1 0 0 1 2156.6321 69.479)" fill="#049FA2" font-family="'LetoSans-Thin'" font-size="39.547">REALTIME MONITORING</text>
+	<text transform="matrix(1 0 0 1 52.1662 552.697)" fill="#676767" font-family="'LetoSans-Thin'" font-size="29.5946">Etihad Airways</text>
+	<text transform="matrix(1 0 0 1 328.3772 552.697)" fill="#A3A3A2" font-family="'LetoSans-Thin'" font-size="26.1243">34597</text>
+	
+		<text id="acID_x5F_anim_2_" transform="matrix(1 0 0 1 52.1662 508.5642)" fill="#EFEEEE" font-family="'LetoSans'" font-size="42.5587">A6-ETA</text>
+	<line fill="none" stroke="#B4B4B4" stroke-width="1.1174" stroke-miterlimit="10" x1="52.2" y1="597" x2="501.7" y2="597"/>
+	<line fill="none" stroke="#B4B4B4" stroke-width="1.1174" stroke-miterlimit="10" x1="52.2" y1="687.4" x2="501.7" y2="687.4"/>
+	<text transform="matrix(1 0 0 1 129.5037 65.9142)" fill="#F6F5DD" font-family="'LetoSans-Thin'" font-size="44.0141">B777 - ENGINE 1 </text>
+</g>
+<rect x="1408.4" y="215.3" fill="#192A17" stroke="#5D5C27" stroke-width="2.4384" width="142.7" height="50.2"/>
+<text id="FCV1_x5F_anim_1_" transform="matrix(1.1435 0 0 1 1441.9055 254.3854)" fill="#6FBE44" font-family="'LetoSans-Bold'" font-size="43.891">3.2</text>
+<rect x="1644.3" y="215.3" fill="#192A17" stroke="#5D5C27" stroke-width="2.4384" width="142.7" height="50.2"/>
+<text id="FCV1_x5F_anim_2_" transform="matrix(1.1435 0 0 1 1677.8154 254.3854)" fill="#6FBE44" font-family="'LetoSans-Bold'" font-size="43.891">3.2</text>
+<g id="bottom_statics">
+</g>
+<g id="pipes">
+	<polyline fill="none" stroke="#308B42" stroke-width="9.1696" stroke-miterlimit="10" points="962.5,612 1095.5,612 1095.5,450.2 
+		963.1,450.2 	"/>
+	
+		<polyline id="post_PD1_pipe_anim" fill="none" stroke="#338D43" stroke-width="27.5088" stroke-linejoin="round" stroke-miterlimit="10" points="
+		804.1,244 804.1,287.3 1300.4,287.2 1300.4,374.9 965.2,374.1 965.2,870.6 	"/>
+	
+		<polyline id="post_PD2_pipe_anim" fill="none" stroke="#338D43" stroke-width="29.3427" stroke-linejoin="round" stroke-miterlimit="10" points="
+		2140.7,1125.6 2140.7,374.1 1805.5,374.9 1805.5,287.2 2417.4,287.3 2417.4,244 	"/>
+	<polyline fill="none" stroke="#308B42" stroke-width="27.5088" stroke-linejoin="round" stroke-miterlimit="10" points="
+		1104.2,1125.6 1104.2,970 965.6,970 	"/>
+	<line fill="none" stroke="#338D43" stroke-width="27.5088" stroke-miterlimit="10" x1="1560" y1="1125.6" x2="1560" y2="288.4"/>
+	<polyline fill="none" stroke="#338D43" stroke-width="27.5088" stroke-miterlimit="10" points="1298.2,287.3 1483.6,287.3 
+		1483.6,266.5 	"/>
+	<polyline fill="none" stroke="#308B42" stroke-width="9.1696" stroke-miterlimit="10" points="2143.1,450.2 2010.7,450.2 
+		2010.7,612 2143.6,612 	"/>
+	<polyline fill="none" stroke="#308B42" stroke-width="27.5088" stroke-linejoin="round" stroke-miterlimit="10" points="
+		2140.6,970 2001.9,970 2001.9,1125.6 	"/>
+	<polyline fill="none" stroke="#338D43" stroke-width="27.5088" stroke-miterlimit="10" points="1805.5,287.2 1713.8,287.3 
+		1483.6,287.3 	"/>
+	
+		<line fill="none" stroke="#338D43" stroke-width="29.3427" stroke-miterlimit="10" x1="1714.3" y1="266.5" x2="1714.3" y2="287.3"/>
+	
+		<line fill="none" stroke="#308B42" stroke-width="29.3427" stroke-miterlimit="10" x1="1002.4" y1="261.7" x2="1002.4" y2="287.3"/>
+	
+		<line fill="none" stroke="#308B42" stroke-width="29.3427" stroke-miterlimit="10" x1="2211.9" y1="261.7" x2="2211.9" y2="287.3"/>
+	
+		<line id="pre_PD1_pipe_anim" fill="none" stroke="#338D43" stroke-width="27.5088" stroke-miterlimit="10" x1="965" y1="1127.6" x2="965" y2="867.8"/>
+</g>
+<g id="CF_bg_anim">
+	<path fill="#7BBE42" d="M424.1,108.2H318.2c-0.8,0.3-1.5,0.6-2.1,0.9c-0.3,0.2-0.7,0.4-1,0.5c-4.2,2.7-21.4,22.3-45,50.2
+		c-4.6,5.5-9.5,11.3-14.6,17.3c-7.1,8.5-14.6,17.4-22.4,26.7c-29.2,35-62,74.6-91.2,109.2c-17.6,20.8-33.9,39.8-47.3,55
+		c-10.9,11.3-35.5,34.5-66,50.4c-8.4,4.4-18.6,8-28.9,11h316.3h29.1h203.3V108.2H424.1z"/>
+</g>
+<text id="CF_anim" transform="matrix(1 0 0 1 230.1263 317.1691)" fill="#FFFFFF" font-family="'LetoSans-Thin'" font-size="142.743">99.9</text>
+<g id="PD2">
+	<path fill="#070808" d="M2216.3,745.2c0,41.5-33.6,75.1-75.1,75.1c-41.5,0-75.1-33.6-75.1-75.1c0-41.5,33.6-75.1,75.1-75.1
+		S2216.3,703.7,2216.3,745.2z"/>
+	<path id="redzone_x5F_sym_4_" opacity="0.1" fill="#ED1C24" enable-background="new    " d="M2192.8,784.7
+		c11.9-15.5,16.7-36.1,11.2-56.4c-9.3-34.7-44.9-55.2-79.6-46c-14.4,3.9-26.3,12.2-34.7,23.2l51.6,39.6L2192.8,784.7z"/>
+	<path id="redcache_x5F_sym_4_" fill="#070808" d="M2206.1,748c0.8-19.5-7.1-39.1-23.1-52.6c-27.5-23.1-68.5-19.5-91.6,8
+		c-9.6,11.4-14.5,25.1-15.1,38.9l64.9,2.8L2206.1,748z"/>
+	<g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2093.8,769 2094.9,771 2085,776.1 
+				2084,774.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2092,764.8 2092.8,766.8 
+				2082.5,771.1 2081.7,769.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2090.5,760.4 2091.2,762.5 
+				2080.5,765.9 2079.9,763.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2089.4,756 2089.9,758.1 
+				2079,760.5 2078.5,758.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2088.7,751.4 2089,753.6 
+				2077.9,755 2077.7,752.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2088.4,746.8 2088.5,749 
+				2077.4,749.5 2077.3,747.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2088.5,742.2 2088.4,744.4 
+				2077.3,743.9 2077.4,741.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2089,737.6 2088.7,739.8 
+				2077.6,738.3 2077.9,736.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2089.9,733.1 2089.4,735.2 
+				2078.5,732.8 2079,730.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2091.1,728.7 2090.5,730.8 
+				2079.9,727.4 2080.5,725.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2092.8,724.4 2092,726.4 
+				2081.7,722.1 2082.5,720.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2094.8,720.2 2093.8,722.2 
+				2084,717 2085,715.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2097.2,716.3 2096.1,718.1 
+				2086.7,712.2 2087.9,710.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2100,712.6 2098.6,714.3 
+				2089.8,707.5 2091.1,705.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2103,709.1 2101.5,710.7 
+				2093.3,703.2 2094.8,701.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2106.3,705.9 2104.7,707.4 
+				2097.2,699.2 2098.8,697.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2109.9,703 2108.2,704.4 
+				2101.4,695.5 2103.1,694.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2113.7,700.4 2111.9,701.6 
+				2105.9,692.2 2107.8,691.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2117.8,698.2 2115.8,699.2 
+				2110.7,689.4 2112.6,688.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2122,696.4 2120,697.2 
+				2115.7,686.9 2117.7,686.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2126.4,694.9 2124.3,695.5 
+				2120.9,684.9 2123,684.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2130.8,693.8 2128.7,694.3 
+				2126.3,683.4 2128.4,682.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2135.4,693.1 2133.2,693.4 
+				2131.8,682.3 2133.9,682 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2140,692.8 2137.8,692.9 
+				2137.3,681.7 2139.5,681.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2144.6,692.9 2142.4,692.8 
+				2142.9,681.7 2145.1,681.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2149.2,693.4 2147,693.1 
+				2148.5,682 2150.6,682.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2153.7,694.3 2151.6,693.8 
+				2154,682.9 2156.1,683.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2158.1,695.5 2156,694.9 
+				2159.4,684.3 2161.5,684.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2162.4,697.2 2160.4,696.4 
+				2164.7,686.1 2166.7,686.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2166.6,699.2 2164.6,698.2 
+				2169.8,688.4 2171.7,689.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2170.5,701.6 2168.7,700.4 
+				2174.6,691.1 2176.5,692.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2174.2,704.3 2172.5,703 
+				2179.3,694.2 2181,695.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2177.7,707.4 2176.1,705.9 
+				2183.6,697.7 2185.2,699.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2180.9,710.7 2179.4,709.1 
+				2187.6,701.6 2189.1,703.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2183.8,714.3 2182.4,712.6 
+				2191.3,705.8 2192.6,707.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2186.4,718.1 2185.2,716.3 
+				2194.5,710.3 2195.7,712.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2188.6,722.2 2187.6,720.2 
+				2197.4,715.1 2198.4,717 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2190.4,726.4 2189.6,724.4 
+				2199.9,720.1 2200.7,722.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2191.9,730.8 2191.3,728.7 
+				2201.9,725.3 2202.5,727.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2193,735.2 2192.5,733.1 
+				2203.4,730.7 2203.9,732.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2193.7,739.8 2193.4,737.6 
+				2204.5,736.2 2204.8,738.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2194,744.4 2193.9,742.2 
+				2205,741.7 2205.1,743.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2193.9,749 2194,746.8 
+				2205.1,747.3 2205,749.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2193.4,753.6 2193.7,751.4 
+				2204.8,752.8 2204.5,755 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2192.5,758.1 2193,755.9 
+				2203.9,758.4 2203.4,760.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2191.3,762.5 2191.9,760.4 
+				2202.5,763.8 2201.9,765.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2189.6,766.8 2190.4,764.8 
+				2200.7,769 2199.9,771.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2187.6,771 2188.6,769 
+				2198.4,774.1 2197.4,776.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="2185.2,774.9 2186.4,773 
+				2195.7,779 2194.5,780.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#852428" stroke-width="0.3732" stroke-miterlimit="10" points="2182.4,778.6 2183.8,776.9 
+				2192.6,783.7 2191.3,785.4 			"/>
+		</g>
+	</g>
+	<text transform="matrix(1.0376 0 0 1 2119.0874 712.9268)" fill="#1F1D1E" font-family="'Zapfino'" font-size="4.5898">FlightWatching</text>
+	<g id="Zero_4_">
+		
+			<text id="Min_4_" transform="matrix(1.0376 0 0 1 2087.3687 786.1733)" fill="#787A77" font-family="'Constantia'" font-size="15.2992">0</text>
+	</g>
+	<polygon fill="#14251B" points="2172.3,798.7 2109.6,798.7 2109.6,779.4 2172.3,779.4 	"/>
+	<path opacity="0.1" fill="#ED1C24" enable-background="new    " d="M2076.5,739.5c-1.3,14.8,2.5,28.9,9.9,40.6l53.8-34.3l-46.5-45
+		C2084.1,711.1,2077.8,724.5,2076.5,739.5z"/>
+	
+		<text id="PD2_value_anim" transform="matrix(1.0376 0 0 1 2112.5662 795.3251)" fill="#F05323" font-family="'LetoSans'" font-size="18">0044</text>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2420.5283" y1="168798.2969" x2="2414.8186" y2="168945.8125" gradientTransform="matrix(1 0 0 -1 -276.9453 169605.4688)">
+		<stop  offset="0" style="stop-color:#121212"/>
+		<stop  offset="0.2541" style="stop-color:#151615"/>
+		<stop  offset="0.5769" style="stop-color:#202020"/>
+		<stop  offset="0.9356" style="stop-color:#343434"/>
+		<stop  offset="1" style="stop-color:#3A3A39"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M2141.2,671.8c-40.8,0-73.8,33-73.8,73.8c0,40.8,33,73.8,73.8,73.8c40.8,0,73.8-33,73.8-73.8
+		C2215,704.8,2182,671.8,2141.2,671.8z M2141.2,813.8c-37.7,0-68.2-30.5-68.2-68.2c0-37.7,30.5-68.2,68.2-68.2
+		c37.7,0,68.2,30.5,68.2,68.2C2209.4,783.3,2178.9,813.8,2141.2,813.8z"/>
+	<polygon id="PD2_needle_anim" fill="#F05323" points="2090.3,777.5 2144.3,750.4 2140.9,745.1 2137.5,739.8 	"/>
+	<path fill="#6E6D6E" stroke="#070807" stroke-width="0.3732" stroke-miterlimit="10" d="M2150.1,745.6c0,5.1-4.2,9.3-9.3,9.3
+		c-5.1,0-9.3-4.2-9.3-9.3c0-5.1,4.2-9.3,9.3-9.3C2145.9,736.3,2150.1,740.4,2150.1,745.6z"/>
+	<path id="PD2_center_anim" fill="#629740" d="M2141.2,745.6"/>
+	<g>
+		<text transform="matrix(1.1435 0 0 1 2141.1577 770.1299)" fill="#2787C9" font-family="'LetoSans-Thin'" font-size="14.2069">PSI</text>
+	</g>
+</g>
+<g id="PD1">
+	<path fill="#070808" d="M1040,744.9c0,41.3-33.5,74.9-74.9,74.9c-41.3,0-74.9-33.5-74.9-74.9s33.5-74.9,74.9-74.9
+		C1006.5,670.1,1040,703.6,1040,744.9z"/>
+	<path id="redzone_x5F_sym_3_" opacity="0.1" fill="#ED1C24" enable-background="new    " d="M1016.5,784.4
+		c11.8-15.4,16.6-36,11.2-56.2c-9.3-34.6-44.8-55.1-79.4-45.8c-14.3,3.8-26.3,12.2-34.6,23.1l51.4,39.4L1016.5,784.4z"/>
+	<path id="redcache_x5F_sym_3_" fill="#070808" d="M1029.9,747.8c0.8-19.4-7-39-23.1-52.5c-27.4-23-68.3-19.4-91.3,8
+		c-9.5,11.4-14.5,25.1-15.1,38.8l64.7,2.8L1029.9,747.8z"/>
+	<g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="917.9,768.7 918.9,770.7 
+				909.1,775.8 908.1,773.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="916.1,764.5 916.9,766.5 
+				906.7,770.8 905.8,768.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="914.6,760.2 915.2,762.3 
+				904.7,765.6 904,763.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="913.5,755.7 914,757.8 903.1,760.2 
+				902.7,758.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="912.8,751.2 913.1,753.3 
+				902.1,754.8 901.8,752.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="912.5,746.6 912.6,748.8 
+				901.5,749.3 901.4,747.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="912.6,742 912.5,744.2 901.4,743.7 
+				901.5,741.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="913.1,737.4 912.8,739.6 
+				901.8,738.1 902.1,736 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="914,732.9 913.5,735 902.7,732.6 
+				903.1,730.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="915.2,728.5 914.6,730.6 904,727.2 
+				904.7,725.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="916.9,724.2 916.1,726.2 905.8,722 
+				906.7,720 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="918.9,720.1 917.9,722 908.1,716.9 
+				909.1,715 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="921.3,716.1 920.1,718 910.8,712 
+				911.9,710.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="924,712.4 922.7,714.2 913.9,707.4 
+				915.2,705.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="927,709 925.6,710.6 917.4,703.1 
+				918.9,701.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="930.4,705.8 928.7,707.3 
+				921.2,699.1 922.9,697.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="933.9,702.9 932.2,704.3 
+				925.4,695.5 927.2,694.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="937.8,700.4 935.9,701.5 
+				929.9,692.2 931.8,691 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="941.8,698.1 939.8,699.2 
+				934.7,689.3 936.7,688.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="946,696.3 944,697.1 939.7,686.9 
+				941.8,686 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="950.3,694.8 948.3,695.5 
+				944.9,684.9 947,684.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="954.8,693.7 952.7,694.2 
+				950.3,683.4 952.4,682.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="959.3,693 957.2,693.3 955.7,682.3 
+				957.9,682 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="963.9,692.7 961.7,692.8 
+				961.3,681.7 963.5,681.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="968.5,692.8 966.3,692.7 
+				966.8,681.6 969,681.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="973.1,693.3 970.9,693 972.4,682 
+				974.5,682.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="977.6,694.2 975.5,693.7 
+				977.9,682.9 980,683.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="982,695.5 979.9,694.8 983.3,684.2 
+				985.4,684.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="986.3,697.1 984.3,696.3 988.5,686 
+				990.5,686.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="990.4,699.1 988.5,698.1 
+				993.6,688.3 995.6,689.3 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="994.4,701.5 992.5,700.4 998.5,691 
+				1000.3,692.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="998.1,704.2 996.3,702.9 
+				1003.1,694.1 1004.8,695.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1001.5,707.3 999.9,705.8 
+				1007.4,697.6 1009,699.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1004.7,710.6 1003.2,709 
+				1011.4,701.5 1012.9,703.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1007.6,714.2 1006.3,712.4 
+				1015.1,705.7 1016.4,707.4 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1010.2,718 1009,716.1 
+				1018.3,710.2 1019.5,712 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1012.4,722 1011.3,720.1 
+				1021.2,714.9 1022.2,716.9 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1014.2,726.2 1013.4,724.2 
+				1023.6,719.9 1024.5,722 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1015.7,730.6 1015,728.5 
+				1025.6,725.1 1026.3,727.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1016.8,735 1016.3,732.9 
+				1027.2,730.5 1027.6,732.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1017.5,739.6 1017.2,737.4 
+				1028.2,736 1028.5,738.1 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1017.8,744.2 1017.7,742 
+				1028.8,741.5 1028.9,743.7 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1017.7,748.8 1017.8,746.6 
+				1028.9,747 1028.8,749.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1017.2,753.3 1017.5,751.1 
+				1028.5,752.6 1028.2,754.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1016.3,757.8 1016.8,755.7 
+				1027.6,758.1 1027.2,760.2 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1015,762.2 1015.7,760.2 
+				1026.3,763.5 1025.6,765.6 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1013.4,766.5 1014.2,764.5 
+				1024.5,768.7 1023.6,770.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1011.4,770.7 1012.4,768.7 
+				1022.2,773.8 1021.2,775.8 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#545650" stroke-width="0.3732" stroke-miterlimit="10" points="1009,774.6 1010.2,772.7 
+				1019.5,778.7 1018.3,780.5 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#852428" stroke-width="0.3732" stroke-miterlimit="10" points="1006.3,778.3 1007.6,776.6 
+				1016.4,783.3 1015.1,785 			"/>
+		</g>
+	</g>
+	<text transform="matrix(1.0376 0 0 1 943.0924 712.7974)" fill="#1F1D1E" font-family="'Zapfino'" font-size="4.576">FlightWatching</text>
+	<g id="Zero_3_">
+		
+			<text id="Min_3_" transform="matrix(1.0376 0 0 1 911.4703 785.8228)" fill="#787A77" font-family="'Constantia'" font-size="15.253">0</text>
+	</g>
+	<polygon fill="#14251B" points="996.1,798.3 933.7,798.3 933.7,779.1 996.1,779.1 	"/>
+	<path opacity="0.1" fill="#ED1C24" enable-background="new    " d="M900.6,739.3c-1.3,14.8,2.5,28.8,9.9,40.5l53.6-34.1l-46.3-44.9
+		C908.2,711,901.9,724.3,900.6,739.3z"/>
+	
+		<text id="PD1_value_anim" transform="matrix(1.0376 0 0 1 937.0309 794.5181)" fill="#73BF44" font-family="'LetoSans'" font-size="18">0052</text>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1244.4578" y1="168798.7031" x2="1238.7651" y2="168945.7812" gradientTransform="matrix(1 0 0 -1 -276.9453 169605.4688)">
+		<stop  offset="0" style="stop-color:#121212"/>
+		<stop  offset="0.2541" style="stop-color:#151615"/>
+		<stop  offset="0.5769" style="stop-color:#202020"/>
+		<stop  offset="0.9356" style="stop-color:#343434"/>
+		<stop  offset="1" style="stop-color:#3A3A39"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M965.1,671.8c-40.6,0-73.6,32.9-73.6,73.6c0,40.6,32.9,73.6,73.6,73.6c40.6,0,73.6-32.9,73.6-73.6
+		C1038.7,704.7,1005.8,671.8,965.1,671.8z M965.1,813.4c-37.6,0-68-30.4-68-68c0-37.6,30.4-68,68-68c37.6,0,68,30.4,68,68
+		C1033.1,782.9,1002.7,813.4,965.1,813.4z"/>
+	<polygon id="PD1_needle_anim" fill="#81C341" points="914.3,776.7 968.4,750.4 965.1,745.1 961.8,739.7 	"/>
+	<path fill="#6E6D6E" stroke="#070807" stroke-width="0.3732" stroke-miterlimit="10" d="M974,745.4c0,5.1-4.2,9.3-9.3,9.3
+		c-5.1,0-9.3-4.2-9.3-9.3c0-5.1,4.2-9.3,9.3-9.3C969.8,736.1,974,740.2,974,745.4z"/>
+	<path id="PD1_center_anim" fill="#629740" d="M965.1,745.4"/>
+	<text transform="matrix(1.1435 0 0 1 965.0948 769.8267)" fill="#2787C9" font-family="'LetoSans-Thin'" font-size="14.2069">PSI</text>
+</g>
+<circle id="RT_anim" fill="#338D43" cx="2109.5" cy="56" r="34"/>
+<text transform="matrix(1 0 0 1 280.1258 362.301)" fill="#EFEEEE" font-family="'LetoSans'" font-size="21.2215">confidence factor</text>
+<g id="top_statics">
+	<text transform="matrix(1.1435 0 0 1 1589.0035 1022.4044)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">APU BLEED </text>
+	<text transform="matrix(1.1435 0 0 1 1589.0035 1045.2887)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">VLV</text>
+	
+		<rect x="1081.7" y="802.3" fill="#181717" stroke="#9CCB3C" stroke-width="0.4585" stroke-miterlimit="10" width="58.4" height="14.6"/>
+	
+		<rect x="1211.3" y="746.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="14.6" height="58.4"/>
+	<g>
+		<g>
+		</g>
+	</g>
+	
+		<rect x="1967.8" y="802.3" fill="#181717" stroke="#9CCB3C" stroke-width="0.4585" stroke-miterlimit="10" width="58.4" height="14.6"/>
+	
+		<rect x="1876.4" y="746.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="14.6" height="58.4"/>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1340.3781 315.6754)" fill="#565652" font-family="'LetoSans'" font-size="16.4099"> </text>
+		<text transform="matrix(1.0901 0 0 1 1340.8575 335.3712)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">TEMP SENSOR</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1844.8492 316.5509)" fill="#565652" font-family="'LetoSans'" font-size="16.4099"> </text>
+		<text transform="matrix(1.0901 0 0 1 1845.3278 336.2433)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">TEMP SENSOR</text>
+	</g>
+	<g>
+		<g>
+			
+				<rect x="1293.9" y="302.6" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="11.8" height="38.8"/>
+			
+				<rect x="1296.6" y="297.7" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="6.3" height="4.9"/>
+			
+				<rect x="1290.6" y="307.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.8" height="4"/>
+			
+				<rect x="1290.6" y="328.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.8" height="4"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			
+				<rect x="1799.1" y="302.6" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="11.8" height="38.8"/>
+			
+				<rect x="1801.8" y="297.7" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="6.3" height="4.9"/>
+			
+				<rect x="1795.9" y="307.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.8" height="4"/>
+			
+				<rect x="1795.9" y="328.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.8" height="4"/>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1956.0856 1155.4567)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">HP stage</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 2099.6284 1155.4567)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">IP stage</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1062.2843 1155.4567)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">HP stage</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 925.0753 1155.4567)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">IP stage</text>
+	</g>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2329.9,845 2329.9,905.2 
+			2284.6,905.2 2284.6,845 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2328.1,852.8 2328.1,898.8 
+			2295,898.8 2295,852.8 		"/>
+		
+			<rect x="2257.8" y="837.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="24.7" height="63.1"/>
+		
+			<rect x="2280.9" y="845" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="3.9"/>
+		
+			<rect x="2280.9" y="904.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="4"/>
+		
+			<rect x="2254.4" y="883.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		
+			<rect x="2254.4" y="854.2" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2309.1,877.9l0,14.9h15.7
+				c0,0,0.6-4.5,0.6-7.4c0-2.9-0.8-7.5-0.8-7.5H2309.1L2309.1,877.9z"/>
+			
+				<rect x="2309.1" y="876.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+			
+				<rect x="2311.6" y="876.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2339.3,884.5v-8h-8.4l0.1,8H2339.3
+			L2339.3,884.5z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2330.4,885.3v-9.5h-2.1l0,9.5H2330.4
+			L2330.4,885.3z"/>
+		<path fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" d="M2282.6,890.7c0,0,2.1,1.7,4.1,0
+			c2-1.7-0.9-7.2,0-10.2c0.9-3,10.3-1.3,10.3-1.3"/>
+		
+			<rect x="2317.8" y="856.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.9" height="6.7"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" points="2317.8,857.3 2310.9,853.9 
+			2282.6,852.3 		"/>
+		
+			<rect x="2252.6" y="874.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.5" height="7.4"/>
+		
+			<rect x="2250" y="876.6" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.2" height="9.9"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2269.5,881.5 2279.5,881.5 
+			2280.4,872.8 2291.3,872.8 		"/>
+	</g>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" points="808.3,820.9 808.3,944.9 
+			714.9,944.9 714.9,820.9 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" points="804.6,837 804.6,931.7 
+			736.4,931.7 736.4,837 		"/>
+		
+			<rect x="659.8" y="805.4" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="51" height="130"/>
+		
+			<rect x="707.2" y="820.9" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="107.3" height="8.1"/>
+		
+			<rect x="707.2" y="942.6" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="107.3" height="8.1"/>
+		
+			<rect x="652.7" y="900.6" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="62.2" height="8.1"/>
+		
+			<rect x="652.7" y="839.8" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="62.2" height="8.1"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" d="M765.3,888.7l0,30.7h32.3
+				c0,0,1.3-9.4,1.3-15.3c0-6-1.7-15.4-1.7-15.4H765.3L765.3,888.7z"/>
+			
+				<rect x="765.3" y="885.7" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="3.8" height="36.5"/>
+			
+				<rect x="770.5" y="885.7" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="3.8" height="36.5"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" d="M827.6,902.2v-16.5h-17.3l0.2,16.5H827.6
+			L827.6,902.2z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" d="M809.4,904v-19.6h-4.3l0,19.6H809.4
+			L809.4,904z"/>
+		<path fill="none" stroke="#565652" stroke-width="1.8895" stroke-miterlimit="10" d="M710.7,915c0,0,4.3,3.4,8.4,0
+			c4.2-3.5-1.8-14.9,0-21c1.8-6.1,21.2-2.7,21.2-2.7"/>
+		
+			<rect x="783.3" y="843.8" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="5.9" height="13.7"/>
+		<polyline fill="none" stroke="#565652" stroke-width="1.8895" stroke-miterlimit="10" points="783.3,846.3 769.1,839.2 710.7,836 
+					"/>
+		
+			<rect x="649" y="881.5" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="9.4" height="15.3"/>
+		
+			<rect x="643.7" y="886" fill="#181717" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" width="4.6" height="20.4"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.9448" stroke-miterlimit="10" points="683.8,896 704.3,896 706.2,878.1 
+			728.7,878.1 		"/>
+	</g>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="1092.9,1059.7 1092.9,994.1 
+			1134.5,994.1 1134.5,1059.7 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="1102.4,1051.2 1102.4,1001 
+			1132.8,1001 1132.8,1051.2 		"/>
+		
+			<rect x="1068.3" y="999.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="22.7" height="68.8"/>
+		
+			<rect x="1089.4" y="1055.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="47.8" height="4.3"/>
+		
+			<rect x="1089.4" y="991" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="47.8" height="4.3"/>
+		
+			<rect x="1065.2" y="1013.2" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="27.7" height="4.3"/>
+		
+			<rect x="1065.2" y="1045.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="27.7" height="4.3"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1115.3,1023.8l14.3,0
+				c0,0,0.7-4.9,0.7-8.1c0-3.2-0.6-8.1-0.6-8.1h-14.4L1115.3,1023.8L1115.3,1023.8z"/>
+			
+				<rect x="1115.3" y="1006.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.7" height="19.3"/>
+			
+				<rect x="1117.7" y="1006.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.7" height="19.3"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1143,1016.7h-7.6l-0.1,8.7h7.7V1016.7
+			L1143,1016.7z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1134.9,1015.7h-1.9l0,10.4h1.9V1015.7
+			L1134.9,1015.7z"/>
+		
+			<rect x="1136.8" y="1026.2" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.8" height="0.9"/>
+		
+			<rect x="1137.5" y="1027.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="3.5" height="3.5"/>
+		<path fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" d="M1104.2,1022.5c0,0-8.6,1.8-9.4-1.5
+			c-0.8-3.2,1.8-9.3,0-11.1c-1.8-1.8-3.8,0-3.8,0"/>
+		
+			<rect x="1123.3" y="1040.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.6" height="7.3"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" points="1091,1051.7 1117,1050 
+			1123.3,1046.3 		"/>
+		
+			<rect x="1063.5" y="1019.6" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.2" height="8.1"/>
+		
+			<rect x="1061.2" y="1014.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2" height="10.8"/>
+	</g>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="1971.7,1059.7 1971.7,994.1 
+			2013.2,994.1 2013.2,1059.7 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="1973.3,1051.2 1973.3,1001 
+			2003.7,1001 2003.7,1051.2 		"/>
+		
+			<rect x="2015.1" y="999.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="22.7" height="68.8"/>
+		
+			<rect x="1968.9" y="1055.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="47.8" height="4.3"/>
+		
+			<rect x="1968.9" y="991" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="47.8" height="4.3"/>
+		
+			<rect x="2013.2" y="1013.2" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="27.7" height="4.3"/>
+		
+			<rect x="2013.2" y="1045.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="27.7" height="4.3"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1990.8,1023.8l0-16.3h-14.4
+				c0,0-0.6,5-0.6,8.1c0,3.2,0.7,8.1,0.7,8.1L1990.8,1023.8L1990.8,1023.8z"/>
+			
+				<rect x="1989.1" y="1006.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.7" height="19.3"/>
+			
+				<rect x="1986.8" y="1006.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.7" height="19.3"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1963.1,1016.7v8.7h7.7l-0.1-8.7H1963.1
+			L1963.1,1016.7z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M1971.2,1015.7v10.4h1.9l0-10.4H1971.2
+			L1971.2,1015.7z"/>
+		
+			<rect x="1964.5" y="1026.2" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.8" height="0.9"/>
+		
+			<rect x="1965.2" y="1027.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="3.5" height="3.5"/>
+		<path fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" d="M2015.1,1009.9c0,0-1.9-1.8-3.8,0
+			c-1.8,1.8,0.8,7.9,0,11.1c-0.8,3.2-9.4,1.5-9.4,1.5"/>
+		
+			<rect x="1980.2" y="1040.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.6" height="7.3"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" points="1982.8,1046.3 1989.1,1050 
+			2015.1,1051.7 		"/>
+		
+			<rect x="2038.4" y="1019.6" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.2" height="8.1"/>
+		
+			<rect x="2042.9" y="1014.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2" height="10.8"/>
+	</g>
+	<g>
+		<g>
+			
+				<rect x="910.3" y="643.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="21.5" height="27.6"/>
+			
+				<rect x="914.1" y="623.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="13.9" height="20.2"/>
+			
+				<rect x="911.4" y="628.8" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.2" height="3.6"/>
+			
+				<rect x="909.3" y="656.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="23.8" height="4.8"/>
+			
+				<rect x="909.3" y="644.8" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="23.8" height="4.8"/>
+		</g>
+		
+			<rect x="933" y="629.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.1" height="43.8"/>
+		
+			<rect x="930.1" y="629.7" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="3.5"/>
+		
+			<rect x="930.1" y="669.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="4.8"/>
+		
+			<rect x="930.1" y="637.6" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="4.1"/>
+		<path fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M993.1,663.5h-15.2c0,0-1.8-0.1-1.8-5.1
+			c0-2.9,1.8-5.1,1.8-5.1h15.2V663.5z"/>
+		<ellipse fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" cx="994" cy="658.4" rx="1.1" ry="5.1"/>
+		
+			<rect x="994.1" y="647.2" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1" height="9.9"/>
+	</g>
+	<text transform="matrix(1.1435 0 0 1 1035.9786 674.6665)" fill="#565652" font-family="'LetoSansCondensed'" font-size="14">PRECOOLER</text>
+	<g>
+		<g>
+			
+				<rect x="1170.5" y="379.6" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="63.6" height="7.7"/>
+			
+				<rect x="1197.6" y="406.3" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="9.3" height="14.4"/>
+			<circle fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" cx="1203.1" cy="395.2" r="16.3"/>
+		</g>
+		
+			<rect x="1191" y="391.6" fill="#010101" stroke="#535454" stroke-width="0.917" stroke-miterlimit="10" width="22.7" height="6.9"/>
+	</g>
+	<g>
+		<g>
+			
+				<rect x="1870.7" y="379.6" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="63.6" height="7.7"/>
+			
+				<rect x="1897.8" y="406.3" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="9.3" height="14.4"/>
+			<circle fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" cx="1903.3" cy="395.2" r="16.3"/>
+		</g>
+		
+			<rect x="1891.2" y="391.6" fill="#010101" stroke="#535454" stroke-width="0.917" stroke-miterlimit="10" width="22.7" height="6.9"/>
+	</g>
+	<g>
+		
+			<rect x="995.7" y="378.9" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="42.2" height="7.7"/>
+		<circle fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" cx="1017.3" cy="392.6" r="13.7"/>
+		
+			<rect x="1012.5" y="406.3" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="9.3" height="14.4"/>
+	</g>
+	<g>
+		
+			<rect x="2071.2" y="379.6" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="42.2" height="7.7"/>
+		<circle fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" cx="2092.8" cy="393.3" r="13.7"/>
+		
+			<rect x="2088.1" y="407" fill="#010101" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" width="9.3" height="14.4"/>
+	</g>
+	<g>
+		
+			<rect x="1824.7" y="325.3" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+		<text transform="matrix(-1 0 0 1 1836.4176 337.3018)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">T</text>
+	</g>
+	
+		<rect x="1969.5" y="785.4" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+	<text id="P_4_" transform="matrix(1 0 0 1 1972.6442 797.4365)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">P</text>
+	<polyline fill="none" stroke="#535454" stroke-width="27.5088" stroke-miterlimit="10" points="2310.5,1125.6 2310.5,532 
+		2228.3,532 	"/>
+	<text id="P_5_" transform="matrix(1 0 0 1 1864.316 760.0176)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">P</text>
+	<text transform="matrix(1.1435 0 0 1 851.0875 1025.8395)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">IP VLV</text>
+	<text transform="matrix(1.1435 0 0 1 1590.0992 486.5524)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">CHECK VLV</text>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="1921.7,388.1 1921.7,807.9 
+		2137.5,807.9 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="1903.8,406.6 1903.8,873.1 
+		2089.4,873.1 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="2092.3,407 2092.3,423.7 
+		2333.8,423.7 2333.8,864 2327.6,864 	"/>
+	<g>
+		<g>
+			<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="1577.7,487.3 1579.2,510.5 
+				1534.1,510.5 1536.1,485.2 1534.1,462.8 1579.2,462.8 			"/>
+			
+				<rect x="1532.1" y="462.8" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="2.7"/>
+			
+				<rect x="1532.1" y="505.7" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="5.3"/>
+		</g>
+		<ellipse fill="none" stroke="#6FBE44" stroke-width="1.8339" stroke-miterlimit="10" cx="1557" cy="486.2" rx="17.6" ry="19.2"/>
+		<polygon fill="#6FBE44" points="1545.6,497.6 1557,470.6 1568.4,497.6 		"/>
+	</g>
+	
+		<rect x="1859.6" y="748" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+	<text transform="matrix(1.0901 0 0 1 2032.6071 867.2524)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">PRV</text>
+	<text transform="matrix(1.1435 0 0 1 2170.3901 1025.8395)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">IP VLV</text>
+	<g>
+		<g>
+			<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2118.4,1002.1 2163.4,1002.1 
+				2161.5,1024.5 2163.4,1049.8 2118.4,1049.8 2119.9,1026.6 			"/>
+			
+				<rect x="2115.7" y="1002.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="2.7"/>
+			
+				<rect x="2115.7" y="1045" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="5.3"/>
+		</g>
+		<path fill="none" stroke="#6FBE44" stroke-width="1.8339" stroke-miterlimit="10" d="M2140.6,1006.3c9.7,0,17.6,8.6,17.6,19.2
+			c0,10.6-7.9,19.2-17.6,19.2c-9.7,0-17.6-8.6-17.6-19.2C2123,1014.9,2130.9,1006.3,2140.6,1006.3z"/>
+		<polygon fill="#6FBE44" points="2129.2,1036.9 2140.6,1009.9 2152,1036.9 		"/>
+	</g>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2170.2,836.3 2170.2,896.5 
+			2124.9,896.5 2124.9,836.3 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2168.5,844.1 2168.5,890.1 
+			2135.3,890.1 2135.3,844.1 		"/>
+		
+			<rect x="2098.1" y="828.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="24.7" height="63.1"/>
+		
+			<rect x="2121.2" y="836.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="3.9"/>
+		
+			<rect x="2121.2" y="895.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="3.9"/>
+		
+			<rect x="2094.7" y="875" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		
+			<rect x="2094.7" y="845.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2149.4,869.2l0,14.9h15.7
+				c0,0,0.6-4.5,0.6-7.5c0-2.9-0.8-7.5-0.8-7.5H2149.4L2149.4,869.2z"/>
+			
+				<rect x="2149.4" y="867.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+			
+				<rect x="2151.9" y="867.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2179.6,875.8v-8h-8.4l0.1,8H2179.6
+			L2179.6,875.8z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2170.7,876.6v-9.5h-2.1l0,9.5H2170.7
+			L2170.7,876.6z"/>
+		<path fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" d="M2122.9,882c0,0,2.1,1.7,4.1,0
+			c2-1.7-0.9-7.2,0-10.2c0.9-3,10.3-1.3,10.3-1.3"/>
+		
+			<rect x="2158.1" y="847.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.9" height="6.7"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" points="2158.1,848.6 2151.2,845.2 
+			2122.9,843.6 		"/>
+		
+			<rect x="2092.9" y="865.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.5" height="7.4"/>
+		
+			<rect x="2090.3" y="867.9" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.2" height="9.9"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="2109.8,872.8 2119.8,872.8 
+			2120.7,864 2131.6,864 		"/>
+	</g>
+	<g>
+		
+			<rect x="2113.8" y="482.8" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="55.5" height="96.4"/>
+		<path fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" d="M2170.4,578c0,0,4.8-13.3,20.5-22.8
+			c15.7-9.6,33.1-7.4,33.1-7.4v-35.3c0,0-20.7-0.5-32.7-4.9c-15.7-9.6-20.9-22.8-20.9-22.8V578L2170.4,578z"/>
+		
+			<rect x="2117.3" y="479.8" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="48.5" height="2.4"/>
+		
+			<rect x="2117.3" y="578.3" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="48.5" height="2.4"/>
+		
+			<rect x="2121.6" y="470.9" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="38.4" height="8.1"/>
+		
+			<rect x="2119.3" y="470.6" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="44.5" height="2.7"/>
+		
+			<rect x="2121.6" y="580.6" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="38.4" height="8.1"/>
+		
+			<rect x="2119.3" y="586.4" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="44.5" height="2.7"/>
+		
+			<rect x="2168" y="484.8" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="7.8" height="94.5"/>
+	</g>
+	<text transform="matrix(0 -1.1435 1 0 2132.4819 571.9893)" fill="#565652" font-family="'Consolas'" font-size="14.6714">PRECOOLER</text>
+	<text transform="matrix(1.0901 0 0 1 1913.9332 977.9033)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">HPV</text>
+	<text transform="matrix(1.0901 0 0 1 1159.0988 977.9033)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">HPV</text>
+	<text transform="matrix(1.0901 0 0 1 2091.9331 228.3096)" fill="#565652" font-family="'Consolas'" font-size="16.4099">R INR WAI</text>
+	<text transform="matrix(1.0901 0 0 1 2294.6499 228.3096)" fill="#565652" font-family="'Consolas'" font-size="16.4099">R OUT WAI</text>
+	<text transform="matrix(1.0901 0 0 1 2355.394 898.8945)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">FAV</text>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 2015.4098 407.7897)" fill="#565652" font-family="'LetoSans'" font-size="16.4099"> </text>
+		<text transform="matrix(1.0901 0 0 1 1971.7106 427.485)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">T FAV CTRL</text>
+	</g>
+	<g>
+		<g>
+			
+				<rect x="2174.4" y="643.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="21.5" height="27.6"/>
+			
+				<rect x="2178.2" y="623.1" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="13.9" height="20.2"/>
+			
+				<rect x="2175.6" y="628.8" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="19.2" height="3.6"/>
+			
+				<rect x="2173.1" y="656.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="23.8" height="4.8"/>
+			
+				<rect x="2173.1" y="644.8" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="23.8" height="4.8"/>
+		</g>
+		
+			<rect x="2124" y="629.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.1" height="43.8"/>
+		
+			<rect x="2121.7" y="629.7" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="3.5"/>
+		
+			<rect x="2121.7" y="669.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="4.8"/>
+		
+			<rect x="2121.7" y="637.6" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="54.3" height="4.1"/>
+		<path fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M2113,653.2h15.2c0,0,1.8,2.3,1.8,5.1
+			c0,5-1.8,5.1-1.8,5.1H2113V653.2z"/>
+		
+			<ellipse fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" cx="2112.1" cy="658.4" rx="1.1" ry="5.1"/>
+		<rect x="2111" y="647.2" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1" height="9.9"/>
+	</g>
+	<text transform="matrix(1.1435 0 0 1 988.2418 907.5972)" fill="#2787C9" font-family="'LetoSans-Thin'" font-size="11.4869">PSI</text>
+	
+		<rect x="1082.7" y="785.4" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+	<text id="P_6_" transform="matrix(1 0 0 1 1086.4113 797.4365)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">P</text>
+	<g>
+		
+			<rect x="1320.1" y="325.3" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+		<text transform="matrix(1 0 0 1 1323.8029 337.3018)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">T</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1584.3219 345.8761)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">XBLEED VLV</text>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.0901 0 0 1 833.5553 228.3096)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">L OUT WAI</text>
+		</g>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.0901 0 0 1 1034.9073 228.3096)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">L INR WAI</text>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 2393.2434 181.5566)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">WAI</text>
+	</g>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="968.4,936.2 1219.4,936.2 
+		1219.4,389.4 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="1885.2,388.6 1885.2,936.2 
+		2131.8,936.2 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="968.6,807.9 1184.4,807.9 
+		1184.4,387.5 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="1016.8,873.1 1202.3,873.1 
+		1202.3,406.6 	"/>
+	<polyline fill="none" stroke="#868686" stroke-width="1.3754" stroke-miterlimit="10" points="778.6,864 772.4,864 772.4,423.7 
+		1016.4,423.7 1016.4,407 	"/>
+	
+		<rect x="1227.5" y="748" fill="#171617" stroke="#6ECBD0" stroke-width="1.3754" stroke-miterlimit="10" width="15.4" height="15.4"/>
+	<text id="P_7_" transform="matrix(1 0 0 1 1231.1378 760.0176)" fill="#72CDDD" font-family="'Consolas'" font-size="14.6714">P</text>
+	<polyline fill="none" stroke="#535454" stroke-width="27.5088" stroke-miterlimit="10" points="802.4,1125.6 802.4,532 883,532 	
+		"/>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1033.1469 422.9775)" fill="#565652" font-family="'LetoSans'" font-size="16">T FAV CTRL</text>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1 0 0 1 1231.1378 415.5145)" fill="#F6F5DD" font-family="'LetoSans-Thin'" font-size="14.5893">SOL BLEED </text>
+			<text transform="matrix(1 0 0 1 1231.1378 439.4554)" fill="#F6F5DD" font-family="'LetoSans-Thin'" font-size="14.5893">VLV CTL</text>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1767.9323 427.485)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">SOL BLEED </text>
+		<text transform="matrix(1.0901 0 0 1 1777.7682 447.1769)" fill="#565652" font-family="'LetoSans'" font-size="16.4099">VLV CTL</text>
+	</g>
+	<text transform="matrix(0 -1.1435 1 0 881.3868 663.6182)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">OPV</text>
+	<g>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="981.2,836.3 981.2,896.5 
+			935.9,896.5 935.9,836.3 		"/>
+		<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="970.8,844.1 970.8,890.1 
+			937.7,890.1 937.7,844.1 		"/>
+		
+			<rect x="983.3" y="828.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="24.7" height="63.1"/>
+		
+			<rect x="932.9" y="836.3" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="3.9"/>
+		
+			<rect x="932.9" y="895.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="52.1" height="3.9"/>
+		
+			<rect x="981.2" y="875" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		
+			<rect x="981.2" y="845.5" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="30.2" height="3.9"/>
+		<g>
+			<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M956.8,869.2h-15.5c0,0-0.8,4.5-0.8,7.5
+				c0,2.9,0.7,7.4,0.7,7.4h15.7L956.8,869.2L956.8,869.2z"/>
+			
+				<rect x="954.9" y="867.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+			
+				<rect x="952.4" y="867.8" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="1.9" height="17.7"/>
+		</g>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M926.6,875.8h8.3l0.1-8h-8.4V875.8
+			L926.6,875.8z"/>
+		<path fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" d="M935.4,876.6h2.1l0-9.5h-2.1V876.6
+			L935.4,876.6z"/>
+		<path fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" d="M968.9,870.4c0,0,9.4-1.6,10.3,1.3
+			c0.9,3-2,8.5,0,10.2c2,1.7,4.1,0,4.1,0"/>
+		
+			<rect x="945.2" y="847.4" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.8" height="6.7"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.917" stroke-miterlimit="10" points="983.3,843.6 954.9,845.2 
+			948.1,848.6 		"/>
+		
+			<rect x="1008.7" y="865.7" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="4.5" height="7.4"/>
+		
+			<rect x="1013.6" y="867.9" fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="2.2" height="9.9"/>
+		<polyline fill="none" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="974.6,864 985.4,864 986.4,872.8 
+			996.3,872.8 		"/>
+	</g>
+	<g>
+		
+			<rect x="936.9" y="482.8" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="55.5" height="96.4"/>
+		<path fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" d="M935.8,484.8c0,0-5.3,13.2-20.9,22.8
+			c-12,4.4-32.7,4.9-32.7,4.9v35.3c0,0,17.5-2.2,33.1,7.4c15.7,9.6,20.5,22.8,20.5,22.8V484.8z"/>
+		
+			<rect x="940.3" y="479.8" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="48.5" height="2.4"/>
+		
+			<rect x="940.3" y="578.3" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="48.5" height="2.4"/>
+		
+			<rect x="946.1" y="470.9" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="38.4" height="8.1"/>
+		
+			<rect x="942.3" y="470.6" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="44.5" height="2.7"/>
+		
+			<rect x="946.1" y="580.6" fill="#181717" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="38.4" height="8.1"/>
+		
+			<rect x="942.3" y="586.4" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="44.5" height="2.7"/>
+		
+			<rect x="930.3" y="484.8" fill="#010101" stroke="#868686" stroke-width="0.4585" stroke-miterlimit="10" width="7.8" height="94.5"/>
+	</g>
+	<g>
+		<text transform="matrix(0 -1.1435 1 0 969.015 571.9897)" fill="#565652" font-family="'LetoSans'" font-size="11.0876">PRECOOLER</text>
+	</g>
+	<g>
+		<text transform="matrix(0 -1.1435 1 0 1039.9969 571.9893)" fill="#565652" font-family="'Consolas'" font-size="14.6714">PRECOOLER</text>
+	</g>
+	<g>
+		<text transform="matrix(1.1435 0 0 1 1035.9641 690.9971)" fill="#565652" font-family="'LetoSans-Thin'" font-size="14.6714">PRECOOLER</text>
+	</g>
+	<text transform="matrix(0 -1.1435 1 0 2215.9058 664.665)" fill="#565652" font-family="'Consolas'" font-size="19.0726">OPV</text>
+	<g>
+		<g>
+			<polygon fill="#181717" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" points="986.2,1026.6 987.7,1049.8 
+				942.7,1049.8 944.6,1024.5 942.7,1002.1 987.7,1002.1 			"/>
+			
+				<rect x="940.6" y="1002.1" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="2.7"/>
+			
+				<rect x="940.6" y="1045" fill="#010101" stroke="#565652" stroke-width="0.4585" stroke-miterlimit="10" width="49.9" height="5.3"/>
+		</g>
+		<path fill="none" stroke="#6FBE44" stroke-width="1.8339" stroke-miterlimit="10" d="M965.6,1006.3c9.7,0,17.6,8.6,17.6,19.2
+			c0,10.6-7.9,19.2-17.6,19.2c-9.7,0-17.6-8.6-17.6-19.2C948,1014.9,955.8,1006.3,965.6,1006.3z"/>
+		<polygon fill="#6FBE44" points="954.2,1036.9 965.6,1009.9 976.9,1036.9 		"/>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.1435 0 0 1 1441.3739 197.145)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">FCV 1</text>
+			<text transform="matrix(1.1435 0 0 1 1501.33 197.145)" fill="#565652" font-family="'LetoSans'" font-size="19.0726"> </text>
+		</g>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.1435 0 0 1 1687.8412 197.145)" fill="#565652" font-family="'LetoSans'" font-size="19.0726">FCV 2</text>
+			<text transform="matrix(1.1435 0 0 1 1747.7924 197.145)" fill="#565652" font-family="'LetoSans'" font-size="19.0726"> </text>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 1028.9913 867.2524)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">PRV</text>
+	</g>
+	<g>
+		<text transform="matrix(1.0901 0 0 1 839.5709 900.729)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">FAV</text>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.0901 0 0 1 1434.6083 168.4165)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">PACK 1</text>
+		</g>
+	</g>
+	<g>
+		<g>
+			<text transform="matrix(1.0901 0 0 1 1673.2885 168.4165)" fill="#FFFFFF" font-family="'LetoSans'" font-size="22.007">PACK 2</text>
+		</g>
+	</g>
+</g>
+<g id="valves">
+	
+		<use xlink:href="#valve"  width="319.7" height="375.5" id="XBL_anim" x="-170.2" y="-187.8" transform="matrix(0 -0.1425 0.1553 0 1614.7552 285.1331)" overflow="visible" enable-background="new    "/>
+	<g id="PRV2_anim" enable-background="new    ">
+		<path fill="#05090A" d="M2164.6,865.8c0-11.7-10.3-21.1-23-21.1c-12.7,0-23,9.5-23,21.1c0,11.7,10.3,21.1,23,21.1
+			C2154.3,886.9,2164.6,877.5,2164.6,865.8z"/>
+		<g>
+			<path fill="#5BA545" d="M2166.4,865.8c0,12.6-11.1,22.8-24.8,22.8c-13.7,0-24.8-10.2-24.8-22.8c0-12.6,11.1-22.8,24.8-22.8
+				C2155.3,843,2166.4,853.2,2166.4,865.8z M2162.8,865.8c0-10.7-9.5-19.5-21.2-19.5c-11.7,0-21.2,8.7-21.2,19.5
+				c0,10.7,9.5,19.5,21.2,19.5C2153.3,885.3,2162.8,876.5,2162.8,865.8z"/>
+		</g>
+		<g id="clapet_x5F_sym_2_">
+			<path fill="#5BA545" d="M2138.6,839.9c1.1-0.1,2.2-0.2,3.3-0.2c0.9,0,1.8,0,2.7,0.1v52.4c-0.9,0.1-1.8,0.1-2.7,0.1
+				c-1.1,0-2.2-0.1-3.3-0.2V839.9z"/>
+			<path fill="#949F90" d="M2144.6,839.4l0.4,0v53.2l-0.4,0c-0.9,0.1-1.8,0.1-2.8,0.1c-1.1,0-2.2-0.1-3.4-0.2l-0.4,0v-53l0.4,0
+				c1.2-0.1,2.3-0.2,3.4-0.2C2142.8,839.3,2143.7,839.4,2144.6,839.4z M2139,891.8c1,0.1,1.9,0.2,2.8,0.2c0.7,0,1.5,0,2.3-0.1v-51.7
+				c-0.8-0.1-1.5-0.1-2.3-0.1c-0.9,0-1.9,0.1-2.8,0.2V891.8z"/>
+		</g>
+		<path fill="#151716" d="M2143.5,865.8c0-1-0.9-1.8-1.9-1.8c-1.1,0-1.9,0.8-1.9,1.8c0,1,0.9,1.8,1.9,1.8
+			C2142.7,867.5,2143.5,866.8,2143.5,865.8z"/>
+		<g id="PRV2_center_anim">
+			<path fill="none" stroke="#5BA545" stroke-width="3.4379" stroke-miterlimit="10" d="M2141.6,865.8"/>
+		</g>
+	</g>
+	<g id="PRV1_anim">
+		<path fill="#05090A" d="M989.2,863c0-11.7-10.3-21.1-23-21.1c-12.7,0-23,9.5-23,21.1c0,11.7,10.3,21.1,23,21.1
+			C978.9,884.1,989.2,874.6,989.2,863z"/>
+		<g>
+			<path fill="#5BA545" d="M991,863c0,12.6-11.1,22.8-24.8,22.8c-13.7,0-24.8-10.2-24.8-22.8c0-12.6,11.1-22.8,24.8-22.8
+				C979.9,840.2,991,850.4,991,863z M987.4,863c0-10.7-9.5-19.5-21.2-19.5c-11.7,0-21.2,8.7-21.2,19.5c0,10.7,9.5,19.5,21.2,19.5
+				C977.9,882.5,987.4,873.7,987.4,863z"/>
+		</g>
+		<g id="clapet_x5F_sym_1_">
+			<path fill="#5BA545" d="M963.2,837.1c1.1-0.1,2.2-0.2,3.3-0.2c0.9,0,1.8,0,2.7,0.1v52.4c-0.9,0.1-1.8,0.1-2.7,0.1
+				c-1.1,0-2.2-0.1-3.3-0.2V837.1z"/>
+			<path fill="#949F90" d="M969.2,836.6l0.4,0v53.2l-0.4,0c-0.9,0.1-1.8,0.1-2.8,0.1c-1.1,0-2.2-0.1-3.4-0.2l-0.4,0v-53l0.4,0
+				c1.2-0.1,2.3-0.2,3.4-0.2C967.4,836.5,968.3,836.5,969.2,836.6z M963.6,889c1,0.1,1.9,0.2,2.8,0.2c0.7,0,1.5,0,2.3-0.1v-51.7
+				c-0.8-0.1-1.5-0.1-2.3-0.1c-0.9,0-1.9,0.1-2.8,0.2V889z"/>
+		</g>
+		<path fill="#151716" d="M968.1,863c0-1-0.9-1.8-1.9-1.8c-1.1,0-1.9,0.8-1.9,1.8c0,1,0.9,1.8,1.9,1.8
+			C967.2,864.7,968.1,863.9,968.1,863z"/>
+		<g id="PRV1_center_anim">
+			<path fill="none" stroke="#5BA545" stroke-width="3.4379" stroke-miterlimit="10" d="M966.2,863"/>
+		</g>
+	</g>
+</g>
+<g id="unused_valves">
+	<path id="center_15_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2211.9,231.6"/>
+	<path fill="#05090A" d="M1559,1050.3c-11.7,0-21.1-10.3-21.1-23c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23
+		C1580.1,1040,1570.6,1050.3,1559,1050.3z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1559,1050.3c-11.7,0-21.1-10.3-21.1-23
+		c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23C1580.1,1040,1570.6,1050.3,1559,1050.3z"/>
+	<path id="clapet_x5F_sym_10_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M1587.7,1030c0.1-1,0.2-2,0.2-3
+		c0-0.8-0.1-1.7-0.1-2.5h-57.1c-0.1,0.8-0.1,1.6-0.1,2.5c0,1,0.1,2,0.2,3H1587.7z"/>
+	<path fill="#151716" d="M1559,1029.2c-1,0-1.8-0.9-1.8-1.9c0-1.1,0.8-1.9,1.8-1.9c1,0,1.8,0.9,1.8,1.9
+		C1560.7,1028.4,1559.9,1029.2,1559,1029.2z"/>
+	<path id="center_14_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1559,1027.3"/>
+	<path fill="#05090A" d="M1105.7,1050.3c-11.7,0-21.1-10.3-21.1-23c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23
+		C1126.8,1040,1117.3,1050.3,1105.7,1050.3z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1105.7,1050.3c-11.7,0-21.1-10.3-21.1-23
+		c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23C1126.8,1040,1117.3,1050.3,1105.7,1050.3z"/>
+	<path id="clapet_x5F_sym_9_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M1132.5,1030.1c0.1-1,0.2-2,0.2-3
+		c0-0.8-0.1-1.7-0.1-2.5h-57.1c-0.1,0.8-0.1,1.6-0.1,2.5c0,1,0.1,2,0.2,3H1132.5z"/>
+	<path fill="#151716" d="M1105.7,1029.2c-1,0-1.8-0.9-1.8-1.9c0-1.1,0.8-1.9,1.8-1.9s1.8,0.9,1.8,1.9
+		C1107.4,1028.4,1106.6,1029.2,1105.7,1029.2z"/>
+	<path id="center_13_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1105.7,1027.3"/>
+	<path fill="#05090A" d="M801.8,251.8c-12.7,0-23-9.5-23-21.1c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1
+		C824.8,242.4,814.5,251.8,801.8,251.8z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M801.8,251.8c-12.7,0-23-9.5-23-21.1
+		c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1C824.8,242.4,814.5,251.8,801.8,251.8z"/>
+	<path id="clapet_x5F_sym_15_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M798.8,257.1c1.1,0.1,2.2,0.2,3.3,0.2
+		c0.9,0,1.8,0,2.7-0.1v-52.4c-0.9-0.1-1.8-0.1-2.7-0.1c-1.1,0-2.2,0.1-3.3,0.2V257.1z"/>
+	<path fill="#151716" d="M801.8,232.5c-1.1,0-1.9-0.8-1.9-1.8c0-1,0.9-1.8,1.9-1.8c1.1,0,1.9,0.8,1.9,1.8
+		C803.7,231.7,802.8,232.5,801.8,232.5z"/>
+	<path id="center_19_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M801.8,230.7"/>
+	<path fill="#05090A" d="M1002.4,252.7c-12.7,0-23-9.5-23-21.1c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1
+		C1025.4,243.3,1015.1,252.7,1002.4,252.7z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1002.4,252.7c-12.7,0-23-9.5-23-21.1
+		c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1C1025.4,243.3,1015.1,252.7,1002.4,252.7z"/>
+	<path id="clapet_x5F_sym_14_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M999.4,258c1.1,0.1,2.2,0.2,3.3,0.2
+		c0.9,0,1.8,0,2.7-0.1v-52.4c-0.9-0.1-1.8-0.1-2.7-0.1c-1.1,0-2.2,0.1-3.3,0.2V258z"/>
+	<path id="center_18_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M1002.4,231.6"/>
+	<path fill="#05090A" d="M2416.2,251.8c-12.7,0-23-9.5-23-21.1c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1
+		C2439.3,242.4,2429,251.8,2416.2,251.8z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2416.2,251.8c-12.7,0-23-9.5-23-21.1
+		c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1C2439.3,242.4,2429,251.8,2416.2,251.8z"/>
+	<path id="clapet_x5F_sym_13_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M2413.2,257.1c1.1,0.1,2.2,0.2,3.3,0.2
+		c0.9,0,1.8,0,2.7-0.1v-52.4c-0.9-0.1-1.8-0.1-2.7-0.1c-1.1,0-2.2,0.1-3.3,0.2V257.1z"/>
+	<path fill="#151716" d="M2416.2,232.5c-1.1,0-1.9-0.8-1.9-1.8c0-1,0.9-1.8,1.9-1.8c1.1,0,1.9,0.8,1.9,1.8
+		C2418.2,231.7,2417.3,232.5,2416.2,232.5z"/>
+	<path id="center_17_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2416.2,230.7"/>
+	<path id="center_16_" fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2000.3,1028.8"/>
+	<path fill="#05090A" d="M2000.3,1051.8c-11.7,0-21.1-10.3-21.1-23c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23
+		C2021.5,1041.5,2012,1051.8,2000.3,1051.8z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2000.3,1051.8c-11.7,0-21.1-10.3-21.1-23
+		c0-12.7,9.5-23,21.1-23c11.7,0,21.1,10.3,21.1,23C2021.5,1041.5,2012,1051.8,2000.3,1051.8z"/>
+	<path id="clapet_x5F_sym_12_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M2029.1,1031.5c0.1-1,0.2-2,0.2-3
+		c0-0.8-0.1-1.7-0.1-2.5h-57.1c-0.1,0.8-0.1,1.6-0.1,2.5c0,1,0.1,2,0.2,3H2029.1z"/>
+	<path fill="#151716" d="M2000.3,1030.7c-1,0-1.8-0.9-1.8-1.9c0-1.1,0.8-1.9,1.8-1.9c1,0,1.8,0.9,1.8,1.9
+		C2002.1,1029.8,2001.3,1030.7,2000.3,1030.7z"/>
+	<path fill="#05090A" d="M2211.9,252.7c-12.7,0-23-9.5-23-21.1c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1
+		C2234.9,243.3,2224.6,252.7,2211.9,252.7z"/>
+	<path fill="none" stroke="#5BA545" stroke-width="3.4382" stroke-miterlimit="10" d="M2211.9,252.7c-12.7,0-23-9.5-23-21.1
+		c0-11.7,10.3-21.1,23-21.1c12.7,0,23,9.5,23,21.1C2234.9,243.3,2224.6,252.7,2211.9,252.7z"/>
+	<path fill="#151716" d="M2211.9,233.4c-1.1,0-1.9-0.8-1.9-1.8c0-1,0.9-1.8,1.9-1.8c1.1,0,1.9,0.8,1.9,1.8
+		C2213.8,232.6,2212.9,233.4,2211.9,233.4z"/>
+	<path id="clapet_x5F_sym_11_" fill="#5BA545" stroke="#949F90" stroke-width="0.8596" d="M2208.9,258c1.1,0.1,2.2,0.2,3.3,0.2
+		c0.9,0,1.8,0,2.7-0.1v-52.4c-0.9-0.1-1.8-0.1-2.7-0.1c-1.1,0-2.2,0.1-3.3,0.2V258z"/>
+</g>
+</svg>
