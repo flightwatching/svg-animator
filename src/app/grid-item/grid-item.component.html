@@ -1,5 +1,9 @@
 <div [(ngGridItem)]="itemConfigs.config">
-  <div class="handle title"></div>
+  <div class="handle title">
+    <button class="btn-delete" >
+      <md-icon>close</md-icon>
+    </button>
+  </div>
     <div class="draw">
         <span [innerHtml]="draw.svg | safeHtml"></span>
     </div>
