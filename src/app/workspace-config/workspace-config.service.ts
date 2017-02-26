@@ -4,6 +4,7 @@ import { WorkspaceConfigAPIService } from './workspace-config-api.service';
 import { WorkspaceConfigModel } from './workspace-config.model';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
 import { Box } from "../box.model";
+import {UUID} from "angular2-uuid";
 
 @Injectable()
 export class WorkspaceConfigService {
@@ -59,7 +60,7 @@ export class WorkspaceConfigService {
         let newName = 'default'+this.numNewConfig;
         let newConfig: WorkspaceConfigModel; 
 
-        newConfig = {name: newName, boxes: []};
+        newConfig = new WorkspaceConfigModel(newName);
 
         this.workspaceConfigAPIService.addConfig(newConfig)
             .subscribe(
@@ -75,6 +76,14 @@ export class WorkspaceConfigService {
             );
     }
 
+    //@TODO maybe migrate this function directly to the model
+    public removeBox(id: UUID): void {
+        const index = this.currentConfig.boxes.map(e => e.id ).indexOf(id);
+        if (index > -1) {
+            this.currentConfig.boxes.splice(index, 1);
+        }
+    }
+
     private findConfig(name: String): WorkspaceConfigModel {
         for (var i = 0; i < this.configs.length; i++) {
             if (this.configs[i].name == name) {
@@ -82,10 +91,6 @@ export class WorkspaceConfigService {
             }
         }
         return null;
-    }
-
-    private generateDefaultArrayBoxConfig(): Box[] {
-        return [{ svg: "example.svg", config: this.generateDefaultItemConfig() }];
     }
 
 	private generateDefaultItemConfig(): NgGridItemConfig {
