@@ -1,7 +1,9 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {DrawService} from "../draw/draw.service";
 import {DrawModel} from "../draw/draw.model";
 import {MdSnackBar} from "@angular/material";
+import {UUID} from "angular2-uuid";
+import {Box} from "../box.model";
 
 @Component({
   selector: 'grid-item',
@@ -10,7 +12,9 @@ import {MdSnackBar} from "@angular/material";
 })
 export class GridItemComponent implements OnInit {
 
-  @Input() itemConfigs:any;
+  @Input() itemConfigs: Box;
+
+  @Output() remove: EventEmitter<UUID> = new EventEmitter<UUID>();
 
   draw: DrawModel;
 
@@ -27,5 +31,9 @@ export class GridItemComponent implements OnInit {
                 }
             },
             err => this.snackBar.open(`Cannot retrieve ${this.itemConfigs.svg}`, 'Undo', { duration: 3000 }));
+  }
+
+  removeItem(): void {
+      this.remove.emit(this.itemConfigs.id);
   }
 }
