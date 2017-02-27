@@ -1,3 +1,40 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar>
+    <button (click)="sideNav()" class="btn-sidenav"><img id="sidenav-icon" src="assets/sidenav-icon.png"/></button>
+</md-toolbar>
+
+
+<md-sidenav-container>
+    <md-sidenav #sidenav mode="side" opened="{{sidenavOpened}}">
+        <ul>
+            <li class="sidenav-item">CONFIG(S)</li>
+
+            <div *ngIf="workspaceConfigService.configs.length>0">
+                <li class="sidenav-item" *ngFor="let config of workspaceConfigService.configs"
+                        [style.background-color]="config.name === workspaceConfigService.currentConfigName ? 'red' : 'transparent'">
+                    <div (click)="workspaceConfigService.setConfig(config.name)">{{config.name}}</div>
+                    <button (click)="workspaceConfigService.deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
+                </li>
+
+                <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon><span class="config-btn-label">SAVE</span></li>
+            </div>
+
+            <li (click)="workspaceConfigService.addConf()" class="sidenav-item"><md-icon>add</md-icon><span class="config-btn-label">ADD</span></li>
+        </ul>
+        <ul>
+            <li class="sidenav-item-draw" *ngFor="let d of draws">
+                <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
+            </li>
+        </ul>
+    </md-sidenav>
+
+    <div class="dashboard">
+        <div *ngIf="workspaceConfigService.currentConfig">
+            <div [ngGrid]="workspaceConfigService.gridConfig">
+                <grid-item *ngFor="let box of workspaceConfigService.currentConfig.boxes"
+                    [itemConfigs]="box"
+                    (remove)="removeGridItem($event)">
+                </grid-item>
+            </div>
+        </div>
+    </div>
+</md-sidenav-container>

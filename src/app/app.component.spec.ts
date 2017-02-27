@@ -1,34 +1,104 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
+import {TestBed, async, ComponentFixture} from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NgGridModule } from "angular2-grid";
+import {MaterialModule, MdSnackBar} from "@angular/material";
+import {} from 'jasmine';
+import Spy = jasmine.Spy;
+import { WorkspaceConfigService } from "./workspace-config/workspace-config.service";
+import {DebugElement} from "@angular/core";
+import {By} from "@angular/platform-browser";
+import {Observable} from "rxjs";
+import {SafeHtmlPipe} from "./shared/pipes/safe-html.pipe";
+import {DrawService} from "./draw/draw.service";
 
-describe('AppComponent', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+
+xdescribe('AppComponent', () => {
+
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
+    let el: DebugElement;
+    let mockGridConfigService: WorkspaceConfigService;
+
+    const draws = [
+        {name: "draw1", svg: "<svg>draw1</svg>"},
+        {name: "draw2", svg: "<svg>draw2</svg>"},
+        {name: "draw3", svg: "<svg>draw3</svg>"}
+    ];
+
+
+    beforeEach(() => {
+        mockGridConfigService = jasmine.createSpyObj<WorkspaceConfigService>('GridConfigService', ['getConfigs', 'getConfig', 'saveConfig']);
+        (mockGridConfigService.saveConfig as Spy).and.returnValue(Observable.of(1));
+        (mockGridConfigService.getConfig as Spy).and.returnValue(Observable.of({ config:{ gridConfig: {}, gridItemsConfigs: []}}));
+        (mockGridConfigService.getConfigs as Spy).and.returnValue(Observable.of([{ config:{ gridConfig: {}, gridItemsConfigs: []}}]));
     });
-    TestBed.compileComponents();
-  });
 
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
+    beforeEach(async(() =>
+        TestBed.configureTestingModule({
+            declarations: [
+                AppComponent,
+                SafeHtmlPipe
+            ],
+            schemas: [ NO_ERRORS_SCHEMA ],
+            providers: [
+                { provide: WorkspaceConfigService, useValue: mockGridConfigService },
+                MdSnackBar
+            ],
+            imports: [
+                NgGridModule,
+                MaterialModule.forRoot()
+            ]
+        }).compileComponents()
+    ));
 
-  it(`should have as title 'app works!'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app works!');
-  }));
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.componentInstance;
+        el = fixture.debugElement;
+        fixture.autoDetectChanges();
+    });
 
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
-  }));
+    it('should create the app', async(() => {
+        expect(component).toBeTruthy();
+    }));
+
+    describe("Configuration", () => {
+        let selectedElement: DebugElement;
+
+        beforeEach(async(() => {
+            fixture.whenStable().then(() => {
+                /* Given */
+                selectedElement = el.query(By.css('#save-config'));
+                /* When  */
+                selectedElement.nativeElement.click();
+            });
+        }));
+
+        it('Should save the grid configuration', async(() => {
+            fixture.whenStable()
+            .then(() => {
+                expect(mockGridConfigService.saveConfig).toHaveBeenCalled();
+            });
+        }));
+    });
+
+    xdescribe("Close svg", () => {
+
+        beforeEach(async(() => {
+            fixture.whenStable().then(() => {
+                let button = fixture.debugElement.nativeElement.querySelector('btn-del');
+                button.click();
+            });
+        }));
+
+        it('Should close the svg', async(() => {
+            fixture.whenStable().then(() => {
+                expect(component.closeSVG).toHaveBeenCalled();
+            });
+        }));
+    });
+
 });
+
