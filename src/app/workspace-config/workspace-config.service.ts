@@ -61,6 +61,9 @@ export class WorkspaceConfigService {
         if (this.newConfigName=="") {
             this.snackBar.open("Error : new config name can't be empty.", 'Undo', { duration: 3000 });
         }
+        else if (this.findConfig(this.newConfigName)!=null) {
+            this.snackBar.open("Error : this config name already exists.", 'Undo', { duration: 3000 });
+        }
         else {
             let newConfig: WorkspaceConfigModel; 
             newConfig = new WorkspaceConfigModel(this.newConfigName);
