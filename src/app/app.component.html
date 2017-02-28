@@ -31,4 +31,4 @@
     </div>
 </md-sidenav-container>
 
-<button (click)="sideNav()" id="btn-sidenav"><img id="sidenav-icon" src="assets/sidenav-icon.png"/></button>
+<button (click)="sideNav()" [ngClass]="{'btn-sidenav-open':sidenavOpened}" class="btn-sidenav"><md-icon class="menu-icon">menu</md-icon></button>

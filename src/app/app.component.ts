@@ -40,23 +40,7 @@ export class AppComponent implements OnInit {
     }
 
     sideNav():void {
-
-        let btn = document.getElementById("btn-sidenav");
         this.sidenavOpened = !this.sidenavOpened;
-        let rightDistance = this.sidenavOpened ? '240px' : '40px' ;
-        btn.style.right = rightDistance ;
-
-        // if (this.sidenavOpened) {
-        //     for (var i = 240; i>40; i-=1){
-        //         setTimeout(function(){ btn.style.right = i + 'px' ; }, 20);
-        //     }
-        // }else{
-        //     for (var i = 40; i<240; i+=1){
-        //         setTimeout(function(){ btn.style.right = i + 'px' ; }, 20);
-        //     }
-        // }
-        // this.sidenavOpened = !this.sidenavOpened;
-
     }
 
     closeSVG(index):void {
