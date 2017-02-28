@@ -100,3 +100,8 @@ md-sidenav-container {
 .config-btn-label {
     margin-left: 5px;
 }
+
+#new_config_name {
+    margin-left: 10px;
+    width: 75%;
+}
