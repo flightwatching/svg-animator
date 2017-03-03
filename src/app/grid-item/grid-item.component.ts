@@ -4,6 +4,7 @@ import {DrawModel} from "../draw/draw.model";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
 import {Box} from "../box.model";
+import * as d3 from 'd3';
 
 @Component({
   selector: 'grid-item',
@@ -29,7 +30,7 @@ export class GridItemComponent implements OnInit {
                 if(data) {
                     this.draw = new DrawModel(data);
                     if (this.draw.scripts) {
-                      this.triggerScripts(this.draw.scripts);
+                      //this.triggerScripts(this.draw.scripts);
                     }
                 }
             },
