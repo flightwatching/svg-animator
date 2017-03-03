@@ -19,7 +19,7 @@ export class GridItemComponent implements OnInit {
   draw: DrawModel;
 
   constructor(private drawService:DrawService, private snackBar: MdSnackBar) {
-      this.draw = new DrawModel({name: "empty", svg: "empty"});
+      this.draw = new DrawModel({name: "empty", svg: "empty", scripts: []});
   }
 
   ngOnInit() {
@@ -28,6 +28,9 @@ export class GridItemComponent implements OnInit {
             data => {
                 if(data) {
                     this.draw = new DrawModel(data);
+                    if (this.draw.scripts) {
+                      this.triggerScripts(this.draw.scripts);
+                    }
                 }
             },
             err => this.snackBar.open(`Cannot retrieve ${this.itemConfigs.svg}`, 'Undo', { duration: 3000 }));
@@ -35,5 +38,9 @@ export class GridItemComponent implements OnInit {
 
   removeItem(): void {
       this.remove.emit(this.itemConfigs.id);
+  }
+
+  triggerScripts(scripts) {
+    eval(scripts[2].script);
   }
 }
