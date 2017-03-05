@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter, AfterViewInit} from '@angular/core';
 import {DrawService} from "../draw/draw.service";
 import {DrawModel} from "../draw/draw.model";
 import {MdSnackBar} from "@angular/material";
@@ -11,7 +11,7 @@ import * as d3 from 'd3';
   templateUrl: './grid-item.component.html',
   styleUrls: ['./grid-item.component.css']
 })
-export class GridItemComponent implements OnInit {
+export class GridItemComponent implements OnInit, AfterViewInit {
 
   @Input() itemConfigs: Box;
 
@@ -29,9 +29,6 @@ export class GridItemComponent implements OnInit {
             data => {
                 if(data) {
                     this.draw = new DrawModel(data);
-                    if (this.draw.scripts) {
-                      //this.triggerScripts(this.draw.scripts);
-                    }
                 }
             },
             err => this.snackBar.open(`Cannot retrieve ${this.itemConfigs.svg}`, 'Undo', { duration: 3000 }));
@@ -41,7 +38,12 @@ export class GridItemComponent implements OnInit {
       this.remove.emit(this.itemConfigs.id);
   }
 
-  triggerScripts(scripts) {
-    eval(scripts[2].script);
-  }
+
+    ngAfterViewInit() {
+        if (this.draw.scripts) {
+            // @TODO for the moment we animate only one custom script
+            // We have to clean all other scripts
+            eval(this.draw.scripts[4].script);
+        }
+    }
 }

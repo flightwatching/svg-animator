@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+  <!-- WARN
+       From now, i'm not able to use the script on the backend without this cdn
+       The import and @type d3 seem don't solve the problem.
+       Maybe it's scope problem between @angular-compiler and live creation/injection of innerHtml
+   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.1/d3.js"></script>
   <app-root>Loading...</app-root>
 </body>
 </html>
