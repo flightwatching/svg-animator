@@ -14,7 +14,7 @@ describe('GridItemComponent', () => {
   let fixture: ComponentFixture<GridItemComponent>;
   let mockDrawService: DrawService;
   let mockSnackBar: MdSnackBar;
-  const drawStored = {name: "foo", svg: "<svg>foo</svg>"};
+  const drawStored = {name: "foo", svg: "<svg>foo</svg>", scripts: []};
 
     beforeEach(() => {
         mockDrawService = jasmine.createSpyObj<DrawService>('DrawService', ['getDraw']);
