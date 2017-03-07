@@ -40,10 +40,6 @@ export class GridItemComponent implements OnInit, AfterViewInit {
 
 
     ngAfterViewInit() {
-        if (this.draw.scripts) {
-            // @TODO for the moment we animate only one custom script
-            // We have to clean all other scripts
-            eval(this.draw.scripts[4].script);
-        }
+        this.draw.scripts.map(s => eval(s.script));
     }
 }
