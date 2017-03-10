@@ -10,6 +10,7 @@ branches:
         - master
         - develop
         - release
+        - /^greenkeeper/.*$/
 
 env:
     global:
