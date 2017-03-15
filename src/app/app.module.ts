@@ -11,6 +11,8 @@ import { DrawService } from "./draw/draw.service";
 import { DrawApiService } from "./draw/draw-api.service";
 import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
 import { GridItemComponent } from './grid-item/grid-item.component';
+import { CollapseModule } from 'ng2-collapse';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { GridItemComponent } from './grid-item/grid-item.component';
     FormsModule,
     HttpModule,
     NgGridModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    CollapseModule,
   ],
   providers: [
     WorkspaceConfigService,
