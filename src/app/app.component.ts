@@ -11,17 +11,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    private sidenavOpened = false;
     private draws: Array<any> = [];
 
 	// constructor(public workspaceConfigService:WorkspaceConfigService,
  //                private snackBar: MdSnackBar,
  //                private drawService: DrawService) {
  //    }
-
-    constructor() {
-        console.log('dzadazdz')
-    }
 
     ngOnInit(): void {
         console.log("edzdazd")

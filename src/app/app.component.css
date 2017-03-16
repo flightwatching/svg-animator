@@ -2,38 +2,6 @@ md-toolbar {
     background-color: rgb(50, 53, 56);
 }
 
-md-sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-
-    background-color: rgb(50, 53, 56);
-}
-
-.sidenav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-.sidenav-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.sidenav-item-draw {
-    cursor: pointer;
-}
-
-.sidenav-item-draw:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 md-sidenav-container {
     min-height: 100vh;
 }
@@ -87,20 +55,4 @@ md-sidenav-container {
 
 .btn {
     margin-left: 10px;
-}
-
-.btn-del-conf {
-    float: right;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-
-.config-btn-label {
-    margin-left: 5px;
-}
-
-#new_config_name {
-    margin-left: 10px;
-    width: 75%;
 }

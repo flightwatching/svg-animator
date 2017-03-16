@@ -1,4 +1,5 @@
-<!-- <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
+<button (click)="sideNav()" [ngClass]="{'btn-sidenav-open': sidenavOpened}" class="btn-sidenav"><md-icon class="menu-icon">menu</md-icon></button>
+<md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
         <collapse-group>
             <collapse-item open="false">
                 <collapse-header>Configs</collapse-header>
@@ -31,4 +32,4 @@
                     </ul>
             </collapse-item>
         </collapse-group>
-</md-sidenav> -->
+</md-sidenav>
