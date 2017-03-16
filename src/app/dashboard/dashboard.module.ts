@@ -4,21 +4,20 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { NgGridModule } from 'angular2-grid';
-import { MaterialModule } from "@angular/material";
-import { SafeHtmlPipe } from '../shared/pipes/safe-html.pipe';
+import { MaterialModule } from '@angular/material';
+import { SharedModule } from '../shared/shared.module';
 
-
-@NgModule({	
+@NgModule({
 	imports: [
 		CommonModule,
 		DashboardRoutingModule,
 		NgGridModule,
-		MaterialModule
+		MaterialModule,
+        SharedModule,
 	],
 	declarations: [
 		DashboardComponent,
-		GridItemComponent,
-		SafeHtmlPipe
+		GridItemComponent
 	]
 })
-export class DashboardModule { }
+export class DashboardModule {}

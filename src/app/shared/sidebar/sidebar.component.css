@@ -30,6 +30,22 @@ md-sidenav {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.btn-sidenav {
+    padding: 0;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-sidenav-open {
+    right: 240px;
+}
 .btn-del-conf {
     float: right;
     background-color: rgba(0, 0, 0, 0);

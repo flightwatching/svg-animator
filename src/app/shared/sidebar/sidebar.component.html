@@ -1,35 +1,42 @@
 <button (click)="sideNav()" [ngClass]="{'btn-sidenav-open': sidenavOpened}" class="btn-sidenav"><md-icon class="menu-icon">menu</md-icon></button>
 <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
-        <collapse-group>
-            <collapse-item open="false">
-                <collapse-header>Configs</collapse-header>
-                    <ul>
-                        <li class="sidenav-item">CONFIG(S)</li>
+    <nav>
+        <ul>
+            <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+            <li><a [routerLink]="['/connector']">Connector editor</a></li>
+            <li><a [routerLink]="['/draw']">Draw editor</a></li>
+        </ul>
+    </nav>
+    <!--<collapse-group>
+        <collapse-item open="false">
+            <collapse-header>Configs</collapse-header>
+                <ul>
+                    <li class="sidenav-item">CONFIG(S)</li>
 
-                        <div *ngIf="workspaceConfigService.configs.length>0">
-                            <li class="sidenav-item" *ngFor="let config of workspaceConfigService.configs"
-                                    (click)="workspaceConfigService.setConfig(config.name)"
-                                    [style.background-color]="config.name === workspaceConfigService.currentConfigName ? 'red' : 'transparent'">
-                                <div>{{config.name}}</div>
-                                <button (click)="workspaceConfigService.deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
-                            </li>
-
-                            <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon><span class="config-btn-label">SAVE</span></li>
-                        </div>
-
-                        <li class="sidenav-item">
-                            <input type="text" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
-                            <md-icon (click)="workspaceConfigService.addConf()">add</md-icon>
+                    <div *ngIf="workspaceConfigService.configs.length>0">
+                        <li class="sidenav-item" *ngFor="let config of workspaceConfigService.configs"
+                                (click)="workspaceConfigService.setConfig(config.name)"
+                                [style.background-color]="config.name === workspaceConfigService.currentConfigName ? 'red' : 'transparent'">
+                            <div>{{config.name}}</div>
+                            <button (click)="workspaceConfigService.deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
                         </li>
-                    </ul>
-            </collapse-item>
-            <collapse-item open="false">
-                <collapse-header>Draws</collapse-header>
-                    <ul>
-                        <li class="sidenav-item-draw" *ngFor="let d of draws">
-                            <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
-                        </li>
-                    </ul>
-            </collapse-item>
-        </collapse-group>
+
+                        <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config"><md-icon>save</md-icon><span class="config-btn-label">SAVE</span></li>
+                    </div>
+
+                    <li class="sidenav-item">
+                        <input type="text" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
+                        <md-icon (click)="workspaceConfigService.addConf()">add</md-icon>
+                    </li>
+                </ul>
+        </collapse-item>
+        <collapse-item open="false">
+            <collapse-header>Draws</collapse-header>
+                <ul>
+                    <li class="sidenav-item-draw" *ngFor="let d of draws">
+                        <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
+                    </li>
+                </ul>
+        </collapse-item>
+    </collapse-group>-->
 </md-sidenav>

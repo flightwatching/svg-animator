@@ -8,34 +8,30 @@ import { WorkspaceConfigService } from "./workspace-config/workspace-config.serv
 import { WorkspaceConfigAPIService } from "./workspace-config/workspace-config-api.service";
 import { DrawService } from "./draw/draw.service";
 import { DrawApiService } from "./draw/draw-api.service";
-import { CollapseModule } from 'ng2-collapse';
 import { AppRoutingModule } from './app-routing.module';
-//import { DashboardModule } from './dashboard/dashboard.module';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { SharedModule } from './shared/shared.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    CollapseModule,
-    //DashboardModule,
-    AppRoutingModule
+    SharedModule,
+    AppRoutingModule,
   ],
   providers: [
     WorkspaceConfigService,
     WorkspaceConfigAPIService,
     DrawService,
-    DrawApiService
+    DrawApiService,
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 
   constructor() {
     console.log('module')
