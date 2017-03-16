@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkspaceConfigService } from '../workspace-config/workspace-config.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public workspaceConfigService:WorkspaceConfigService) { }
 
   ngOnInit() {
   }

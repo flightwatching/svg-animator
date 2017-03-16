@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 // import {DrawService} from "./draw/draw.service";
 // import { UUID } from 'angular2-uuid';
 
-
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -19,7 +18,6 @@ export class AppComponent implements OnInit {
  //    }
 
     ngOnInit(): void {
-        console.log("edzdazd")
         // this.workspaceConfigService.loadConfigurations();
         // this.getDraws();
     }
