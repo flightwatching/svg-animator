@@ -4,9 +4,15 @@
 <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
     <nav>
         <ul>
-            <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
-            <li><a [routerLink]="['/connector']">Connector editor</a></li>
-            <li><a [routerLink]="['/draw']">Draw editor</a></li>
+            <li>
+                <a [routerLink]="['/dashboard']" routerLinkActive="active-link" class="sidenav-item">Dashboard</a>
+            </li>
+            <li>
+                <a [routerLink]="['/connector']" routerLinkActive="active-link" class="sidenav-item">Connector editor</a>
+            </li>
+            <li>
+                <a [routerLink]="['/draw']" routerLinkActive="active-link" class="sidenav-item">Draw editor</a>
+            </li>
         </ul>
     </nav>
     <collapse-group>

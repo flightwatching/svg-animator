@@ -6,6 +6,16 @@ md-sidenav {
     width: 200px;
 
     background-color: rgb(50, 53, 56);
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.active-link {
+    color: red !important;
 }
 
 .sidenav-item {
@@ -15,7 +25,6 @@ md-sidenav {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    color: #FFFFFF;
 }
 
 .sidenav-item:hover {
