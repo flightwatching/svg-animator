@@ -12,13 +12,16 @@ import { DrawApiService } from "./draw/draw-api.service";
 import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { CollapseModule } from 'ng2-collapse';
-
+import { AppRoutingModule } from './app-routing.module';
+//import { DashboardModule } from './dashboard/dashboard.module';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SafeHtmlPipe,
-    GridItemComponent
+    GridItemComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,8 @@ import { CollapseModule } from 'ng2-collapse';
     NgGridModule,
     MaterialModule.forRoot(),
     CollapseModule,
+    //DashboardModule,
+    AppRoutingModule
   ],
   providers: [
     WorkspaceConfigService,
@@ -36,4 +41,9 @@ import { CollapseModule } from 'ng2-collapse';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor() {
+    console.log('module')
+  }
+}
