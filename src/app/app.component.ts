@@ -10,17 +10,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    private draws: Array<any> = [];
 
 	// constructor(public workspaceConfigService:WorkspaceConfigService,
  //                private snackBar: MdSnackBar,
  //                private drawService: DrawService) {
  //    }
 
-    ngOnInit(): void {
-        // this.workspaceConfigService.loadConfigurations();
-        // this.getDraws();
-    }
+    ngOnInit(): void {}
 
 	// addDraw(name: string): void {
  //        this.workspaceConfigService.currentConfig.boxes.push({
@@ -30,18 +26,4 @@ export class AppComponent implements OnInit {
  //        });
  //    }
 
- //    getDraws(): void{
-	//     this.drawService.getDraws()
- //            .subscribe(
- //                data => this.draws = data,
- //                err => this.snackBar.open("Can't retrieve the draws", 'Undo', { duration: 3000 }));
- //    }
-
- //    sideNav():void {
- //        this.sidenavOpened = !this.sidenavOpened;
- //    }
-
- //    removeGridItem(IdGridItem: UUID) {
-	//     this.workspaceConfigService.removeBox(IdGridItem);
- //    }
 }

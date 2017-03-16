@@ -1,4 +1,6 @@
-<button (click)="sideNav()" [ngClass]="{'btn-sidenav-open': sidenavOpened}" class="btn-sidenav"><md-icon class="menu-icon">menu</md-icon></button>
+<button (click)="sideNav()" [ngClass]="{'btn-sidenav-open': sidenavOpened}" class="btn-sidenav">
+    <md-icon class="menu-icon">menu</md-icon>
+</button>
 <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
     <nav>
         <ul>
@@ -7,6 +9,8 @@
             <li><a [routerLink]="['/draw']">Draw editor</a></li>
         </ul>
     </nav>
+    <collapse-group>
+    </collapse-group>
     <!--<collapse-group>
         <collapse-item open="false">
             <collapse-header>Configs</collapse-header>
