@@ -1,0 +1,25 @@
+<button (click)="sideNav()" [ngClass]="{'btn-sidenav-open': sidenavOpened}" class="btn-sidenav">
+    <md-icon class="menu-icon">menu</md-icon>
+</button>
+<md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
+    <nav>
+        <ul>
+            <li>
+                <a [routerLink]="['/dashboard']" routerLinkActive="active-link" class="sidenav-item">Dashboard</a>
+            </li>
+            <li>
+                <a [routerLink]="['/connector']" routerLinkActive="active-link" class="sidenav-item">Connector editor</a>
+            </li>
+            <li>
+                <a [routerLink]="['/draw']" routerLinkActive="active-link" class="sidenav-item">Draw editor</a>
+            </li>
+        </ul>
+    </nav>
+    <div [ngSwitch]="location.path(true)">
+        <div *ngSwitchCase="'/dashboard'">
+            <dashboard-tools></dashboard-tools>
+        </div>
+        <div *ngSwitchCase="'/connector'">
+        </div>
+    </div>
+</md-sidenav>

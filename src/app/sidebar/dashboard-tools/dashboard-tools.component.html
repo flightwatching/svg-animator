@@ -1,0 +1,29 @@
+<collapse-group>
+  <collapse-item open="false">
+    <collapse-header>Configs</collapse-header>
+    <ul>
+      <div *ngIf="workspaceConfigService.configs.length>0">
+          <li *ngFor="let config of workspaceConfigService.configs" (click)="workspaceConfigService.setConfig(config.name)">
+              <div>{{config.name}}</div>
+              <button (click)="workspaceConfigService.deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
+          </li>
+
+          <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config">
+            <md-icon>save</md-icon><span>SAVE</span>
+          </li>
+      </div>
+        <li class="sidenav-item">
+            <input type="text" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
+            <md-icon (click)="workspaceConfigService.addConf()">add</md-icon>
+        </li>
+    </ul>
+  </collapse-item>
+    <collapse-item open="false">
+        <collapse-header>Draws</collapse-header>
+        <ul>
+            <li *ngFor="let d of draws">
+                <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
+            </li>
+        </ul>
+    </collapse-item>
+</collapse-group>

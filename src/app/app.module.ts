@@ -10,10 +10,15 @@ import { DrawService } from "./draw/draw.service";
 import { DrawApiService } from "./draw/draw-api.service";
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module'
+import { SidebarComponent } from './sidebar/sidebar.component'
+import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
+import { CollapseModule } from 'ng2-collapse';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SidebarComponent,
+    DashboardToolsComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +27,7 @@ import { SharedModule } from './shared/shared.module'
     MaterialModule.forRoot(),
     SharedModule,
     AppRoutingModule,
+    CollapseModule,
   ],
   providers: [
     WorkspaceConfigService,
@@ -31,9 +37,4 @@ import { SharedModule } from './shared/shared.module'
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-
-  constructor() {
-    console.log('module')
-  }
-}
+export class AppModule {}

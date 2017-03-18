@@ -40,8 +40,9 @@ export class GridItemComponent implements OnInit, AfterViewInit {
 
 
     ngAfterViewInit() {
-        this.draw.scripts
-            .sort((a, b) => a.priority - b.priority)
-            .map(s => eval(s.script));
+        // TEMPORARY in comments
+        // this.draw.scripts
+        //     .sort((a, b) => a.priority - b.priority)
+        //     .map(s => eval(s.script));
     }
 }
