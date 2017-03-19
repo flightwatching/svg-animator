@@ -13,23 +13,21 @@ export class DashboardComponent implements OnInit {
     private draws: Array<DrawModel> = [];
 
     constructor(public workspaceConfigService:WorkspaceConfigService,
-                private drawService: DrawService) {
-
-    }
+                private drawService: DrawService) {}
 
     ngOnInit() {
         this.workspaceConfigService.loadConfigurations();
         this.getDraws();
     }
 
-    getDraws(): void {
+    public removeGridItem(IdGridItem: UUID): void {
+        this.workspaceConfigService.removeBox(IdGridItem);
+    }
+
+    private getDraws(): void {
         this.drawService.getDraws()
             .subscribe(
                 data => this.draws = data,
-                err => console.error("dzada"))
-    }
-
-    removeGridItem(IdGridItem: UUID) {
-        this.workspaceConfigService.removeBox(IdGridItem);
+                err => console.error("Can't retrieve any draws"))
     }
 }

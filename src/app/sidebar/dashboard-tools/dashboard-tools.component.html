@@ -2,19 +2,21 @@
   <collapse-item open="false">
     <collapse-header>Configs</collapse-header>
     <ul>
-      <div *ngIf="workspaceConfigService.configs.length>0">
-          <li *ngFor="let config of workspaceConfigService.configs" (click)="workspaceConfigService.setConfig(config.name)">
-              <div>{{config.name}}</div>
-              <button (click)="workspaceConfigService.deleteConf(config.name)" class="btn-del-conf" ><md-icon class="icon-close">close</md-icon></button>
+      <div *ngIf="workspaceConfigService.configs.length > 0">
+          <li *ngFor="let config of workspaceConfigService.configs"
+           (click)="workspaceConfigService.setConfig(config.name)"
+            class = "config-btn">
+                <span>{{config.name}}</span>
+                <md-icon (click)="workspaceConfigService.deleteConf(config.name)" class="icon-close">close</md-icon>
           </li>
 
-          <li (click)="workspaceConfigService.saveConfigurationGrid()" class="sidenav-item" id="save-config">
-            <md-icon>save</md-icon><span>SAVE</span>
+          <li (click)="workspaceConfigService.saveConfigurationGrid()" class = "config-btn" id="save-config">
+              <span>save</span><md-icon>save</md-icon>
           </li>
       </div>
-        <li class="sidenav-item">
-            <input type="text" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
+        <li>
             <md-icon (click)="workspaceConfigService.addConf()">add</md-icon>
+            <input type="text" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
         </li>
     </ul>
   </collapse-item>

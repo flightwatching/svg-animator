@@ -13,18 +13,18 @@ import * as d3 from 'd3';
 })
 export class GridItemComponent implements OnInit, AfterViewInit {
 
-  @Input() itemConfigs: Box;
+    @Input() itemConfigs: Box;
 
-  @Output() remove: EventEmitter<UUID> = new EventEmitter<UUID>();
+    @Output() remove: EventEmitter<UUID> = new EventEmitter<UUID>();
 
-  draw: DrawModel;
+    private draw: DrawModel;
 
-  constructor(private drawService:DrawService, private snackBar: MdSnackBar) {
+    constructor(private drawService:DrawService, private snackBar: MdSnackBar) {
       this.draw = new DrawModel({name: "empty", svg: "empty", scripts: []});
-  }
+    }
 
-  ngOnInit() {
-      this.drawService.getDraw(this.itemConfigs.svg)
+    ngOnInit() {
+        this.drawService.getDraw(this.itemConfigs.svg)
         .subscribe(
             data => {
                 if(data) {
@@ -32,17 +32,16 @@ export class GridItemComponent implements OnInit, AfterViewInit {
                 }
             },
             err => this.snackBar.open(`Cannot retrieve ${this.itemConfigs.svg}`, 'Undo', { duration: 3000 }));
-  }
-
-  removeItem(): void {
-      this.remove.emit(this.itemConfigs.id);
-  }
-
+    }
 
     ngAfterViewInit() {
-        // TEMPORARY in comments
-        // this.draw.scripts
-        //     .sort((a, b) => a.priority - b.priority)
-        //     .map(s => eval(s.script));
+        this.draw.scripts
+            .sort((a, b) => a.priority - b.priority)
+            .map(s => eval(s.script));
+    }
+
+
+    public removeItem(): void {
+        this.remove.emit(this.itemConfigs.id);
     }
 }

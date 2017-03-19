@@ -1,15 +1,33 @@
 md-sidenav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 200px;
 
     background-color: rgb(50, 53, 56);
     color: white;
+
+    /* Temporary added to bypass the cdk-focus-trap-content bug (See the DOM) .*/
+    overflow: hidden;
 }
 
-nav a {
+nav {
+    margin: 20px 0;
+}
+
+nav li {
+    padding: 10px 0;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+nav li:hover {
+    background-color: rgb(22, 23, 25);
+    border-left: 3px solid red;
+}
+
+nav li a {
+    padding-left: 30px;
     color: white;
     text-decoration: none;
 }
@@ -18,56 +36,21 @@ nav a {
     color: red !important;
 }
 
-.sidenav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
-
-.sidenav-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.sidenav-item-draw {
-    cursor: pointer;
-}
-
-.sidenav-item-draw:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .btn-sidenav {
     z-index: 999;
-    padding: 0;
-    border: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
     position: fixed;
     top: 40px;
     right: 40px;
-    cursor: pointer;
+    padding: 0;
     width: 40px;
     height: 40px;
-}
 
-.btn-sidenav-open {
-    right: 240px;
-}
-.btn-del-conf {
-    float: right;
-    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
     border: none;
-    outline: none;
+    color: white;
+    background-color: rgb(50, 53, 56);
 }
 
-.config-btn-label {
-    margin-left: 5px;
-}
-
-#new_config_name {
-    margin-left: 10px;
-    width: 75%;
+.btn-sidenav--open {
+    right: 240px;
 }
