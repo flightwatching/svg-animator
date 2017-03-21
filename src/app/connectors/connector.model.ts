@@ -1,5 +1,5 @@
 export class Connector {
 	name: string;
-	apiUrl: number;
-	interval: number;
+	url: number;
+	period: number;
 }

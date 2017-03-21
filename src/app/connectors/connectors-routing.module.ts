@@ -10,4 +10,4 @@ export const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class DashboardRoutingMod {}
+export class ConnectorsRoutingMod {}
