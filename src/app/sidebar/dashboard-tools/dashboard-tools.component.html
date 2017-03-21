@@ -23,7 +23,7 @@
     <collapse-item open="false">
         <collapse-header>Draws</collapse-header>
         <ul>
-            <li *ngFor="let d of draws">
+            <li *ngFor="let d of draws" class="add-draw-btn">
                 <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
             </li>
         </ul>
