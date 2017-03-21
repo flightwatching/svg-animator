@@ -10,6 +10,8 @@ develop: [![Coverage Status](https://coveralls.io/repos/github/flightwatching/sv
 
 # svg-animator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/flightwatching/svg-animator.svg)](https://greenkeeper.io/)
+
 	Do not use commercial or GPL license. The aim is to become open-source and free to commercialize when the features are coded
 
 Install instructions for local development
