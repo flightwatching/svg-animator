@@ -5,15 +5,20 @@ import { Connector } from '../../connectors/connector.model';
 @Component({
     selector: 'connector-tools',
     templateUrl: 'connector-tools.component.html',
+    styleUrls: ['connector-tools.component.css'],
 })
 export class ConnectorToolsComponent implements OnInit {
-    constructor(public connectorService:ConnectorService){}
+    constructor(private connectorService:ConnectorService){}
 
     ngOnInit() {
         this.connectorService.getConnectors();
     }
-    
-    public clickConnector(c: Connector) {
+
+    public goOnEditionConnector(c: Connector) {
+
+    }
+
+    public deleteConnector(c: Connector) {
 
     }
 }

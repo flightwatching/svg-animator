@@ -1,3 +1,38 @@
-<p>
-  connectors-editor works!
-</p>
+<div class="container">
+    <md-card>
+        <md-icon class="delete-btn">clear</md-icon>
+        <md-card-title>
+            Connector 1
+        </md-card-title>
+        <md-card-content>
+            <form novalidate [formGroup]="form">
+                <md-list>
+                    <md-list-item>
+                        <md-input-container type="text">
+                            <input formControlName="apiUrl" mdInput placeholder="Api url" size="100">
+                        </md-input-container>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-input-container mdTooltip="In seconds" mdTooltipPosition="right">
+                            <input formControlName="interval" mdInput type="number" placeholder="Interval" value="10">
+                        </md-input-container>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-input-container type="number" mdTooltip="Variable name used for your script" mdTooltipPosition="right">
+                            <input formControlName="name" mdInput placeholder="Name">
+                        </md-input-container>
+                    </md-list-item>
+                </md-list>
+            </form>
+        </md-card-content>
+    </md-card>
+    <md-card>
+        <p>Form: {{ form.value | json }}</p>
+        <p>Form status: {{ form.status }}</p>
+    </md-card>
+
+    <div class="wrapper-btns">
+        <button md-raised-button color="accent">Add connector</button>
+        <button md-raised-button color="warn">Save</button>
+    </div>
+</div>

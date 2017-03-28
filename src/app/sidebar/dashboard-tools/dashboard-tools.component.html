@@ -15,7 +15,7 @@
               <span class="config-btn-label">SAVE</span><md-icon>save</md-icon>
           </li>
       </div>
-          <li class="sidenav-item" id="new_config_li"> 
+          <li class="sidenav-item" id="new_config_li">
             <input type="text" size="15" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
             <span id="md_icon_add"><md-icon (click)="workspaceConfigService.addConf()">add</md-icon> </span>
         </li>
@@ -29,4 +29,5 @@
             </li>
         </ul>
     </collapse-item>
+    <connector-tools></connector-tools>
 </collapse-group>

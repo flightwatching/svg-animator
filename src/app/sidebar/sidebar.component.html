@@ -2,30 +2,5 @@
     <md-icon class="menu-icon">menu</md-icon>
 </button>
 <md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
-    <collapse-group>
-        <collapse-item open="false">
-            <collapse-header>Menus</collapse-header>
-            <nav>
-                <ul>
-                    <li>
-                        <a [routerLink]="['/dashboard']" routerLinkActive="active-link" class="sidenav-item">Dashboard</a>
-                    </li>
-                    <li>
-                        <a [routerLink]="['/connectors']" routerLinkActive="active-link" class="sidenav-item">Connector editor</a>
-                    </li>
-                    <li>
-                        <a [routerLink]="['/draw']" routerLinkActive="active-link" class="sidenav-item">Draw editor</a>
-                    </li>
-                </ul>
-            </nav>
-        </collapse-item>
-    </collapse-group>
-    <div [ngSwitch]="location.path(true)">
-        <div *ngSwitchCase="'/dashboard'">
-            <dashboard-tools></dashboard-tools>
-        </div>
-        <div *ngSwitchCase="'/connectors'">
-            <connector-tools></connector-tools>
-        </div>
-    </div>
+    <dashboard-tools></dashboard-tools>
 </md-sidenav>

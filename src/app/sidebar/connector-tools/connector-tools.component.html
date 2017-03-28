@@ -1,10 +1,9 @@
-<collapse-group>
-    <collapse-item open="true">
-        <collapse-header>Connectors</collapse-header>
-        <ul>
-	        <li *ngFor="let c of connectorService.connectors"
-	           (click)="clickConnector(c)"
-	            class = "config-btn">{{c.name}}</li>
-        </ul>
-    </collapse-item>
-</collapse-group>
+<collapse-item open="true">
+    <collapse-header>Connectors</collapse-header>
+    <ul>
+        <li *ngFor="let c of connectorService.connectors"  (click)="goOnEditionConnector(c)" class = "config-btn">
+            {{c.name}}
+            <md-icon (click)="deleteConnector(c)" class="icon-close">close</md-icon>
+        </li>
+    </ul>
+</collapse-item>
