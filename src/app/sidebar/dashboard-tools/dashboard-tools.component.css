@@ -8,6 +8,17 @@
     cursor: pointer;
 }
 
+.link {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 30px 10px;
+}
+
+.link a {
+    color: white;
+    text-decoration:none;
+    cursor:pointer;
+}
+
 .config-btn md-icon {
     padding-left: 20px;
     background-color: transparent;

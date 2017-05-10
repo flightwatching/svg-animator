@@ -1,5 +1,6 @@
-export class Connector {
-	name: string;
-	url: number;
-	period: number;
+export interface Connector {
+	apiUrl: string;
+	index: string;
+	interval: number;
+	type: string;
 }

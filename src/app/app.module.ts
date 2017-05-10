@@ -12,7 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module'
 import { SidebarComponent } from './sidebar/sidebar.component'
 import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
-import { ConnectorToolsComponent } from './sidebar/connector-tools/connector-tools.component'
 import { CollapseModule } from 'ng2-collapse';
 import { ConnectorService } from './connectors/connector.service';
 import { ConnectorAPIService } from './connectors/connector-api.service';
@@ -21,8 +20,7 @@ import { ConnectorAPIService } from './connectors/connector-api.service';
   declarations: [
     AppComponent,
     SidebarComponent,
-    DashboardToolsComponent,
-    ConnectorToolsComponent
+    DashboardToolsComponent
   ],
   imports: [
     BrowserModule,
