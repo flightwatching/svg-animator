@@ -6,6 +6,8 @@ import { ConnectorsEditorComponent } from './connectors-editor/connectors-editor
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { MaterialModule } from "@angular/material";
 import {ConnectorAPIService} from "./connector-api.service";
+import {StoreService} from "./store.service";
+import {ConnectorService} from "./connector.service";
 
 @NgModule({
     imports: [
@@ -19,7 +21,9 @@ import {ConnectorAPIService} from "./connector-api.service";
         ConnectorsEditorComponent
     ],
     providers: [
-        ConnectorAPIService
+        ConnectorAPIService,
+        ConnectorService,
+        StoreService,
     ]
 })
 export class ConnectorsModule { }

@@ -5,6 +5,7 @@ import {Connector} from "../connector.model";
 import {ConnectorAPIService} from "../connector-api.service";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
+import {ConnectorService} from "../connector.service";
 
 @Component({
     selector: 'app-connectors-editor',
@@ -16,7 +17,8 @@ export class ConnectorsEditorComponent implements OnInit {
     public form: FormGroup;
 
     constructor(private fb: FormBuilder,
-                private connecterApi:ConnectorAPIService,
+                private connecterApi: ConnectorAPIService,
+                private connectorService: ConnectorService,
                 private snackBar: MdSnackBar) {}
 
     ngOnInit() {
@@ -50,6 +52,7 @@ export class ConnectorsEditorComponent implements OnInit {
     public removeConnector(index: number): void {
         const control = <FormArray>this.form.controls['connectors'];
         control.removeAt(index);
+        this.connectorService.removeConnector(control.value);
     }
     
     /**
