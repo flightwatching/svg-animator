@@ -13,8 +13,6 @@ import { SharedModule } from './shared/shared.module'
 import { SidebarComponent } from './sidebar/sidebar.component'
 import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
 import { CollapseModule } from 'ng2-collapse';
-import { ConnectorService } from './connectors/connector.service';
-import { ConnectorAPIService } from './connectors/connector-api.service';
 
 @NgModule({
   declarations: [
@@ -35,9 +33,7 @@ import { ConnectorAPIService } from './connectors/connector-api.service';
     WorkspaceConfigService,
     WorkspaceConfigAPIService,
     DrawService,
-    DrawApiService,
-    ConnectorService,
-    ConnectorAPIService
+    DrawApiService
   ],
   bootstrap: [AppComponent]
 })
