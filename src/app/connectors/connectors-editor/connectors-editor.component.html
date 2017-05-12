@@ -4,7 +4,7 @@
         <md-card *ngFor="let connector of form.controls.connectors.controls; let i=index">
             <md-icon (click)="removeConnector(i)" class="delete-btn">clear</md-icon>
             <md-card-title>
-                Connector 1
+                Connector {{i + 1}}
             </md-card-title>
             <md-card-content [formGroupName]="i">
                     <md-list>
@@ -34,7 +34,7 @@
         </md-card>
         </div>
         <div class="wrapper-btns">
-            <button (click)="addConnector()" md-raised-button color="accent">Add connector</button>
+            <button (click)="addEmptyConnector()" md-raised-button color="accent">Add connector</button>
             <button md-raised-button color="warn" type="submit" [disabled]="!form.valid">Save</button>
         </div>
     </form>
