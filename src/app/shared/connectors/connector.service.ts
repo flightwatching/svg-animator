@@ -2,11 +2,16 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from "@angular/http";
 import { Observable } from "rxjs";
 import { Connector } from "./connector.model";
-import { StoreService } from "./store.service";
-import { StateConnector } from "./state.enum";
-import 'rxjs/add/observable/interval';
+import { StoreService } from "../../connectors/store.service";
+import { StateConnector } from "../../connectors/state.enum";
 import {ConnectorAPIService} from "./connector-api.service";
+import 'rxjs/add/observable/interval';
 
+/**
+ * This service job is to manage an array of connectors which receive data
+ * by subscribing to an external API (we have 2 strategies: polling and pushing with websocket)
+ *
+ */
 @Injectable()
 export class ConnectorService {
     
@@ -32,6 +37,7 @@ export class ConnectorService {
      * @param connector
      */
     public removeConnector(index: number) {
+        //TODO Add the complete signal for close proper the Observable
         if (index > -1) {
             this.connectors$.splice(index, 1);
         }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ConnectorService} from "./connectors/connector.service";
+import {Component, OnInit, Injectable} from '@angular/core';
+import {ConnectorService} from "./shared/connectors/connector.service";
 
 
 @Component({
@@ -9,7 +9,7 @@ import {ConnectorService} from "./connectors/connector.service";
 })
 export class AppComponent implements OnInit {
     
-    constructor() {}
+    constructor(private connectorService: ConnectorService) {}
         
         ngOnInit(): void {}
 }

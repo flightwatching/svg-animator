@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators, FormArray, NgForm} from '@angular/forms';
 import { validApiUrl } from "./validator-editors";
-import {Connector} from "../connector.model";
-import {ConnectorAPIService} from "../connector-api.service";
+import {Connector} from "../../shared/connectors/connector.model";
+import {ConnectorAPIService} from "../../shared/connectors/connector-api.service";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
-import {ConnectorService} from "../connector.service";
+import {ConnectorService} from "../../shared/connectors/connector.service";
 
 @Component({
     selector: 'app-connectors-editor',
@@ -15,6 +15,7 @@ import {ConnectorService} from "../connector.service";
 export class ConnectorsEditorComponent implements OnInit {
 
     public form: FormGroup;
+    private nbOfConnectorInDB: number = 0;
 
     constructor(private fb: FormBuilder,
                 private connecterApi: ConnectorAPIService,
@@ -32,6 +33,14 @@ export class ConnectorsEditorComponent implements OnInit {
     
     public save(form: NgForm): void {
         let connectors = form.value.connectors;
+        const controls = <FormArray>this.form.controls['connectors'];
+    
+        //Create the new connectors
+        if(this.nbOfConnectorInDB < controls.length) {
+            console.log("add");
+            connectors.filter((_, i) => i >= this.nbOfConnectorInDB)
+                      .map(c => this.connectorService.addConnector(c));
+        }
         
         this.connecterApi.updateConnectors(connectors).subscribe(
             res => this.snackBar.open("Saved", 'Undo', { duration: 3000 }),
@@ -41,7 +50,6 @@ export class ConnectorsEditorComponent implements OnInit {
     public addEmptyConnector(): void {
         const control = <FormArray>this.form.controls['connectors'];
         const connector = this.initEmptyConnector();
-        
         control.push(connector);
     }
     
@@ -70,6 +78,7 @@ export class ConnectorsEditorComponent implements OnInit {
      * Fill the form with connectors retrieve by the rest api
      */
     private fillFormArrayOfConnector(connectors: Array<Connector>): void {
+        this.nbOfConnectorInDB = connectors.length;
         connectors.map(c => this.addConnector(c));
     }
     

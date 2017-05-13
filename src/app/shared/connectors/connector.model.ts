@@ -1,5 +1,5 @@
 import {UUID} from "angular2-uuid";
-import {StateConnector} from "./state.enum";
+import {StateConnector} from "../../connectors/state.enum";
 import {Observable} from "rxjs";
 
 export interface Connector {

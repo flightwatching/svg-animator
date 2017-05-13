@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ConnectorsRoutingMod } from './connectors-routing.module';
 import { ConnectorsEditorComponent } from './connectors-editor/connectors-editor.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { MaterialModule } from "@angular/material";
-import {ConnectorAPIService} from "./connector-api.service";
-import {StoreService} from "./store.service";
-import {ConnectorService} from "./connector.service";
 
 @NgModule({
     imports: [
@@ -19,11 +15,6 @@ import {ConnectorService} from "./connector.service";
     ],
     declarations: [
         ConnectorsEditorComponent
-    ],
-    providers: [
-        ConnectorAPIService,
-        ConnectorService,
-        StoreService,
     ]
 })
-export class ConnectorsModule { }
+export class ConnectorsModule {}
