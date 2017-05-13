@@ -2,45 +2,8 @@ md-toolbar {
     background-color: rgb(50, 53, 56);
 }
 
-md-sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-
-    background-color: rgb(50, 53, 56);
-}
-
-.sidenav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-.sidenav-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.sidenav-item-draw {
-    cursor: pointer;
-}
-
-.sidenav-item-draw:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 md-sidenav-container {
     min-height: 100vh;
-}
-
-.dashboard {
-    min-height: 100vh;
-    background-color: rgb(236, 240, 241); 
 }
 
 .btn-add {
@@ -53,23 +16,16 @@ md-sidenav-container {
     padding: 0;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    float: right;
 }
 
 .icon-close {
     color: rgb(250,250,250);
-    height: 100% ;
+    height: 100%;
 }
 
-.btn-sidenav {
-    padding: 0;
-    border: none;
-    background-color: rgb(50, 53, 56);
-}
+.menu-icon {
+    color: white;
 
-#sidenav-icon {
-    width: 30px;
-    height: 30px;
 }
 
 .grid {
@@ -78,15 +34,4 @@ md-sidenav-container {
 
 .btn {
     margin-left: 10px;
-}
-
-.btn-del-conf {
-    float: right;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-
-.config-btn-label {
-    margin-left: 5px;
 }

@@ -6,6 +6,8 @@ import {MockBackend, MockConnection} from '@angular/http/testing';
 
 import { WorkspaceConfigAPIService } from './workspace-config-api.service';
 import {NgGridConfig} from "angular2-grid";
+import { WorkspaceConfigModel } from "./workspace-config.model";
+
 
 
 describe('GridConfig Service', () => {
@@ -40,115 +42,26 @@ describe('GridConfig Service', () => {
                     new ResponseOptions({
                             status : 200,
                             body:[
-                                {
-                                    'margins': [10],
-                                    'draggable': true,
-                                    'resizable': true,
-                                    'max_cols': 0,
-                                    'max_rows': 0,
-                                    'visible_cols': 0,
-                                    'visible_rows': 0,
-                                    'min_cols': 0,
-                                    'min_rows': 0,
-                                },
-                                {
-                                    'col_width': 250,
-                                    'row_height': 250,
-                                    'cascade': 'up',
-                                    'min_width': 100,
-                                    'min_height': 100,
-                                    'fix_to_grid': false,
-                                    'auto_style': true,
-                                    'auto_resize': false,
-                                    'maintain_ratio': false,
-                                    'prefer_new': false,
-                                    'limit_to_screen': false
-                                }
+                                {"name":"default","boxes":[{"id":"13f577b3-6193-e218-af02-d42b0c2a52e5","config":{"dragHandle":".handle","col":1,"row":1,"sizex":81,"sizey":43,"resizeHandle":null,"fixed":false,"draggable":true,"resizable":true,"borderSize":25},"svg":"demo"}]},
+                                {"name":"default2","boxes":[{"id":"c8e01ef9-6d39-e1e2-041a-6893e8e645fc","svg":"astronaute","config":{"dragHandle":null,"col":51,"row":1,"resizable":true,"minWidth":10,"minHeight":10,"sizex":25,"sizey":25,"payload":1,"resizeHandle":null,"fixed":false,"draggable":true,"borderSize":25}}, {"id":"c6776263-968b-3e73-13bc-ed12eb55c969","svg":"files","config":{"dragHandle":null,"col":26,"row":1,"resizable":true,"minWidth":10,"minHeight":10,"sizex":25,"sizey":25,"payload":2,"resizeHandle":null,"fixed":false,"draggable":true,"borderSize":25}}, {"id":"301650d3-2531-afd7-e2c7-983f81405f7f","svg":"horloge","config":{"dragHandle":null,"col":1,"row":1,"resizable":true,"minWidth":10,"minHeight":10,"sizex":25,"sizey":25,"payload":3,"resizeHandle":null,"fixed":false,"draggable":true,"borderSize":25}}]}
                             ]
                         }
                     )));
                 });
 
             WorkspaceConfigAPIService.getConfigs().subscribe(
-                (data: Array<NgGridConfig>) => {
+                (data: Array<WorkspaceConfigModel>) => {
                     expect(data.length).toEqual(2);
+                    data.map( res => expect(res.name).toBeDefined());
+                    data.map( res => expect(res.boxes).toBeDefined());
+
+                    data.map( res => res.boxes.map( box => expect(box.id).toBeDefined()));
+                    data.map( res => res.boxes.map( box => expect(box.config).toBeDefined()));
+                    data.map( res => res.boxes.map( box => expect(box.svg).toBeDefined()));
                 });
         })));
 
-        it('Should retrieve a grid configuration', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
-            mockBackend.connections.subscribe(
-                (connection: MockConnection) => { connection.mockRespond(new Response(
-                    new ResponseOptions({
-                            status : 200,
-                            body: {
-                                config: { 'margins': [10], 'draggable': true, 'resizable': true}
-                            }
-                        }
-                    )));
-                });
-
-            WorkspaceConfigAPIService.getConfig("default").subscribe(
-                (data) => {
-                    expect(data.status).toEqual(200);
-                    expect(data.config).toBeDefined();
-                });
-        })));
-
-        it('Should retrieve any grid configuration when any config name is passed', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
-            mockBackend.connections.subscribe(
-                (connection: MockConnection) => { connection.mockRespond(new Response(
-                    new ResponseOptions({
-                            status : 200,
-                            body:[]
-                        }
-                    )));
-                });
-
-            WorkspaceConfigAPIService.getConfigs().subscribe(
-                (data: Array<NgGridConfig>) => {
-                    expect(data.length).toEqual(0);
-                });
-        })));
-
-        it('Should retrieve a empty grid configuration', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
-            mockBackend.connections.subscribe(
-                (connection: MockConnection) => { connection.mockRespond(new Response(
-                    new ResponseOptions({
-                            status : 204
-                        }
-                    )));
-                });
-
-            WorkspaceConfigAPIService.getConfig("notAExistingConfig").subscribe(
-                (data) => {
-                    expect(data.status).toEqual(204);
-                    expect(data.config).toBeUndefined();
-                });
-        })));
-
-        it('Should retrieve any grid configuration when the request is malformed', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
-            let status : number = 400;
-            let message : String = "message";
-
-            mockBackend.connections.subscribe(
-                (connection: MockConnection) => { connection.mockError(<any>new Response(
-                    new ResponseOptions({
-                            status : status,
-                            body: {
-                                message: 'message'
-                            }
-                        }
-                    )));
-                });
-
-            WorkspaceConfigAPIService.getConfig("default").subscribe(
-                () => fail('expected error'),
-                (err) => {
-                    expect(err.message).toEqual(`${status} ${message}`);
-                })
-        })));
-
-        it('Should get an error when a grid configuration is ask but the server is down', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
+        it('Should get an error when grid configurations are asked but the server is down', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
             let status : number = 500;
 
             mockBackend.connections.subscribe(
@@ -159,7 +72,7 @@ describe('GridConfig Service', () => {
                     )));
                 });
 
-            WorkspaceConfigAPIService.getConfig("default").subscribe(
+            WorkspaceConfigAPIService.getConfigs().subscribe(
                 () => fail('expected error'),
                 (err) => expect(err.message).toEqual("Server error, try later"));
         })));
@@ -175,13 +88,13 @@ describe('GridConfig Service', () => {
                     )));
                 });
 
-            WorkspaceConfigAPIService.getConfig("default").subscribe(
+            WorkspaceConfigAPIService.getConfigs().subscribe(
                 () => fail('expected error'),
                 (err) => expect(err.message).toEqual(`${status} Not Found`));
         })));
     });
 
-    describe('Save or update grid configuration', () => {
+    describe('Save grid configuration', () => {
 
         it('Should save the grid configuration', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
             let status: number = 200;
@@ -251,6 +164,90 @@ describe('GridConfig Service', () => {
                 });
 
             WorkspaceConfigAPIService.saveConfig("default", {'resizeable': false, 'margins': [5, 10]}).subscribe(
+                () => fail('expected success'),
+                (err) => expect(err.message).toEqual("Server error, try later"));
+
+        })));
+    });
+
+    describe('Add a grid configuration', () => {
+
+        it('Should add the grid configuration', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
+            let status: number = 200;
+            let message: String = "added";
+
+            mockBackend.connections.subscribe(
+                (connection: MockConnection) => {
+                    connection.mockRespond(<any>new Response(
+                        new ResponseOptions({
+                                status,
+                                body: {message}
+                            }
+                        )));
+                });
+
+            WorkspaceConfigAPIService.addConfig({"name":"default","boxes":[{"id":"13f577b3-6193-e218-af02-d42b0c2a52e5","config":{"dragHandle":".handle","col":1,"row":1,"sizex":81,"sizey":43,"resizeHandle":null,"fixed":false,"draggable":true,"resizable":true,"borderSize":25},"svg":"demo"}]})
+            .subscribe(
+                (res) => {
+                    expect(res.status).toEqual(200);
+                    expect(res.message).toEqual(message);
+                },
+                (err) => fail('expected success'));
+        })));
+
+        it('Should get an error when a grid configuration is added but the server is down', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
+            let status: number = 500;
+
+            mockBackend.connections.subscribe(
+                (connection: MockConnection) => {
+                    connection.mockError(<any>new Response(
+                        new ResponseOptions({status}))
+                    )
+                });
+
+            WorkspaceConfigAPIService.addConfig({"name":"default","boxes":[{"id":"13f577b3-6193-e218-af02-d42b0c2a52e5","config":{"dragHandle":".handle","col":1,"row":1,"sizex":81,"sizey":43,"resizeHandle":null,"fixed":false,"draggable":true,"resizable":true,"borderSize":25},"svg":"demo"}]})
+            .subscribe(
+                () => fail('expected success'),
+                (err) => expect(err.message).toEqual("Server error, try later"));
+
+        })));
+    });
+
+    describe('Delete grid configuration', () => {
+
+        it('Should delete the grid configuration', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
+            let status: number = 200;
+            let message: String = "deleted";
+
+            mockBackend.connections.subscribe(
+                (connection: MockConnection) => {
+                    connection.mockRespond(<any>new Response(
+                        new ResponseOptions({
+                                status,
+                                body: {message}
+                            }
+                        )));
+                });
+
+            WorkspaceConfigAPIService.deleteConfig("default").subscribe(
+                (res) => {
+                    expect(res.status).toEqual(200);
+                    expect(res.message).toEqual(message);
+                },
+                (err) => fail('expected success'));
+        })));
+
+        it('Should get an error when a grid configuration is deleted but the server is down', async(inject([WorkspaceConfigAPIService], (WorkspaceConfigAPIService) => {
+            let status: number = 500;
+
+            mockBackend.connections.subscribe(
+                (connection: MockConnection) => {
+                    connection.mockError(<any>new Response(
+                        new ResponseOptions({status}))
+                    )
+                });
+
+            WorkspaceConfigAPIService.deleteConfig("default").subscribe(
                 () => fail('expected success'),
                 (err) => expect(err.message).toEqual("Server error, try later"));
 

@@ -1,0 +1,11 @@
+<div class="dashboard">
+    <div *ngIf="workspaceConfigService.currentConfig">
+        <div [ngGrid]="workspaceConfigService.gridConfig">
+            <grid-item *ngFor="let box of workspaceConfigService.currentConfig.boxes"
+                [itemConfigs]="box"
+                (remove)="removeGridItem($event)">
+            </grid-item>
+        </div>
+    </div>
+</div>
+<router-outlet name="tools"></router-outlet>

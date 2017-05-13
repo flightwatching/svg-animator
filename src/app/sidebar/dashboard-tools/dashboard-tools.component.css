@@ -1,0 +1,44 @@
+.config-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    cursor: pointer;
+}
+
+.link {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 30px 10px;
+}
+
+.link a {
+    color: white;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.config-btn md-icon {
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.config-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#new_config_name {
+	width: 80%;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+#new_config_li {
+	margin-left: 20px;
+	list-style-type: none;
+}
+
+#md_icon_add {
+	vertical-align: middle;
+}

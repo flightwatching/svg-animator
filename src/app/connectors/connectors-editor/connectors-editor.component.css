@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper-btns {
+    margin-left: 35%;
+}
+
+md-card {
+    min-width: 50%;
+    margin: 20px 0;
+}
+
+md-card .delete-btn {
+    padding-left: 95%;
+    cursor: pointer;
+}
+
+md-list-item {
+    margin: 10px;
+}

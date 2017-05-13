@@ -1,18 +1,19 @@
-import { Injectable } from "@angular/core";
-import {MdSnackBar} from '@angular/material';
-import { WorkspaceConfigAPIService } from './workspace-config-api.service';
-import { WorkspaceConfigModel } from './workspace-config.model';
+import { Injectable }                     from "@angular/core";
+import { MdSnackBar }                     from '@angular/material';
+import { WorkspaceConfigAPIService }      from './workspace-config-api.service';
+import { WorkspaceConfigModel }           from './workspace-config.model';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
-import { Box } from "../box.model";
-import {UUID} from "angular2-uuid";
+import { Box }                            from "../box.model";
+import { UUID }                           from "angular2-uuid";
 
 @Injectable()
 export class WorkspaceConfigService {
-    private numNewConfig = 3;
     currentConfig: WorkspaceConfigModel;
     configs: Array<WorkspaceConfigModel> = [];
     currentConfigName: String ="default";
     gridConfig: NgGridConfig;
+
+    newConfigName: String = "";
 
 	constructor(private workspaceConfigAPIService:WorkspaceConfigAPIService, private snackBar: MdSnackBar) {
         this.gridConfig = this.generateDefaultGridConfig();
@@ -57,23 +58,27 @@ export class WorkspaceConfigService {
     }
 
     addConf() {
-        let newName = 'default'+this.numNewConfig;
-        let newConfig: WorkspaceConfigModel; 
+        if (this.newConfigName=="") {
+            this.snackBar.open("Error : new config name can't be empty.", 'Undo', { duration: 3000 });
+        }
+        else if (this.findConfig(this.newConfigName)!=null) {
+            this.snackBar.open("Error : this config name already exists.", 'Undo', { duration: 3000 });
+        }
+        else {
+            let newConfig: WorkspaceConfigModel; 
+            newConfig = new WorkspaceConfigModel(this.newConfigName);
 
-        newConfig = new WorkspaceConfigModel(newName);
-
-        this.workspaceConfigAPIService.addConfig(newConfig)
-            .subscribe(
-                res => {
-                    this.snackBar.open("Configuration added", 'Undo', { duration: 3000 });
-                    
-                    this.configs.push(newConfig);
-                    this.setConfig(newName);
-
-                    this.numNewConfig++;
-                },
-                err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
-            );
+            this.workspaceConfigAPIService.addConfig(newConfig)
+                .subscribe(
+                    res => {
+                        this.snackBar.open("Configuration added", 'Undo', { duration: 3000 });
+                        
+                        this.configs.push(newConfig);
+                        this.setConfig(this.newConfigName);
+                    },
+                    err => this.snackBar.open(err.message, 'Undo', { duration: 3000 })
+                );
+        }
     }
 
     //@TODO maybe migrate this function directly to the model
@@ -110,7 +115,7 @@ export class WorkspaceConfigService {
             "min_rows":1,
             "col_width":2,
             "row_height":2,
-            "cascade":"up",
+            "cascade":"off",
             "min_width":50,
             "min_height":50,
             "fix_to_grid":false,

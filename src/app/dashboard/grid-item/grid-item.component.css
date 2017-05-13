@@ -1,0 +1,23 @@
+.grid-item {
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 1px 10px -5px rgba(0,0,0,.3);
+}
+
+.panel-control {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 999;
+    padding:  10px 5px 0px;
+}
+
+.btn-header {
+    border: none;
+    cursor:pointer;
+    outline: none;
+
+    background-color: transparent;
+}

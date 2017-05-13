@@ -1,0 +1,14 @@
+<div [(ngGridItem)]="itemConfigs.config">
+    <div class="panel-control">
+        <button class="btn-header handle">
+            <md-icon>open_with</md-icon>
+        </button>
+        <button class="btn-header" (click)="removeItem()">
+            <md-icon>close</md-icon>
+        </button>
+    </div>
+    <div class="draw">
+        <span (load)="createdDraw()" [innerHtml]="draw.svg | safeHtml"></span>
+    </div>
+</div>
+

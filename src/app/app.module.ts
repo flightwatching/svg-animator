@@ -2,28 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgGridModule } from 'angular2-grid';
 import { AppComponent } from './app.component';
 import { MaterialModule } from "@angular/material";
 import { WorkspaceConfigService } from "./workspace-config/workspace-config.service";
 import { WorkspaceConfigAPIService } from "./workspace-config/workspace-config-api.service";
 import { DrawService } from "./draw/draw.service";
 import { DrawApiService } from "./draw/draw-api.service";
-import { SafeHtmlPipe } from './shared/pipes/safe-html.pipe';
-import { GridItemComponent } from './grid-item/grid-item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module'
+import { SidebarComponent } from './sidebar/sidebar.component'
+import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
+import { CollapseModule } from 'ng2-collapse';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SafeHtmlPipe,
-    GridItemComponent
+    SidebarComponent,
+    DashboardToolsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgGridModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    SharedModule,
+    AppRoutingModule,
+    CollapseModule,
   ],
   providers: [
     WorkspaceConfigService,
@@ -33,4 +37,4 @@ import { GridItemComponent } from './grid-item/grid-item.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

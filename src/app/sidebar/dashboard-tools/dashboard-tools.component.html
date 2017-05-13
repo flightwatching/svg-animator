@@ -1,0 +1,38 @@
+<collapse-group>
+  <collapse-item open="false">
+    <collapse-header>Configs</collapse-header>
+    <ul>
+      <div *ngIf="workspaceConfigService.configs.length > 0">
+          <li *ngFor="let config of workspaceConfigService.configs"
+          [style.background-color]="config.name === workspaceConfigService.currentConfigName ? 'red' : 'transparent'"
+           (click)="workspaceConfigService.setConfig(config.name)"
+            class = "config-btn">
+                <span>{{config.name}}</span>
+                <md-icon (click)="workspaceConfigService.deleteConf(config.name)" class="icon-close">close</md-icon>
+          </li>
+
+          <li (click)="workspaceConfigService.saveConfigurationGrid()" class = "config-btn" id="save-config">
+              <span class="config-btn-label">SAVE</span><md-icon>save</md-icon>
+          </li>
+      </div>
+          <li class="sidenav-item" id="new_config_li">
+            <input type="text" size="15" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
+            <span id="md_icon_add"><md-icon (click)="workspaceConfigService.addConf()">add</md-icon> </span>
+        </li>
+    </ul>
+  </collapse-item>
+    <collapse-item open="false">
+        <collapse-header>Draws</collapse-header>
+        <ul>
+            <li *ngFor="let d of draws" class="add-draw-btn">
+                <span (click)="addDraw(d.name)" [innerHtml]="d.svg | safeHtml"></span>
+            </li>
+        </ul>
+    </collapse-item>
+    <div class="link">
+        <a routerLink="connectors" routerLinkActive="active">connector</a>
+    </div>
+    <div class="link">
+      <a  routerLink="dashboard" routerLinkActive="active">dashboard</a>
+    </div>
+</collapse-group>

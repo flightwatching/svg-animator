@@ -1,0 +1,6 @@
+<button (click)="sideNav()" [ngClass]="{ 'btn-sidenav--open': sidenavOpened }" class="btn-sidenav">
+    <md-icon class="menu-icon">menu</md-icon>
+</button>
+<md-sidenav #sidenav align="end" mode="side" opened="{{sidenavOpened}}">
+    <dashboard-tools></dashboard-tools>
+</md-sidenav>
