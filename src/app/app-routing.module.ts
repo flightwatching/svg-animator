@@ -6,7 +6,6 @@ export const routes: Routes = [
     { path: 'connectors', loadChildren: 'app/connectors/connectors.module#ConnectorsModule' },
     { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
     { path: '**', redirectTo: 'dashboard', pathMatch: 'full'},
-    //{ path: 'draw', loadChildren: 'app/draw/draw.module#DrawModule' }
 ];
 
 @NgModule({
