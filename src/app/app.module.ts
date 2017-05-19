@@ -24,7 +24,7 @@ import { CollapseModule } from 'ng2-collapse';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     SharedModule,
     AppRoutingModule,
     CollapseModule,

@@ -4,20 +4,20 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', 'angular-cli'],
+    frameworks: ['jasmine', '@angular/cli'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-firefox-launcher'),
       require('karma-coverage'),
-      require('angular-cli/plugins/karma')
+      require('@angular/cli/plugins/karma')
     ],
     files: [
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
       'dist/app/**/!(*spec).js': ['coverage'],
-      './src/test.ts': ['angular-cli']
+      './src/test.ts': ['@angular/cli']
     },
     coverageReporter: {
       dir : 'coverage/',
