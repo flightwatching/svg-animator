@@ -7,8 +7,6 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
  * for keep the lazy loading in connectors module. Where you'll rather find
  * components for editing and monitoring the connectors.
  */
-import {ConnectorAPIService} from "./connectors/connector-api.service";
-import {ConnectorService} from "./connectors/connector.service";
 import {StoreService} from "../connectors/store.service";
 
 
@@ -20,9 +18,7 @@ import {StoreService} from "../connectors/store.service";
         SafeHtmlPipe,
     ],
     providers: [
-        ConnectorAPIService,
-        ConnectorService,
-        StoreService,
+        StoreService
     ],
     exports: [
         SafeHtmlPipe,

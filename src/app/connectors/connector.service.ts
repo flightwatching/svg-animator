@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from "@angular/http";
 import { Observable } from "rxjs";
 import { Connector } from "./connector.model";
-import { StoreService } from "../../connectors/store.service";
-import { StateConnector } from "../../connectors/state.enum";
-import {ConnectorAPIService} from "./connector-api.service";
+import { StoreService } from "./store.service";
+import { StateConnector } from "./state.enum";
+import { ConnectorAPIService } from "./connector-api.service";
 import 'rxjs/add/observable/interval';
 
 /**

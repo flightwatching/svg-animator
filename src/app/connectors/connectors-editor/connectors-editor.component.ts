@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators, FormArray, NgForm} from '@angular/forms';
 import { validApiUrl } from "./validator-editors";
-import {Connector} from "../../shared/connectors/connector.model";
-import {ConnectorAPIService} from "../../shared/connectors/connector-api.service";
+import {Connector} from "../connector.model";
+import {ConnectorAPIService} from "../connector-api.service";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
-import {ConnectorService} from "../../shared/connectors/connector.service";
+import {ConnectorService} from "../connector.service";
 
 @Component({
     selector: 'app-connectors-editor',

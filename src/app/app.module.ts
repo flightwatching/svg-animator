@@ -14,6 +14,8 @@ import { SharedModule } from './shared/shared.module'
 import { SidebarComponent } from './sidebar/sidebar.component'
 import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
 import { CollapseModule } from 'ng2-collapse';
+import { ConnectorsModule } from './connectors/connectors.module';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { CollapseModule } from 'ng2-collapse';
     SharedModule,
     AppRoutingModule,
     CollapseModule,
+    ConnectorsModule
   ],
   providers: [
     WorkspaceConfigService,

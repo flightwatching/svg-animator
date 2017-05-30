@@ -1,5 +1,5 @@
 import {Component, OnInit, Injectable} from '@angular/core';
-import {ConnectorService} from "./shared/connectors/connector.service";
+import {ConnectorService} from "./connectors/connector.service";
 
 
 @Component({

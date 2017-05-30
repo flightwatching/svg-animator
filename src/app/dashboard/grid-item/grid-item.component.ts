@@ -3,7 +3,7 @@ import {DrawService} from "../../draw/draw.service";
 import {DrawModel} from "../../draw/draw.model";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
-import {Box} from "../../box.model";
+import {Box} from "../../shared/box.model";
 import * as d3 from 'd3';
 
 @Component({
