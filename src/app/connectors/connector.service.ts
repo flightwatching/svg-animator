@@ -15,21 +15,13 @@ import 'rxjs/add/observable/interval';
 @Injectable()
 export class ConnectorService {
     
-    private connectors$: Array<Observable<any>>;
+    public connectors$: Array<Observable<any>>;
     
     constructor(private http : Http,
                 private store: StoreService,
                 private connectorApi: ConnectorAPIService) {
         this.connectors$ = [];
         this.loadConnectorStoreInDB();
-    }
-    
-    /**
-     * Add a new running connector
-     * @param Connector : connector
-     */
-    public addConnector(connector: Connector): void {
-        this.createConnector(connector);
     }
     
     /**
@@ -45,7 +37,7 @@ export class ConnectorService {
     
     private loadConnectorStoreInDB() {
         this.connectorApi.getConnectors().subscribe(
-            connectors => connectors.map(c => this.addConnector(c)),
+            connectors => connectors.map(c => this.createConnector(c)),
             err => console.error(err.message));
     }
     
@@ -55,19 +47,15 @@ export class ConnectorService {
      * He will start to pull the data of the external api.
      * @param Connector : connector
      */
-    private createConnector(connector: Connector): void {
+    public createConnector(connector: Connector): void {
         if(connector.type === "pull") {
-            this.makePullConnector(connector)
+            this.connectors$.push(this.startPollingExternalApi(connector));
+            this.startPushingDataFromExternalApiToStore(connector, this.connectors$[this.connectors$.length - 1]);
         }
         else {
             //TODO implement push connector
             console.warn("Not implemented yet !");
         }
-    }
-    
-    private makePullConnector(c: Connector) {
-        this.connectors$.push(this.startPollingExternalApi(c));
-        this.startPushingDataFromExternalApiToStore(c, this.connectors$[this.connectors$.length - 1]);
     }
     
     private startPollingExternalApi(connector: Connector): Observable<any> {

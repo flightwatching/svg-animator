@@ -18,7 +18,7 @@ export class ConnectorsEditorComponent implements OnInit {
     private nbOfConnectorInDB: number = 0;
 
     constructor(private fb: FormBuilder,
-                private connecterApi: ConnectorAPIService,
+                private connectorApiService: ConnectorAPIService,
                 private connectorService: ConnectorService,
                 private snackBar: MdSnackBar) {}
 
@@ -35,14 +35,19 @@ export class ConnectorsEditorComponent implements OnInit {
         let connectors = form.value.connectors;
         const controls = <FormArray>this.form.controls['connectors'];
     
+
         //Create the new connectors
         if(this.nbOfConnectorInDB < controls.length) {
             console.log("add");
-            connectors.filter((_, i) => i >= this.nbOfConnectorInDB)
-                      .map(c => this.connectorService.addConnector(c));
+            connectors.filter((c, i) => {
+                i >= this.nbOfConnectorInDB;
+            })
+                      .map(c => this.connectorService.createConnector(c));
+
         }
-        
-        this.connecterApi.updateConnectors(connectors).subscribe(
+        console.log(form);    
+            console.log(this.connectorService.connectors$);
+        this.connectorApiService.updateConnectors(connectors).subscribe(
             res => this.snackBar.open("Saved", 'Undo', { duration: 3000 }),
             err => this.snackBar.open("Error during save", 'Undo', { duration: 3000 }));
     }
@@ -68,7 +73,7 @@ export class ConnectorsEditorComponent implements OnInit {
      * fill the connectors form array
      */
     private retrieveConnectorFromDB(): void {
-        this.connecterApi.getConnectors()
+        this.connectorApiService.getConnectors()
             .subscribe(
                 connectors => this.fillFormArrayOfConnector(connectors),
                 err => this.snackBar.open("Can't retrieve connectors", 'Undo', { duration: 3000 }));
