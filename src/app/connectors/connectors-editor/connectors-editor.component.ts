@@ -38,15 +38,13 @@ export class ConnectorsEditorComponent implements OnInit {
 
         //Create the new connectors
         if(this.nbOfConnectorInDB < controls.length) {
-            console.log("add");
             connectors.filter((c, i) => {
                 i >= this.nbOfConnectorInDB;
             })
                       .map(c => this.connectorService.createConnector(c));
 
         }
-        console.log(form);    
-            console.log(this.connectorService.connectors$);
+
         this.connectorApiService.updateConnectors(connectors).subscribe(
             res => this.snackBar.open("Saved", 'Undo', { duration: 3000 }),
             err => this.snackBar.open("Error during save", 'Undo', { duration: 3000 }));
