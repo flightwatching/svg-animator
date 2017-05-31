@@ -3,7 +3,7 @@ import { MdSnackBar }                     from '@angular/material';
 import { WorkspaceConfigAPIService }      from './workspace-config-api.service';
 import { WorkspaceConfigModel }           from './workspace-config.model';
 import { NgGridConfig, NgGridItemConfig } from "angular2-grid";
-import { Box }                            from "../box.model";
+import { Box }                            from "../shared/box.model";
 import { UUID }                           from "angular2-uuid";
 
 @Injectable()

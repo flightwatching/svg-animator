@@ -1,4 +1,4 @@
-import { Box } from "../box.model";
+import { Box } from "../shared/box.model";
 
 export class WorkspaceConfigModel {
     name: String;

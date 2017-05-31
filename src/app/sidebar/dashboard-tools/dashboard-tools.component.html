@@ -8,16 +8,16 @@
            (click)="workspaceConfigService.setConfig(config.name)"
             class = "config-btn">
                 <span>{{config.name}}</span>
-                <md-icon (click)="workspaceConfigService.deleteConf(config.name)" class="icon-close">close</md-icon>
+                <img src="../../../assets/close.svg" (click)="workspaceConfigService.deleteConf(config.name)"/>
           </li>
 
           <li (click)="workspaceConfigService.saveConfigurationGrid()" class = "config-btn" id="save-config">
-              <span class="config-btn-label">SAVE</span><md-icon>save</md-icon>
+              <span class="config-btn-label">SAVE</span><img src="../../../assets/save.svg"/>
           </li>
       </div>
           <li class="sidenav-item" id="new_config_li">
             <input type="text" size="15" placeholder="New config name" id="new_config_name" [(ngModel)]="workspaceConfigService.newConfigName" required  name="name">
-            <span id="md_icon_add"><md-icon (click)="workspaceConfigService.addConf()">add</md-icon> </span>
+            <span id="md_icon_add"><img src="../../../assets/add.svg" (click)="workspaceConfigService.addConf()"/></span>
         </li>
     </ul>
   </collapse-item>

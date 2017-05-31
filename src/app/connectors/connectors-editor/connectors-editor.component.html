@@ -1,8 +1,8 @@
 <div class="container">
-    <form novalidate [formGroup]="form" novalidate (ngSubmit)="save(form)">
+    <form [formGroup]="form" novalidate (ngSubmit)="save(form)">
         <div formArrayName="connectors">
         <md-card *ngFor="let connector of form.controls.connectors.controls; let i=index">
-            <md-icon (click)="removeConnector(i)" class="delete-btn">clear</md-icon>
+            <img src="../../../assets/close.svg" (click)="removeConnector(i)"/>
             <md-card-title>
                 Connector {{i + 1}}
             </md-card-title>
