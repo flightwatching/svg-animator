@@ -5,7 +5,7 @@ import {Observable} from "rxjs";
 export interface Connector {
 	id: UUID; // use by the database
 	apiUrl: string;
-	index: string; // Use by the user for get the value by the store
+	name: string; // Use by the user for get the value by the store
 	interval: number;
 	type: string;
 	status: StateConnector;

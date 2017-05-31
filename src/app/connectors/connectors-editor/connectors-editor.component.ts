@@ -6,6 +6,7 @@ import {ConnectorAPIService} from "../connector-api.service";
 import {MdSnackBar} from "@angular/material";
 import {UUID} from "angular2-uuid";
 import {ConnectorService} from "../connector.service";
+import { Http } from "@angular/http";
 
 @Component({
     selector: 'app-connectors-editor',
@@ -18,6 +19,7 @@ export class ConnectorsEditorComponent implements OnInit {
     private nbOfConnectorInDB: number = 0;
 
     constructor(private fb: FormBuilder,
+                private http : Http,
                 private connectorApiService: ConnectorAPIService,
                 private connectorService: ConnectorService,
                 private snackBar: MdSnackBar) {}
@@ -54,6 +56,14 @@ export class ConnectorsEditorComponent implements OnInit {
         const control = <FormArray>this.form.controls['connectors'];
         const connector = this.initEmptyConnector();
         control.push(connector);
+    }
+
+    public testConnector(connector: Connector): void {
+        console.log(connector.apiUrl);
+        this.http.get(connector.apiUrl).subscribe(
+            data => console.log("OK"),
+            error => console.log("ERROR"),
+            );
     }
     
     /**
@@ -94,7 +104,7 @@ export class ConnectorsEditorComponent implements OnInit {
         const connectorFormGroup = this.fb.group({
             id: [connector.id, Validators.required],
             apiUrl: [connector.apiUrl, [Validators.required, validApiUrl()]],
-            index: [connector.index, Validators.required],
+            name: [connector.name, Validators.required],
             interval: [connector.interval, Validators.required],
             type: [connector.type.toLowerCase(), Validators.required],
         });
@@ -106,7 +116,7 @@ export class ConnectorsEditorComponent implements OnInit {
         return this.fb.group({
             id: [UUID.UUID().toString(), Validators.required],
             apiUrl: ['', [Validators.required, validApiUrl()]],
-            index: ['', Validators.required],
+            name: ['', Validators.required],
             interval: [1000, Validators.required],
             type: ['pull', Validators.required],
         });

@@ -48,14 +48,14 @@ export class ConnectorService {
      * @param Connector : connector
      */
     public createConnector(connector: Connector): void {
-        if(connector.type === "pull") {
-            this.connectors$.push(this.startPollingExternalApi(connector));
-            this.startPushingDataFromExternalApiToStore(connector, this.connectors$[this.connectors$.length - 1]);
-        }
-        else {
-            //TODO implement push connector
-            console.warn("Not implemented yet !");
-        }
+        // if(connector.type === "pull") {
+        //     this.connectors$.push(this.startPollingExternalApi(connector));
+        //     this.startPushingDataFromExternalApiToStore(connector, this.connectors$[this.connectors$.length - 1]);
+        // }
+        // else {
+        //     //TODO implement push connector
+        //     console.warn("Not implemented yet !");
+        // }
     }
     
     private startPollingExternalApi(connector: Connector): Observable<any> {
@@ -79,7 +79,7 @@ export class ConnectorService {
         connector.observable = obsvervableRemoteApi$;
         connector.status = StateConnector.RUNNING;
         obsvervableRemoteApi$.subscribe(
-            data => this.store.putDataInStore(connector.index, data),
+            data => this.store.putDataInStore(connector.name, data),
             error => StateConnector.ERROR,
             () => connector.status = StateConnector.STOPED);
     }

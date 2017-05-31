@@ -20,7 +20,7 @@
                         </md-list-item>
                         <md-list-item>
                             <md-input-container type="number" mdTooltip="Variable name used for your script" mdTooltipPosition="right">
-                                <input formControlName="index" mdInput placeholder="Name">
+                                <input formControlName="name" mdInput placeholder="Name">
                             </md-input-container>
                         </md-list-item>
                         <md-list-item>
@@ -28,6 +28,9 @@
                                 <md-radio-button value="pull">PULL</md-radio-button>
                                 <md-radio-button value="push">PUSH</md-radio-button>
                             </md-radio-group>
+                        </md-list-item>
+                        <md-list-item>
+                            <button type='button' (click)="testConnector(connector)" md-raised-button color="accent">Test</button>
                         </md-list-item>
                     </md-list>
             </md-card-content>
