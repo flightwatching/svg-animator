@@ -14,9 +14,9 @@ import { Http } from "@angular/http";
     styleUrls: ['./connectors-editor.component.css']
 })
 export class ConnectorsEditorComponent implements OnInit {
-
     public form: FormGroup;
     private nbOfConnectorInDB: number = 0;
+    public connectorsTest: Array<any>;
 
     constructor(private fb: FormBuilder,
                 private http : Http,
@@ -25,6 +25,7 @@ export class ConnectorsEditorComponent implements OnInit {
                 private snackBar: MdSnackBar) {}
 
     ngOnInit() {
+        this.connectorsTest = new Array<any>();
         this.retrieveConnectorFromDB();
         
         this.form = this.fb.group({
@@ -42,9 +43,7 @@ export class ConnectorsEditorComponent implements OnInit {
         if(this.nbOfConnectorInDB < controls.length) {
             connectors.filter((c, i) => {
                 i >= this.nbOfConnectorInDB;
-            })
-                      .map(c => this.connectorService.createConnector(c));
-
+            }).map(c => this.connectorService.createConnector(c));
         }
 
         this.connectorApiService.updateConnectors(connectors).subscribe(
@@ -56,13 +55,17 @@ export class ConnectorsEditorComponent implements OnInit {
         const control = <FormArray>this.form.controls['connectors'];
         const connector = this.initEmptyConnector();
         control.push(connector);
+        this.connectorsTest.push(undefined);
     }
 
-    public testConnector(connector: Connector): void {
-        console.log(connector.apiUrl);
+    public testConnector(connector: Connector, index: number): void {
+        if (connector.apiUrl == '' || connector.apiUrl == undefined) {
+            this.connectorsTest[index] = false;
+            return; 
+        }
         this.http.get(connector.apiUrl).subscribe(
-            data => console.log("OK"),
-            error => console.log("ERROR"),
+            data => this.connectorsTest[index] = true,
+            error => this.connectorsTest[index] = false
             );
     }
     
@@ -92,7 +95,10 @@ export class ConnectorsEditorComponent implements OnInit {
      */
     private fillFormArrayOfConnector(connectors: Array<Connector>): void {
         this.nbOfConnectorInDB = connectors.length;
-        connectors.map(c => this.addConnector(c));
+        connectors.map( (c,i) => {
+            this.addConnector(c);
+            this.connectorsTest.push(undefined);
+        });
     }
     
     /**
