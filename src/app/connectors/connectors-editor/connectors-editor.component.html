@@ -31,10 +31,12 @@
                         </md-list-item>
                         <md-list-item>
                             <button type='button' (click)="testConnector(connector.value, i)" md-raised-button color="accent">Test</button>
-                        </md-list-item>
-                        <md-list-item>
-                            <p *ngIf="connectorsTest[i] == true">OK</p>
-                            <p *ngIf="connectorsTest[i] == false">FAIL</p>
+                            <div class="resultConnectorTest" *ngIf="connectorsTest[i] == true">
+                                <img src="../../../assets/done.svg" />
+                            </div>
+                            <div class="resultConnectorTest" *ngIf="connectorsTest[i] == false">
+                                <img src="../../../assets/close.svg" />
+                            </div>
                         </md-list-item>
                     </md-list>
             </md-card-content>

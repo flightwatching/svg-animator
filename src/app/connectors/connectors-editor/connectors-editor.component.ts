@@ -37,7 +37,6 @@ export class ConnectorsEditorComponent implements OnInit {
     public save(form: NgForm): void {
         let connectors = form.value.connectors;
         const controls = <FormArray>this.form.controls['connectors'];
-    
 
         //Create the new connectors
         if(this.nbOfConnectorInDB < controls.length) {
