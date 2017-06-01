@@ -15,6 +15,7 @@ import { SidebarComponent } from './sidebar/sidebar.component'
 import { DashboardToolsComponent } from './sidebar/dashboard-tools/dashboard-tools.component'
 import { CollapseModule } from 'ng2-collapse';
 import { ConnectorsModule } from './connectors/connectors.module';
+import 'hammerjs';
 
 
 @NgModule({
